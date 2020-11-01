@@ -16,7 +16,6 @@ int main(){
     CSV csv;
     
     
-    
     file = fopen("file.csv", "r");
     if(!file){
         puts("Invalid file! 666\n");
