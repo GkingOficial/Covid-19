@@ -1,0 +1,3001 @@
+﻿NameSet,Gender,Age,City,ZipCode
+Brazil,male,84,"Rio de Janeiro",23595-115
+Brazil,male,38,Guarapari,29216-350
+Brazil,male,68,Araguaína,77818-832
+Brazil,female,28,"São Bernardo do Campo",09725-680
+Brazil,male,78,"João Pessoa",58057-549
+Brazil,female,78,"Nova Iguaçu",26023-240
+Brazil,male,22,Araçatuba,16018-680
+Brazil,female,75,"Barra Mansa",27340-480
+Brazil,male,43,"São Paulo",05415-011
+Brazil,male,20,Campinas,13015-140
+Brazil,female,47,"Ribeirão Preto",14071-489
+Brazil,male,40,Castanhal,68742-040
+Brazil,male,67,"Campo Grande",79073-020
+Brazil,male,56,"Belo Horizonte",30480-130
+Brazil,male,71,"São Paulo",08441-015
+Brazil,female,33,"Várzea Grande",78142-000
+Brazil,female,66,Salvador,40254-400
+Brazil,male,53,"São Paulo",08062-325
+Brazil,female,45,"São José dos Campos",12220-710
+Brazil,female,28,Tupã,17600-250
+Brazil,male,51,Hortolândia,13184-682
+Brazil,male,74,Salto,13321-270
+Brazil,male,22,Recife,52280-041
+Brazil,female,57,"São José",88117-250
+Brazil,female,79,"São Paulo",02220-080
+Brazil,female,70,Sorocaba,18055-810
+Brazil,female,80,"São Paulo",08142-030
+Brazil,female,78,Jundiaí,13205-220
+Brazil,female,37,Joinville,89223-267
+Brazil,female,47,Tubarão,88706-420
+Brazil,male,40,Cataguases,36770-076
+Brazil,female,80,Goiânia,74370-535
+Brazil,male,84,"Várzea Grande",78132-700
+Brazil,male,52,Itatiba,13256-320
+Brazil,female,62,Capanema,68700-090
+Brazil,male,25,Votuporanga,15503-158
+Brazil,male,26,Jaú,17212-750
+Brazil,male,70,"Passo Fundo",99070-210
+Brazil,male,29,Marília,17522-710
+Brazil,male,27,"Três Lagoas",79640-210
+Brazil,male,20,Sorocaba,18071-698
+Brazil,male,27,Esteio,93295-450
+Brazil,male,63,Brasília,70862-040
+Brazil,female,81,Goiânia,74781-009
+Brazil,female,22,"Porto Alegre",91270-620
+Brazil,male,72,Sumaré,13176-322
+Brazil,female,25,Samambaia,72303-521
+Brazil,male,20,"Campina Grande",58102-587
+Brazil,female,65,Salvador,40800-322
+Brazil,male,31,Londrina,86063-335
+Brazil,male,30,"Mogi das Cruzes",08715-660
+Brazil,male,85,Petrópolis,25650-300
+Brazil,female,29,Queimados,26395-270
+Brazil,female,51,"Feira de Santana",44040-335
+Brazil,male,64,Fortaleza,60310-010
+Brazil,male,85,"São Paulo",03917-020
+Brazil,male,58,"São José do Rio Preto",15061-580
+Brazil,male,70,"São Paulo",05021-040
+Brazil,female,81,Taguatinga,72161-003
+Brazil,female,84,"Rio Branco",69918-360
+Brazil,male,76,Contagem,32342-090
+Brazil,female,19,Barbacena,36205-244
+Brazil,female,48,Ceilândia,72262-104
+Brazil,male,44,Vitória,29055-120
+Brazil,female,71,"São Paulo",04950-020
+Brazil,female,36,Guarulhos,07093-030
+Brazil,male,54,Brasília,70730-680
+Brazil,female,72,"Rio de Janeiro",21730-450
+Brazil,female,67,"São Paulo",08473-240
+Brazil,male,41,"Porto Alegre",91430-440
+Brazil,male,52,Castanhal,68744-270
+Brazil,female,59,Jandira,06602-100
+Brazil,female,59,Teresina,64019-730
+Brazil,male,45,Bauru,17013-203
+Brazil,female,67,Uberlândia,38401-364
+Brazil,female,54,Campinas,13061-260
+Brazil,female,74,"Santana de Parnaíba",06541-020
+Brazil,male,29,"Barra Mansa",27353-060
+Brazil,female,65,"Rio de Janeiro",22770-665
+Brazil,male,71,Sorocaba,18105-265
+Brazil,female,26,Ananindeua,67105-016
+Brazil,female,21,"São Bernardo do Campo",09892-330
+Brazil,female,52,Cruzeiro,70658-333
+Brazil,male,54,Ituiutaba,38307-420
+Brazil,female,47,Joinville,89226-706
+Brazil,male,69,"Belo Horizonte",30285-740
+Brazil,male,58,Curitiba,82840-400
+Brazil,female,51,Guarulhos,07135-140
+Brazil,female,25,"São Paulo",03383-140
+Brazil,female,83,Dourados,79803-060
+Brazil,male,45,Petrópolis,25615-070
+Brazil,female,34,"Rio Branco",69914-660
+Brazil,male,38,"Duque de Caxias",25243-605
+Brazil,female,40,"Montes Claros",39400-108
+Brazil,female,72,Araguari,38445-126
+Brazil,female,23,"São Paulo",04017-000
+Brazil,female,40,Belém,66077-115
+Brazil,male,69,Cariacica,29149-725
+Brazil,male,66,Belém,66811-880
+Brazil,male,19,Suzano,08633-728
+Brazil,female,24,Piracicaba,13403-164
+Brazil,male,85,Belém,66822-060
+Brazil,female,35,Salvador,41390-290
+Brazil,male,84,Uberlândia,38402-012
+Brazil,female,40,Curitiba,81290-150
+Brazil,female,37,Bauru,17031-412
+Brazil,female,50,"Jaboatão dos Guararapes",54315-610
+Brazil,male,82,Itapevi,06670-080
+Brazil,male,36,Capanema,68703-240
+Brazil,female,58,"Rio de Janeiro",21041-320
+Brazil,male,53,Olinda,53220-103
+Brazil,male,48,"Campos dos Goytacazes",28057-273
+Brazil,male,60,Uberaba,38026-450
+Brazil,male,65,Teresina,64003-600
+Brazil,male,23,Guará,71020-166
+Brazil,female,80,Contagem,32240-370
+Brazil,female,76,Mesquita,26550-080
+Brazil,female,82,Paulista,53433-000
+Brazil,male,22,"Santa Luzia",33010-340
+Brazil,female,21,"Palmeira dos Índios",57600-005
+Brazil,female,37,"João Pessoa",58087-220
+Brazil,female,51,"Porto Alegre",91215-060
+Brazil,female,77,Rondonópolis,78750-030
+Brazil,female,26,Dourados,79826-060
+Brazil,female,37,"Rio de Janeiro",20180-006
+Brazil,female,24,Araucária,83706-305
+Brazil,female,66,Campinas,13104-114
+Brazil,female,59,"Pará de Minas",35661-146
+Brazil,female,82,Goiânia,74365-080
+Brazil,female,24,Barbacena,36200-652
+Brazil,male,34,"Nova Friburgo",28633-660
+Brazil,male,21,Petrolina,56316-590
+Brazil,male,29,Curitiba,80710-500
+Brazil,male,75,Fortaleza,60040-630
+Brazil,male,43,"São Paulo",04434-150
+Brazil,male,21,"São Paulo",03584-178
+Brazil,female,57,"São Gonçalo",24451-650
+Brazil,female,53,Goiânia,74775-009
+Brazil,male,77,Arapiraca,57313-835
+Brazil,male,85,Juazeiro,48901-330
+Brazil,female,76,"São Paulo",03475-160
+Brazil,male,45,"Várzea Grande",78149-480
+Brazil,male,78,"Duque de Caxias",25255-470
+Brazil,male,83,"Barra Mansa",27331-110
+Brazil,male,60,"Jaraguá do Sul",89251-165
+Brazil,male,81,Caratinga,35300-269
+Brazil,male,65,"Rio de Janeiro",21844-100
+Brazil,male,59,Recife,50760-300
+Brazil,male,47,Recife,50730-685
+Brazil,female,84,Lages,88511-540
+Brazil,male,38,Campinas,13040-090
+Brazil,female,78,"Teófilo Otoni",39801-045
+Brazil,male,22,"Rio de Janeiro",23595-400
+Brazil,female,79,"Cabo de Santo Agostinho",54510-390
+Brazil,male,65,Patos,58703-090
+Brazil,male,53,"Rio de Janeiro",21675-340
+Brazil,male,42,"Santa Maria",97105-120
+Brazil,male,77,Fortaleza,60115-171
+Brazil,female,25,"Jaboatão dos Guararapes",54355-570
+Brazil,male,79,Amparo,13901-101
+Brazil,male,48,Canoas,92025-450
+Brazil,male,34,"Porto Alegre",91180-132
+Brazil,male,41,Jaú,17206-726
+Brazil,male,29,Brusque,88352-267
+Brazil,female,70,Salvador,41390-050
+Brazil,female,30,Fortaleza,60510-421
+Brazil,female,51,Salvador,41343-285
+Brazil,male,44,Goiânia,74356-058
+Brazil,male,23,Guará,71100-023
+Brazil,male,26,Anápolis,75096-640
+Brazil,male,45,"Rio de Janeiro",21236-500
+Brazil,female,35,Votorantim,18115-360
+Brazil,female,83,Bauru,17053-080
+Brazil,male,59,"São Paulo",04904-220
+Brazil,female,55,"São Roque",18135-280
+Brazil,male,47,Caruaru,55010-540
+Brazil,female,63,"Três Rios",25807-240
+Brazil,female,24,"Rio de Janeiro",22773-420
+Brazil,female,48,Cuiabá,78005-160
+Brazil,male,61,Linhares,29905-360
+Brazil,female,32,Salvador,41300-270
+Brazil,male,85,Camaçari,42802-450
+Brazil,female,40,Campinas,13056-506
+Brazil,female,47,"Várzea Grande",78120-425
+Brazil,female,40,Belém,66110-046
+Brazil,female,61,"Pato Branco",85509-230
+Brazil,female,74,"São Paulo",02469-035
+Brazil,female,78,Recife,50030-030
+Brazil,female,85,"Vila Velha",29102-202
+Brazil,female,30,Anápolis,75094-700
+Brazil,female,38,"Riacho Fundo",71882-268
+Brazil,male,66,Olinda,53020-380
+Brazil,male,38,"São Paulo",03720-130
+Brazil,male,69,"São Paulo",03544-000
+Brazil,male,54,Londrina,86047-060
+Brazil,female,31,"São Paulo",04432-050
+Brazil,male,60,Joinville,89224-100
+Brazil,female,46,Diadema,09931-040
+Brazil,male,30,Natal,59110-340
+Brazil,female,74,"Rio de Janeiro",23590-140
+Brazil,male,60,Ituiutaba,38304-226
+Brazil,male,22,Campinas,13108-030
+Brazil,male,76,Guarulhos,07151-250
+Brazil,male,57,Jacareí,12307-330
+Brazil,male,26,"Mogi das Cruzes",08740-110
+Brazil,male,68,"São Paulo",04633-070
+Brazil,female,29,Cuiabá,78050-301
+Brazil,female,50,Piracicaba,13409-029
+Brazil,female,79,Maceió,57046-005
+Brazil,female,76,Brasília,70760-705
+Brazil,male,26,"Feira de Santana",44060-210
+Brazil,male,30,Itapetininga,18214-520
+Brazil,male,56,Paulista,53407-250
+Brazil,female,54,Londrina,86050-480
+Brazil,female,26,"Valparaíso de Goiás",72870-404
+Brazil,male,30,Anápolis,75144-502
+Brazil,female,45,"Volta Redonda",27275-315
+Brazil,female,82,Ceilândia,72225-300
+Brazil,male,40,Osasco,06194-070
+Brazil,male,30,"Duque de Caxias",25255-470
+Brazil,male,84,Guarulhos,07113-140
+Brazil,male,81,Caruaru,55020-350
+Brazil,female,31,"Vila Velha",29113-520
+Brazil,female,45,Goiânia,74463-690
+Brazil,female,31,"São Paulo",05665-120
+Brazil,male,81,Hortolândia,13184-532
+Brazil,male,41,"Ribeirão Preto",14056-754
+Brazil,female,81,Mauá,09380-527
+Brazil,male,72,"Campo Limpo Paulista",13233-021
+Brazil,male,53,"São Paulo",04475-130
+Brazil,female,58,Macaé,27930-100
+Brazil,male,79,Cotia,06726-340
+Brazil,female,73,"Duque de Caxias",25271-370
+Brazil,female,69,"São Paulo",03316-060
+Brazil,male,84,"São Paulo",05001-400
+Brazil,male,20,Recife,50870-470
+Brazil,female,50,"Caxias do Sul",95020-140
+Brazil,male,66,Tatuí,18278-310
+Brazil,male,80,Diadema,09920-370
+Brazil,female,74,Florianópolis,88058-116
+Brazil,male,67,Natal,59060-390
+Brazil,female,54,Cascavel,85814-118
+Brazil,male,84,"Porto Alegre",91793-130
+Brazil,male,26,"Passo Fundo",99062-240
+Brazil,male,68,Cruzeiro,70680-700
+Brazil,male,54,Fortaleza,60420-242
+Brazil,female,32,Curitiba,81560-010
+Brazil,female,48,Sorocaba,18030-000
+Brazil,male,64,Luziânia,72856-491
+Brazil,female,41,Brasília,70844-540
+Brazil,female,62,Brusque,88357-024
+Brazil,male,74,Guarulhos,07030-020
+Brazil,male,37,Cascavel,85815-180
+Brazil,male,37,"Poços de Caldas",37701-177
+Brazil,female,70,Macapá,68909-194
+Brazil,female,69,Castanhal,68746-390
+Brazil,female,30,Blumenau,89046-230
+Brazil,male,51,Itaúna,35680-331
+Brazil,male,55,"São Paulo",08285-340
+Brazil,male,79,Barretos,14783-276
+Brazil,male,19,"Santa Luzia",33110-400
+Brazil,female,49,Taguatinga,72152-312
+Brazil,female,66,"Recanto das Emas",72630-202
+Brazil,female,31,Taguatinga,72158-120
+Brazil,female,67,Blumenau,89051-100
+Brazil,female,54,Contagem,32220-370
+Brazil,female,54,"São Paulo",08230-453
+Brazil,male,41,"Sapucaia do Sul",93214-260
+Brazil,female,57,Maceió,57045-025
+Brazil,male,70,"Belo Horizonte",30662-300
+Brazil,male,57,Mesquita,26556-360
+Brazil,male,20,Olinda,53320-440
+Brazil,female,37,Barreiras,47802-060
+Brazil,female,77,Dourados,79840-340
+Brazil,female,65,"Santo André",09030-335
+Brazil,male,28,"Rio Branco",69908-695
+Brazil,female,60,Salvador,40718-635
+Brazil,female,68,Belém,66035-000
+Brazil,female,82,Olinda,53290-210
+Brazil,female,81,Jacareí,12312-520
+Brazil,female,31,Natal,59133-165
+Brazil,male,68,Itapevi,06673-130
+Brazil,male,75,"São Paulo",02551-040
+Brazil,male,20,Suzano,08690-305
+Brazil,female,26,Mococa,13736-269
+Brazil,male,34,Dourados,79833-770
+Brazil,female,38,Sorocaba,18025-794
+Brazil,female,26,Serra,29165-430
+Brazil,male,62,Itabira,35900-528
+Brazil,male,81,"Boa Vista",69317-121
+Brazil,male,72,Osasco,06083-110
+Brazil,male,56,"Campina Grande",58105-355
+Brazil,male,44,Diadema,09961-720
+Brazil,male,21,Taubaté,12093-590
+Brazil,male,64,Petrópolis,25725-170
+Brazil,female,53,Natal,59104-010
+Brazil,male,75,Salvador,40110-015
+Brazil,male,75,"São Paulo",02989-060
+Brazil,female,59,Florianópolis,88058-030
+Brazil,male,43,"Jaboatão dos Guararapes",54355-622
+Brazil,female,47,"Jaboatão dos Guararapes",54340-660
+Brazil,male,54,Goiânia,74550-060
+Brazil,female,31,Serra,29164-580
+Brazil,male,67,"Rio de Janeiro",20010-090
+Brazil,female,71,Petrolina,56332-370
+Brazil,male,23,Aracaju,49085-440
+Brazil,female,51,"Belo Horizonte",31750-530
+Brazil,male,59,Arapiraca,57304-465
+Brazil,female,41,Brasília,70292-110
+Brazil,male,19,"Palmeira dos Índios",57600-020
+Brazil,female,60,"São Paulo",02252-010
+Brazil,male,36,"Belford Roxo",26110-750
+Brazil,male,42,"São Paulo",01236-020
+Brazil,female,23,Belém,66810-220
+Brazil,male,29,"Porto Alegre",90820-090
+Brazil,male,29,Salvador,41219-590
+Brazil,male,57,"Rio de Janeiro",22765-587
+Brazil,male,51,Ceilândia,72255-608
+Brazil,female,69,"Núcleo Bandeirante",71720-550
+Brazil,female,26,Cascavel,85804-610
+Brazil,male,63,Luziânia,72856-592
+Brazil,male,62,Poá,08555-020
+Brazil,female,39,Petrópolis,25755-210
+Brazil,male,45,Itatiba,13255-833
+Brazil,male,55,"São Lourenço da Mata",54730-201
+Brazil,female,31,"São Paulo",01031-020
+Brazil,female,76,"São Paulo",05767-004
+Brazil,male,84,Tatuí,18276-630
+Brazil,male,19,Salvador,40323-670
+Brazil,female,46,Manaus,69097-483
+Brazil,female,42,Salvador,40435-410
+Brazil,male,59,"São Paulo",02957-110
+Brazil,female,57,Guarulhos,07056-100
+Brazil,female,21,"Santa Maria",97043-430
+Brazil,female,25,Joinville,89214-200
+Brazil,male,20,Itaquaquecetuba,08573-170
+Brazil,male,42,"Francisco Morato",07953-160
+Brazil,female,48,Cruzeiro,12710-470
+Brazil,male,49,"Teixeira de Freitas",45998-427
+Brazil,female,62,"Duque de Caxias",25041-735
+Brazil,female,26,"Passo Fundo",99034-160
+Brazil,female,28,Salvador,40040-468
+Brazil,male,63,"Santana de Parnaíba",06519-450
+Brazil,male,83,Curitiba,81320-430
+Brazil,female,48,"Rio de Janeiro",22740-190
+Brazil,male,29,Sertãozinho,14170-770
+Brazil,male,67,"Campos dos Goytacazes",28020-216
+Brazil,male,22,Jandira,06616-000
+Brazil,male,62,Olinda,53140-090
+Brazil,female,59,"São Luís",65032-160
+Brazil,female,20,Cubatão,11534-250
+Brazil,male,75,Guarulhos,07263-110
+Brazil,male,75,"São Gonçalo",24450-060
+Brazil,female,85,Palmas,77015-230
+Brazil,male,54,"Belo Horizonte",30170-010
+Brazil,male,55,Guarulhos,07081-221
+Brazil,male,45,Sorocaba,18075-650
+Brazil,female,78,Teresópolis,25955-650
+Brazil,male,50,Mogi-Guaçu,13843-151
+Brazil,male,30,"São Gonçalo",24715-510
+Brazil,male,82,Goiânia,74150-150
+Brazil,male,73,Bebedouro,14709-124
+Brazil,female,21,Salvador,40100-170
+Brazil,male,39,"Rio de Janeiro",21230-090
+Brazil,male,37,"São Paulo",02763-080
+Brazil,female,68,Fortaleza,60711-050
+Brazil,female,65,Brasília,70854-530
+Brazil,male,58,Mococa,13733-160
+Brazil,male,38,Pinhais,83321-320
+Brazil,male,71,Serra,29163-556
+Brazil,male,22,Itajubá,37501-036
+Brazil,male,40,"São José do Rio Preto",15050-140
+Brazil,male,72,"Rio de Janeiro",22750-700
+Brazil,male,67,"São Gonçalo",24465-555
+Brazil,female,62,"São Paulo",05202-220
+Brazil,male,54,Itajubá,37504-074
+Brazil,female,31,Barbacena,36201-605
+Brazil,male,47,"Poços de Caldas",37704-340
+Brazil,male,79,"Cachoeira do Sul",96503-320
+Brazil,female,47,"São Paulo",05367-180
+Brazil,male,79,Belém,66080-450
+Brazil,male,50,Goiânia,74370-658
+Brazil,male,27,Alegrete,97547-350
+Brazil,male,63,Teresópolis,25965-175
+Brazil,female,58,"São João Del Rei",36307-450
+Brazil,female,23,"Pará de Minas",35660-297
+Brazil,female,81,Votorantim,18116-420
+Brazil,female,57,Araras,13601-412
+Brazil,male,49,"Juiz de Fora",36081-210
+Brazil,male,80,"São Paulo",01547-160
+Brazil,female,60,Itu,13308-253
+Brazil,female,76,"João Pessoa",58035-295
+Brazil,female,53,"Belo Horizonte",31610-080
+Brazil,male,66,Goiânia,74370-684
+Brazil,female,64,Brazlândia,72710-125
+Brazil,male,79,Campinas,13050-452
+Brazil,female,42,"Volta Redonda",27211-400
+Brazil,female,55,Teresópolis,25973-470
+Brazil,male,53,Mossoró,59607-510
+Brazil,male,69,"São Paulo",08390-060
+Brazil,female,73,Blumenau,89074-410
+Brazil,female,35,"Sete Lagoas",35701-238
+Brazil,male,35,Fortaleza,60455-465
+Brazil,male,35,"Vila Velha",29102-080
+Brazil,female,41,Betim,32550-150
+Brazil,male,60,"Campos dos Goytacazes",28083-130
+Brazil,male,74,Sumaré,13171-081
+Brazil,male,60,"São Paulo",05104-040
+Brazil,female,23,"Belo Horizonte",31930-530
+Brazil,female,55,Sarandi,87111-050
+Brazil,male,21,"Cruz Alta",98015-390
+Brazil,female,76,"São Carlos",13573-192
+Brazil,female,75,"São João de Meriti",25530-240
+Brazil,male,38,Manaus,69033-700
+Brazil,female,24,Sabará,34525-000
+Brazil,male,60,Camaragibe,54765-455
+Brazil,female,52,Palmas,77021-058
+Brazil,male,20,"São José do Rio Preto",15053-232
+Brazil,male,26,"São João de Meriti",25555-260
+Brazil,female,51,Itaquaquecetuba,08597-698
+Brazil,male,51,"São Paulo",08050-550
+Brazil,male,63,Araçatuba,16058-605
+Brazil,female,70,Londrina,86030-090
+Brazil,male,46,"São Paulo",05324-070
+Brazil,female,80,Fortaleza,60851-840
+Brazil,female,37,"Cachoeiro de Itapemirim",29313-748
+Brazil,male,79,Jundiaí,13216-254
+Brazil,male,69,Taubaté,12082-710
+Brazil,female,69,"Rio Claro",13502-480
+Brazil,female,74,Mauá,09320-050
+Brazil,male,83,Caraguatatuba,11666-100
+Brazil,male,60,Palmas,77020-010
+Brazil,female,22,"Juazeiro do Norte",63040-660
+Brazil,male,70,"Campo Grande",79012-511
+Brazil,male,38,Piraquara,83307-320
+Brazil,female,64,Samambaia,72313-715
+Brazil,male,42,Cotia,06700-178
+Brazil,male,22,"Rio de Janeiro",21521-010
+Brazil,male,42,"Mogi das Cruzes",08761-530
+Brazil,male,64,"Belford Roxo",26183-450
+Brazil,female,62,"São Paulo",04153-180
+Brazil,male,67,"Rio de Janeiro",20750-000
+Brazil,male,59,Osasco,06086-100
+Brazil,female,75,Corumbá,79310-702
+Brazil,female,29,Osasco,06086-140
+Brazil,male,74,Cariacica,29147-795
+Brazil,male,46,"São Paulo",05735-070
+Brazil,female,64,Hortolândia,13183-436
+Brazil,male,25,"Patos de Minas",38705-144
+Brazil,male,47,Aracaju,49095-840
+Brazil,female,66,"Valparaíso de Goiás",72878-210
+Brazil,male,62,"São Paulo",02805-130
+Brazil,male,27,Parnaíba,64216-160
+Brazil,female,63,"Jaboatão dos Guararapes",54430-580
+Brazil,male,26,"Taboão da Serra",06783-160
+Brazil,female,60,"São Gonçalo",24710-290
+Brazil,male,36,Queimados,26331-520
+Brazil,female,68,Itapetininga,18202-020
+Brazil,male,29,Salvador,40220-235
+Brazil,male,66,Blumenau,89045-180
+Brazil,male,23,Araxá,38182-298
+Brazil,female,21,"Poços de Caldas",37713-330
+Brazil,male,78,Manaus,69098-030
+Brazil,female,79,"Belo Horizonte",30380-250
+Brazil,male,64,Apucarana,86800-150
+Brazil,male,75,Curitiba,81920-030
+Brazil,female,84,Natal,59129-340
+Brazil,female,49,Colatina,29706-330
+Brazil,male,74,"Nova Iguaçu",26230-240
+Brazil,female,29,Franca,14403-352
+Brazil,male,69,Itapetininga,18211-203
+Brazil,male,62,"Franco da Rocha",07859-150
+Brazil,female,79,"São Paulo",02223-240
+Brazil,female,22,Florianópolis,88063-091
+Brazil,male,70,Cariacica,29141-350
+Brazil,female,65,Florianópolis,88058-537
+Brazil,female,49,"Juazeiro do Norte",63041-100
+Brazil,male,54,Maringá,87015-580
+Brazil,female,40,Cariacica,29144-140
+Brazil,female,57,"Porto Alegre",91330-780
+Brazil,male,69,Mauá,09371-040
+Brazil,female,19,Diadema,09981-010
+Brazil,female,54,Mauá,09360-050
+Brazil,male,82,"Recanto das Emas",72602-307
+Brazil,male,53,"São Paulo",05527-170
+Brazil,male,36,Fortaleza,60410-520
+Brazil,male,75,Petrolina,56320-725
+Brazil,male,49,"Aparecida de Goiânia",74934-060
+Brazil,male,42,Sorocaba,18071-200
+Brazil,female,72,Goiânia,74565-090
+Brazil,female,28,Palmas,77016-492
+Brazil,male,65,Mogi-Mirim,13800-186
+Brazil,male,60,Castro,84165-000
+Brazil,female,22,"Santana do Livramento",97574-380
+Brazil,female,36,Salvador,40323-875
+Brazil,female,29,Recife,51320-150
+Brazil,male,62,"Caxias do Sul",95020-130
+Brazil,female,23,Fortaleza,60535-070
+Brazil,male,73,"São Paulo",05885-700
+Brazil,male,33,Rondonópolis,78700-115
+Brazil,male,85,Itu,13300-440
+Brazil,female,42,"São Paulo",02955-070
+Brazil,male,57,"São Paulo",04605-040
+Brazil,female,78,"Novo Hamburgo",93346-190
+Brazil,female,29,Anápolis,75115-530
+Brazil,female,31,"Mogi das Cruzes",08730-000
+Brazil,male,19,"Telêmaco Borba",84263-470
+Brazil,female,85,Fortaleza,60821-670
+Brazil,female,61,"Valparaíso de Goiás",72878-473
+Brazil,male,79,"Santa Bárbara D'Oeste",13454-026
+Brazil,female,77,Guarulhos,07141-090
+Brazil,male,48,Fortaleza,60872-601
+Brazil,male,25,Criciúma,88805-585
+Brazil,female,45,"Sete Lagoas",35701-189
+Brazil,male,50,"Belo Horizonte",31360-520
+Brazil,male,24,Bauru,17033-470
+Brazil,male,43,Colombo,83405-080
+Brazil,male,25,Londrina,86026-170
+Brazil,male,84,"Praia Grande",11705-350
+Brazil,female,25,Belém,66842-190
+Brazil,male,78,"Porto Alegre",91793-160
+Brazil,female,39,Jaboticabal,14882-104
+Brazil,female,61,Santos,11065-201
+Brazil,male,80,Petrópolis,25670-101
+Brazil,female,50,"Juazeiro do Norte",63040-530
+Brazil,male,25,"Duque de Caxias",25046-375
+Brazil,female,73,"Campo Grande",79084-086
+Brazil,female,78,"São João de Meriti",25571-180
+Brazil,female,65,"Rio de Janeiro",20561-010
+Brazil,female,56,"Porto Alegre",91770-310
+Brazil,male,23,Palmas,77015-040
+Brazil,male,59,"Novo Hamburgo",93340-530
+Brazil,male,28,"São Gonçalo",24745-430
+Brazil,male,38,"Santa Maria",72546-408
+Brazil,male,25,"São José dos Campos",12236-770
+Brazil,male,75,Maceió,57073-010
+Brazil,female,45,Caruaru,55018-600
+Brazil,female,66,Natal,59070-520
+Brazil,male,42,Guarapuava,85070-050
+Brazil,male,72,"Taboão da Serra",06787-570
+Brazil,male,84,"São Paulo",03336-070
+Brazil,male,68,Palhoça,88130-260
+Brazil,female,70,Rondonópolis,78750-580
+Brazil,male,68,Sumaré,13181-122
+Brazil,female,21,"Juiz de Fora",36020-110
+Brazil,male,80,Londrina,86083-440
+Brazil,male,71,"Vila Velha",29104-210
+Brazil,male,77,"Rio de Janeiro",23095-710
+Brazil,female,72,"Belo Horizonte",31130-080
+Brazil,female,61,"Santa Cruz do Sul",96815-800
+Brazil,male,47,Jundiaí,13207-540
+Brazil,female,83,Petrolina,56302-000
+Brazil,female,82,Londrina,86050-610
+Brazil,male,80,Vitória,29047-068
+Brazil,female,67,"São Paulo",03571-060
+Brazil,male,81,"Rio de Janeiro",20061-022
+Brazil,male,66,"Pato Branco",85501-220
+Brazil,male,56,Recife,51270-040
+Brazil,male,53,Franca,14406-693
+Brazil,female,77,Curitiba,82530-320
+Brazil,male,65,Araçatuba,16016-280
+Brazil,female,50,"Rio de Janeiro",22793-273
+Brazil,male,41,Brazlândia,72705-515
+Brazil,female,53,"São João da Boa Vista",13870-559
+Brazil,female,83,"Belo Horizonte",30350-160
+Brazil,male,32,Japeri,26430-040
+Brazil,female,70,Fortaleza,60720-560
+Brazil,female,40,"Santana de Parnaíba",06540-085
+Brazil,male,73,Salvador,41345-040
+Brazil,male,50,Natal,59010-326
+Brazil,male,67,Chapecó,89812-190
+Brazil,female,31,"Aparecida de Goiânia",74960-030
+Brazil,female,60,"Campos dos Goytacazes",28010-140
+Brazil,female,53,Caucaia,61605-740
+Brazil,female,83,Fortaleza,60332-774
+Brazil,female,69,"Campo Grande",79097-340
+Brazil,male,46,"Santa Maria",72545-243
+Brazil,female,29,"Porto Alegre",91510-210
+Brazil,male,84,"São Paulo",08430-480
+Brazil,male,45,"Taboão da Serra",06786-490
+Brazil,female,48,Palmas,77006-312
+Brazil,female,43,"Rio de Janeiro",22715-070
+Brazil,female,81,"Porto Alegre",91260-421
+Brazil,male,70,"Boa Vista",69311-360
+Brazil,female,31,"Rio de Janeiro",23033-310
+Brazil,female,36,Alvorada,94818-100
+Brazil,male,59,"São Paulo",05630-030
+Brazil,male,53,Londrina,86083-270
+Brazil,male,31,Campinas,13082-641
+Brazil,female,54,"Rio de Janeiro",21236-355
+Brazil,male,79,"Nova Iguaçu",26015-330
+Brazil,male,50,Assis,19816-243
+Brazil,female,62,Ceilândia,72270-222
+Brazil,male,23,Itajaí,88305-495
+Brazil,male,39,Niterói,24230-360
+Brazil,female,50,Natal,59075-053
+Brazil,male,76,"Porto Alegre",91792-320
+Brazil,female,70,"São Paulo",02965-150
+Brazil,female,71,"Rio de Janeiro",21020-350
+Brazil,male,51,"Porto Alegre",90040-200
+Brazil,male,54,Aracaju,49010-100
+Brazil,male,28,Maceió,57017-020
+Brazil,female,81,Manaus,69098-032
+Brazil,male,24,Ourinhos,19913-480
+Brazil,female,48,Goiânia,74840-460
+Brazil,female,36,Samambaia,72319-524
+Brazil,female,32,Osasco,06140-102
+Brazil,female,22,Guarulhos,07181-222
+Brazil,female,39,"Montes Claros",39404-244
+Brazil,male,58,"Santana do Livramento",97577-240
+Brazil,female,21,Curitiba,82620-260
+Brazil,female,20,Vitória,29026-301
+Brazil,female,38,"Rio de Janeiro",21865-090
+Brazil,male,54,"São Paulo",02841-050
+Brazil,female,52,Uberlândia,38411-346
+Brazil,female,59,Cuiabá,78095-538
+Brazil,male,67,Cariacica,29141-037
+Brazil,male,39,"Rio de Janeiro",23590-260
+Brazil,male,30,"Rio de Janeiro",22790-320
+Brazil,female,73,Sobradinho,73060-202
+Brazil,male,21,"São Paulo",04181-010
+Brazil,female,43,"Porto Alegre",91230-040
+Brazil,male,85,Samambaia,72335-003
+Brazil,female,78,Blumenau,89036-760
+Brazil,male,83,Niterói,24230-370
+Brazil,male,59,Mesquita,26582-280
+Brazil,male,63,"São Gonçalo",24745-700
+Brazil,male,24,Itaquaquecetuba,08573-100
+Brazil,male,38,"João Pessoa",58027-030
+Brazil,female,52,Botucatu,18600-321
+Brazil,female,21,Goiânia,74355-752
+Brazil,female,56,Camaçari,42804-230
+Brazil,male,51,Serra,29160-495
+Brazil,male,48,Queimados,26331-050
+Brazil,male,45,Mogi-Mirim,13807-510
+Brazil,female,24,Itumbiara,75522-160
+Brazil,female,39,"Santa Maria",72543-501
+Brazil,male,50,"Teófilo Otoni",39801-086
+Brazil,female,72,Goiânia,74684-002
+Brazil,female,71,Luziânia,72859-270
+Brazil,male,51,Jacareí,12335-240
+Brazil,female,80,Ceilândia,72231-111
+Brazil,female,49,Salvador,41185-470
+Brazil,male,68,Cotia,06716-110
+Brazil,female,39,Natal,59032-320
+Brazil,male,85,"Passo Fundo",99062-600
+Brazil,female,45,Recife,52130-160
+Brazil,female,68,Belém,66625-047
+Brazil,female,42,"Belo Horizonte",31960-160
+Brazil,female,43,"São Paulo",02325-010
+Brazil,female,69,Manaus,69046-100
+Brazil,male,83,Olinda,53040-150
+Brazil,male,35,"São Gonçalo",24440-430
+Brazil,male,32,Juazeiro,48908-340
+Brazil,female,53,"Santana do Livramento",97578-540
+Brazil,female,71,Itajubá,37505-420
+Brazil,female,29,Araguaína,77818-200
+Brazil,female,75,Niterói,24240-395
+Brazil,male,34,Itu,13309-662
+Brazil,female,30,"São José",88106-612
+Brazil,female,77,Itajaí,88303-394
+Brazil,male,45,"Rio de Janeiro",23081-200
+Brazil,male,39,Araguaína,77804-010
+Brazil,female,27,Guarulhos,07172-146
+Brazil,male,84,Paulista,53417-450
+Brazil,female,37,"São Gonçalo",24451-040
+Brazil,male,78,"Rio de Janeiro",22711-310
+Brazil,female,66,Fortaleza,60060-170
+Brazil,female,59,"São Roque",18132-220
+Brazil,male,30,"Nova Iguaçu",26061-820
+Brazil,female,35,Salvador,41706-790
+Brazil,male,42,Natal,59078-190
+Brazil,female,56,Brasília,70278-140
+Brazil,male,26,Taguatinga,72015-605
+Brazil,male,75,"São Paulo",03975-100
+Brazil,male,57,"São Gonçalo",24425-730
+Brazil,female,45,Limeira,13485-135
+Brazil,male,71,Sobradinho,73064-233
+Brazil,female,52,Cruzeiro,12710-220
+Brazil,female,71,"São Gonçalo",24426-270
+Brazil,male,40,Ipatinga,35164-765
+Brazil,male,46,"Três Lagoas",79645-320
+Brazil,female,82,Fortaleza,60741-420
+Brazil,female,73,"São Paulo",03880-110
+Brazil,male,44,Teresópolis,25963-300
+Brazil,male,38,Piracicaba,13424-535
+Brazil,male,72,Caruaru,55018-350
+Brazil,female,28,Araguari,38446-397
+Brazil,female,74,Sorocaba,18051-240
+Brazil,female,79,"Aparecida de Goiânia",74927-054
+Brazil,male,61,Ituiutaba,38300-056
+Brazil,male,40,"Almirante Tamandaré",83514-480
+Brazil,male,79,Limeira,13481-337
+Brazil,female,47,Sumaré,13173-210
+Brazil,female,60,Guará,71215-232
+Brazil,male,38,Brusque,88353-130
+Brazil,female,35,Recife,52110-070
+Brazil,male,32,"Várzea Grande",78132-413
+Brazil,female,57,Uberlândia,38415-480
+Brazil,female,19,Criciúma,88817-103
+Brazil,female,39,"Teófilo Otoni",39803-141
+Brazil,female,26,"São Paulo",05868-640
+Brazil,male,39,Samambaia,72307-011
+Brazil,female,23,"Rio de Janeiro",23587-030
+Brazil,female,57,Bayeux,58309-330
+Brazil,male,62,"São Sebastião",71693-119
+Brazil,female,68,Toledo,85913-200
+Brazil,female,71,"São Paulo",04701-000
+Brazil,male,64,Araucária,83701-400
+Brazil,male,52,Planaltina,73340-202
+Brazil,male,58,Campinas,13032-410
+Brazil,male,34,Brusque,88355-357
+Brazil,male,29,Brusque,88354-440
+Brazil,male,58,Campinas,13060-601
+Brazil,male,66,"Porto Alegre",91787-760
+Brazil,male,39,Maceió,57017-320
+Brazil,male,22,Salvador,40081-300
+Brazil,female,70,Manaus,69040-612
+Brazil,female,67,Betim,32637-030
+Brazil,female,64,Resende,27520-030
+Brazil,female,31,Salvador,41345-485
+Brazil,female,76,Sorocaba,18075-081
+Brazil,female,84,Campinas,13083-770
+Brazil,male,46,Rondonópolis,78720-422
+Brazil,male,68,Natal,59092-200
+Brazil,male,79,"Coronel Fabriciano",35171-400
+Brazil,male,25,"Ribeirão Preto",14021-090
+Brazil,male,38,Recife,52120-374
+Brazil,male,80,Tucuruí,68455-142
+Brazil,female,72,"São Paulo",03589-160
+Brazil,female,64,Araçatuba,16018-080
+Brazil,male,71,Cacoal,78977-160
+Brazil,female,63,Rondonópolis,78700-810
+Brazil,female,76,Guarulhos,07097-031
+Brazil,female,19,Pinhais,83321-310
+Brazil,female,45,"Belo Horizonte",31270-250
+Brazil,male,58,Carapicuíba,06340-150
+Brazil,male,50,Belém,66030-235
+Brazil,male,46,Goiânia,74477-246
+Brazil,male,66,"Valparaíso de Goiás",72874-015
+Brazil,male,23,"Feira de Santana",44021-660
+Brazil,female,23,"São Paulo",05086-040
+Brazil,male,64,Sertãozinho,14166-209
+Brazil,female,62,Sorocaba,18055-630
+Brazil,female,35,"Rio de Janeiro",21515-080
+Brazil,female,48,Santos,11080-130
+Brazil,male,45,"Três Rios",25821-285
+Brazil,male,27,"São Paulo",02257-020
+Brazil,male,23,Guarulhos,07261-152
+Brazil,female,20,"São Paulo",04890-740
+Brazil,male,26,Londrina,86076-070
+Brazil,male,41,Belém,66810-220
+Brazil,male,69,"Belo Horizonte",30666-100
+Brazil,female,26,"São Carlos",13563-759
+Brazil,male,20,"Taboão da Serra",06775-330
+Brazil,male,32,Caratinga,35300-228
+Brazil,female,63,"São Paulo",05616-072
+Brazil,female,64,Recife,51180-620
+Brazil,male,39,Palhoça,88137-165
+Brazil,female,54,Queimados,26349-080
+Brazil,male,66,"São Paulo",03283-040
+Brazil,male,45,Mogi-Guaçu,13844-015
+Brazil,female,51,"Belo Horizonte",31980-190
+Brazil,female,25,Paragominas,68625-550
+Brazil,male,56,"São Paulo",02871-010
+Brazil,male,37,"Duque de Caxias",25231-300
+Brazil,female,57,"São Paulo",05050-030
+Brazil,male,28,"São Paulo",03544-050
+Brazil,male,63,Guarujá,11454-110
+Brazil,male,81,"Rio de Janeiro",22431-060
+Brazil,female,65,"Várzea Grande",78142-015
+Brazil,female,19,Salvador,41650-690
+Brazil,male,70,"São Bernardo do Campo",09793-020
+Brazil,female,24,Fortaleza,60520-580
+Brazil,male,73,Belém,66045-210
+Brazil,female,82,Guarapari,29220-240
+Brazil,female,73,Florianópolis,88049-205
+Brazil,male,35,Itapevi,06695-500
+Brazil,female,76,Arcoverde,56503-190
+Brazil,female,37,"Abreu e Lima",53520-540
+Brazil,female,48,Diadema,09914-000
+Brazil,female,62,"Rio Verde",75904-020
+Brazil,male,31,Suzano,08664-615
+Brazil,female,38,"Porto Alegre",90160-007
+Brazil,female,47,"Governador Valadares",35012-170
+Brazil,male,56,Uberlândia,38410-226
+Brazil,female,45,Barbacena,36205-278
+Brazil,female,31,Canoas,92320-040
+Brazil,male,46,Recife,52081-065
+Brazil,male,27,Sorocaba,18030-230
+Brazil,male,55,Arcoverde,56503-580
+Brazil,female,30,Campinas,13054-529
+Brazil,female,77,"São Paulo",04870-420
+Brazil,female,78,"Jaboatão dos Guararapes",54410-370
+Brazil,female,54,Uberaba,38056-290
+Brazil,male,50,"São Caetano do Sul",09531-110
+Brazil,male,47,Cascavel,85814-136
+Brazil,female,36,"São Paulo",03223-010
+Brazil,male,53,"São Paulo",05164-035
+Brazil,female,36,Formosa,73805-605
+Brazil,male,58,Criciúma,88810-745
+Brazil,male,83,"São Paulo",02543-010
+Brazil,male,34,Camaçari,42804-170
+Brazil,female,54,"Rio de Janeiro",23017-235
+Brazil,male,74,Curitiba,82600-610
+Brazil,female,72,"Santo André",09040-260
+Brazil,male,83,Palhoça,88131-320
+Brazil,female,61,"Porto Alegre",91440-300
+Brazil,male,52,Samambaia,72320-582
+Brazil,female,84,Itapetininga,18206-050
+Brazil,male,77,Manaus,69027-020
+Brazil,female,75,Salvador,41152-005
+Brazil,female,26,Teresina,64079-290
+Brazil,male,23,Birigüi,16203-565
+Brazil,male,64,Itatiba,13256-759
+Brazil,male,21,Guarujá,11430-260
+Brazil,male,52,Petrolina,56309-020
+Brazil,male,39,"Porto Alegre",90843-462
+Brazil,male,75,"São Paulo",03930-050
+Brazil,female,21,Igarassu,53620-290
+Brazil,female,37,Contagem,32013-350
+Brazil,male,71,"São Bernardo do Campo",09812-600
+Brazil,female,43,"São Paulo",02471-230
+Brazil,female,23,"São Paulo",08130-200
+Brazil,male,32,"Porto Alegre",90630-000
+Brazil,female,47,"Belford Roxo",26187-330
+Brazil,male,52,Itaquaquecetuba,08598-351
+Brazil,female,29,Palhoça,88138-090
+Brazil,male,72,Birigüi,16200-760
+Brazil,male,19,"Campina Grande",58104-535
+Brazil,male,81,Caratinga,35300-200
+Brazil,female,42,"São Paulo",04235-020
+Brazil,male,60,"Rio de Janeiro",21072-740
+Brazil,female,44,Ananindeua,67100-530
+Brazil,male,23,Macaé,27937-160
+Brazil,female,41,"São Luís",65076-630
+Brazil,female,59,"Campo Grande",79044-860
+Brazil,male,69,Samambaia,72319-111
+Brazil,female,82,Belém,66063-480
+Brazil,female,71,Jundiaí,13214-551
+Brazil,female,81,"São Paulo",08320-350
+Brazil,male,19,"Vila Velha",29115-621
+Brazil,female,40,Americana,13471-390
+Brazil,female,66,Timóteo,35183-602
+Brazil,male,83,"Itapecerica da Serra",06856-805
+Brazil,female,34,Campinas,13031-550
+Brazil,male,64,Itapevi,06665-205
+Brazil,female,61,"São Leopoldo",93010-040
+Brazil,male,26,"Lago Sul",71625-130
+Brazil,male,81,Florianópolis,88064-030
+Brazil,male,53,Lages,88506-500
+Brazil,female,24,Osasco,06236-170
+Brazil,female,53,Joinville,89226-681
+Brazil,female,64,Passos,37901-526
+Brazil,male,22,Florianópolis,88058-060
+Brazil,female,52,Luziânia,72853-153
+Brazil,male,34,Atibaia,12949-330
+Brazil,female,85,Camaragibe,54756-640
+Brazil,male,37,"Bragança Paulista",12917-041
+Brazil,male,55,Brazlândia,72710-032
+Brazil,female,76,Ceilândia,72270-212
+Brazil,female,74,Araras,13601-432
+Brazil,male,79,"Abreu e Lima",53570-530
+Brazil,male,24,Gravataí,94015-620
+Brazil,female,20,Gama,72460-306
+Brazil,male,64,"Jaboatão dos Guararapes",54230-740
+Brazil,male,46,Itapevi,06685-280
+Brazil,female,34,"São Paulo",02226-160
+Brazil,female,78,"Novo Hamburgo",93320-420
+Brazil,male,77,"Santo André",09250-240
+Brazil,male,68,"São Paulo",01505-030
+Brazil,male,81,Teresópolis,25961-247
+Brazil,male,65,Palmas,77023-030
+Brazil,female,82,"Jaraguá do Sul",89260-150
+Brazil,male,83,Jundiaí,13208-780
+Brazil,female,50,"Belo Horizonte",30692-120
+Brazil,female,32,Formosa,73805-277
+Brazil,male,82,"Juiz de Fora",36039-330
+Brazil,male,47,Belém,66033-455
+Brazil,female,40,Petrolina,56320-390
+Brazil,female,20,Fortaleza,60415-560
+Brazil,female,61,Carapicuíba,06310-100
+Brazil,female,59,Sorocaba,18087-201
+Brazil,male,49,Alvorada,94818-480
+Brazil,male,61,"São Paulo",02243-080
+Brazil,male,20,Gravataí,94065-380
+Brazil,male,70,"São Paulo",08265-140
+Brazil,male,57,Guará,71010-615
+Brazil,male,27,"São Paulo",05601-030
+Brazil,female,81,Campinas,13082-045
+Brazil,male,85,Arapiraca,57308-430
+Brazil,female,54,"Ribeirão Preto",14066-240
+Brazil,female,83,Sabará,34525-630
+Brazil,male,44,"São Paulo",05875-300
+Brazil,male,47,"Ribeirão das Neves",33933-260
+Brazil,male,21,Sobradinho,73062-805
+Brazil,female,72,"Rio de Janeiro",21072-590
+Brazil,female,29,"Campos dos Goytacazes",28057-330
+Brazil,female,44,"São Paulo",03923-000
+Brazil,female,64,Piracicaba,13402-032
+Brazil,female,22,Guarulhos,07273-033
+Brazil,female,76,Palhoça,88133-595
+Brazil,male,80,Maringá,87030-060
+Brazil,male,35,"Várzea Grande",78115-805
+Brazil,male,42,Paranoá,71571-813
+Brazil,female,38,Araguaína,77825-320
+Brazil,female,49,Queimados,26323-520
+Brazil,female,47,Bauru,17032-400
+Brazil,female,69,Ananindeua,67125-460
+Brazil,male,58,Barretos,14784-184
+Brazil,female,52,Alegrete,97543-053
+Brazil,male,64,"São Gonçalo",24471-360
+Brazil,male,37,Umuarama,87501-610
+Brazil,male,32,"Santo André",09181-310
+Brazil,female,29,Castanhal,68744-318
+Brazil,male,36,Guaratinguetá,12509-480
+Brazil,female,19,Jacareí,12312-170
+Brazil,male,66,"Santa Maria",97060-280
+Brazil,male,37,Uberlândia,38405-116
+Brazil,female,72,"Rio de Janeiro",23013-350
+Brazil,male,85,"Vila Velha",29113-038
+Brazil,female,46,Campinas,13088-305
+Brazil,female,42,"São Paulo",02471-020
+Brazil,female,83,Salvador,41305-620
+Brazil,male,61,"São Paulo",08290-230
+Brazil,female,80,"São Paulo",03286-170
+Brazil,male,84,"Cabo Frio",28915-010
+Brazil,female,35,"São João Del Rei",36307-082
+Brazil,male,33,Londrina,86070-270
+Brazil,male,69,"Rio de Janeiro",21770-320
+Brazil,male,24,Anápolis,75085-560
+Brazil,female,25,Campinas,13041-090
+Brazil,male,57,"Santa Maria",97070-430
+Brazil,male,51,Viamão,94480-580
+Brazil,female,81,Ananindeua,67020-225
+Brazil,male,22,Salvador,40253-840
+Brazil,male,21,"Novo Hamburgo",93420-531
+Brazil,male,61,"Vila Velha",29101-695
+Brazil,female,55,Divinópolis,35501-045
+Brazil,female,69,Uberlândia,38401-220
+Brazil,male,70,Petrópolis,25665-271
+Brazil,male,65,Caçapava,12282-500
+Brazil,female,39,Crato,63119-119
+Brazil,female,72,Salvador,40710-770
+Brazil,female,26,Curitiba,82120-200
+Brazil,female,67,"Santo Ângelo",98801-030
+Brazil,male,61,"Rio de Janeiro",23580-125
+Brazil,male,26,Atibaia,12948-580
+Brazil,female,51,"São Paulo",08161-480
+Brazil,male,76,Nilópolis,26520-535
+Brazil,male,75,"Sete Lagoas",35703-360
+Brazil,male,82,Queimados,26355-180
+Brazil,male,59,"São Paulo",02039-010
+Brazil,male,55,Amparo,13900-250
+Brazil,female,54,"Porto Alegre",91900-630
+Brazil,female,85,Contagem,32043-018
+Brazil,female,77,Tubarão,88705-460
+Brazil,female,61,Cuiabá,78070-076
+Brazil,female,20,Niterói,24322-120
+Brazil,male,56,"Campo Grande",79051-120
+Brazil,female,37,Catanduva,15804-380
+Brazil,male,73,"Três Rios",25805-210
+Brazil,male,35,Fortaleza,60455-060
+Brazil,female,62,Belém,66075-550
+Brazil,male,74,Jequié,45203-050
+Brazil,male,39,Natal,59122-475
+Brazil,female,71,Viamão,94465-480
+Brazil,female,52,"Pato Branco",85505-100
+Brazil,male,42,Manaus,69095-171
+Brazil,female,50,Paranoá,71570-502
+Brazil,female,67,Marília,17512-740
+Brazil,female,75,Ceilândia,72215-044
+Brazil,male,75,Goiânia,74710-080
+Brazil,male,27,"Rio de Janeiro",21545-270
+Brazil,male,67,Americana,13468-030
+Brazil,male,40,Gravataí,94195-070
+Brazil,male,56,"São Lourenço da Mata",54705-780
+Brazil,female,70,Piracicaba,13405-234
+Brazil,male,41,"São Paulo",01201-060
+Brazil,female,46,Jacareí,12318-560
+Brazil,female,29,"São Lourenço da Mata",54705-460
+Brazil,male,19,Barreiras,47806-270
+Brazil,female,83,"Vitória da Conquista",45025-100
+Brazil,male,32,Dourados,79824-010
+Brazil,female,44,Maceió,57025-280
+Brazil,female,37,"Rio de Janeiro",22620-310
+Brazil,male,22,Sorocaba,18074-642
+Brazil,male,63,"Rio de Janeiro",22723-026
+Brazil,female,60,"São Paulo",04637-100
+Brazil,female,73,"São Paulo",04603-040
+Brazil,male,44,Apucarana,86812-105
+Brazil,female,51,"São Paulo",05866-170
+Brazil,male,37,"São Bernardo do Campo",09781-060
+Brazil,female,39,"Patos de Minas",38703-658
+Brazil,female,37,"Feira de Santana",44062-350
+Brazil,female,51,"São Paulo",04638-130
+Brazil,male,56,"São Paulo",05887-270
+Brazil,male,43,"São Paulo",08010-385
+Brazil,female,36,Pelotas,96087-090
+Brazil,male,56,"Lago Sul",71660-130
+Brazil,female,40,Luziânia,72803-550
+Brazil,female,29,"Praia Grande",11725-150
+Brazil,female,21,"Rio de Janeiro",22020-002
+Brazil,male,36,Natal,59010-100
+Brazil,female,73,Samambaia,72321-308
+Brazil,female,76,"Belo Horizonte",31910-540
+Brazil,female,47,Ituiutaba,38302-142
+Brazil,female,28,Itaquaquecetuba,08596-570
+Brazil,female,50,Sumaré,13181-130
+Brazil,male,26,"Belo Horizonte",30626-100
+Brazil,male,24,Vitória,29020-320
+Brazil,male,32,Bauru,17035-630
+Brazil,female,50,Salvador,40391-136
+Brazil,male,36,Belém,66630-740
+Brazil,female,35,Guarulhos,07132-490
+Brazil,male,52,"São Bernardo do Campo",09726-060
+Brazil,male,24,Taubaté,12093-630
+Brazil,female,23,"São Paulo",08290-001
+Brazil,female,51,Gama,72415-210
+Brazil,male,58,Salvador,40310-490
+Brazil,male,19,"Jaboatão dos Guararapes",54410-640
+Brazil,female,46,"Sete Lagoas",35701-125
+Brazil,male,33,Poá,08564-050
+Brazil,female,27,Mogi-Mirim,13806-578
+Brazil,male,43,Colombo,83401-370
+Brazil,male,80,Recife,50100-110
+Brazil,female,19,"São Gonçalo",24420-310
+Brazil,male,85,Salvador,40250-470
+Brazil,male,60,Joinville,89216-120
+Brazil,male,26,Guaratinguetá,12502-390
+Brazil,female,19,Salvador,41205-485
+Brazil,male,61,"Presidente Prudente",19041-070
+Brazil,male,47,Salvador,40230-083
+Brazil,male,72,Taubaté,12050-150
+Brazil,male,47,"Sete Lagoas",35703-268
+Brazil,female,49,"Cachoeiro de Itapemirim",29311-738
+Brazil,female,44,Salvador,40820-270
+Brazil,female,41,"Porto Alegre",91060-501
+Brazil,male,57,Sorocaba,18071-281
+Brazil,male,34,Brusque,88354-000
+Brazil,female,29,Colombo,83410-730
+Brazil,male,64,"Santana de Parnaíba",06535-295
+Brazil,male,62,Maringá,87050-530
+Brazil,male,28,Olinda,53190-040
+Brazil,male,69,"João Monlevade",35931-018
+Brazil,male,40,Chapecó,89810-220
+Brazil,female,27,"Vila Velha",29115-103
+Brazil,female,49,Bauru,17039-460
+Brazil,male,50,Camaragibe,54753-330
+Brazil,male,62,"São Paulo",05883-160
+Brazil,male,50,"Pará de Minas",35661-243
+Brazil,female,21,"São Paulo",08452-340
+Brazil,male,60,"Lençóis Paulista",18681-852
+Brazil,male,70,Andradina,16900-443
+Brazil,male,75,"Franco da Rocha",07845-020
+Brazil,female,54,Contagem,32072-120
+Brazil,male,57,"Volta Redonda",27255-037
+Brazil,male,72,Joinville,89202-002
+Brazil,female,80,"São José dos Campos",12220-640
+Brazil,male,26,"São Paulo",08215-510
+Brazil,female,22,Santos,11030-270
+Brazil,male,67,"Bragança Paulista",12929-340
+Brazil,female,58,"Rio de Janeiro",22440-033
+Brazil,female,27,Chapecó,89804-131
+Brazil,female,56,"Rio de Janeiro",20531-390
+Brazil,male,37,Goiânia,74377-500
+Brazil,female,65,Guarulhos,07173-122
+Brazil,female,48,"São Paulo",05535-030
+Brazil,male,73,Corumbá,79321-270
+Brazil,female,36,"Porto Alegre",91792-010
+Brazil,male,76,Itatiba,13256-500
+Brazil,female,71,Piracicaba,13405-099
+Brazil,male,77,Queimados,26365-110
+Brazil,male,48,"Belo Horizonte",31340-430
+Brazil,male,28,"São Paulo",04330-175
+Brazil,male,85,Manaus,69099-205
+Brazil,male,74,Uberlândia,38401-486
+Brazil,female,82,Colombo,83408-150
+Brazil,male,27,Avaré,18703-370
+Brazil,male,56,Palmas,77023-468
+Brazil,female,37,Lages,88520-465
+Brazil,female,76,"São José dos Campos",12248-041
+Brazil,male,85,Natal,59090-720
+Brazil,male,67,"Franco da Rocha",07860-400
+Brazil,male,79,Fortaleza,60874-460
+Brazil,male,50,Manaus,69090-170
+Brazil,female,60,"São Paulo",05892-480
+Brazil,female,76,"Duque de Caxias",25255-540
+Brazil,female,64,Goiânia,74593-750
+Brazil,female,44,Ipatinga,35162-222
+Brazil,male,23,Suzano,08633-516
+Brazil,male,66,Niterói,24322-400
+Brazil,male,19,"Feira de Santana",44040-370
+Brazil,male,51,Jundiaí,13208-403
+Brazil,female,79,"Campos dos Goytacazes",28015-270
+Brazil,female,25,Varginha,37014-520
+Brazil,male,76,Macaé,27937-080
+Brazil,male,33,Araguaína,77823-745
+Brazil,male,79,"São Bernardo do Campo",09760-010
+Brazil,female,54,"São Paulo",03289-060
+Brazil,female,54,"São Luís",65042-585
+Brazil,female,69,Londrina,86047-370
+Brazil,male,53,Itapeva,18405-010
+Brazil,male,45,"Novo Gama",72860-359
+Brazil,female,21,"Jaboatão dos Guararapes",54090-353
+Brazil,male,27,"Campo Mourão",87302-140
+Brazil,male,33,"São Paulo",04411-130
+Brazil,male,81,Fortaleza,60871-540
+Brazil,female,27,Amparo,13902-150
+Brazil,male,32,Jundiaí,13208-110
+Brazil,female,28,Serra,29168-880
+Brazil,male,48,Araçatuba,16075-073
+Brazil,female,31,"São José do Rio Preto",15070-410
+Brazil,male,46,"Nova Friburgo",28625-280
+Brazil,female,35,Samambaia,72320-500
+Brazil,male,53,Birigüi,16203-150
+Brazil,female,33,Palhoça,88136-202
+Brazil,male,80,Queimados,26379-370
+Brazil,male,82,"Montes Claros",39401-514
+Brazil,female,62,Contagem,32020-040
+Brazil,female,49,Avaré,18701-158
+Brazil,male,69,Valinhos,13278-408
+Brazil,female,38,Betim,32686-075
+Brazil,female,40,Mossoró,59600-150
+Brazil,female,63,Recife,52110-232
+Brazil,female,22,Mossoró,59603-200
+Brazil,male,69,Itu,13304-280
+Brazil,male,60,Americana,13474-213
+Brazil,male,66,Cariacica,29141-550
+Brazil,female,20,Caruaru,55024-240
+Brazil,male,27,"Porto Alegre",91751-830
+Brazil,male,62,Hortolândia,13183-701
+Brazil,male,22,"Rio de Janeiro",21311-171
+Brazil,female,32,"São Bernardo do Campo",09830-040
+Brazil,female,63,"Rio de Janeiro",21210-840
+Brazil,male,39,Gurupi,77413-370
+Brazil,male,45,Belém,66643-620
+Brazil,female,29,Brasília,70376-530
+Brazil,male,69,Florianópolis,88095-650
+Brazil,female,76,"Porto Alegre",90230-260
+Brazil,male,63,Contagem,32340-170
+Brazil,male,38,Belém,66085-370
+Brazil,male,66,Bauru,17026-892
+Brazil,male,57,Paulista,53423-510
+Brazil,female,24,Petrópolis,25680-160
+Brazil,female,22,Taubaté,12081-440
+Brazil,female,84,"Foz do Iguaçu",85869-350
+Brazil,male,65,Araxá,38181-028
+Brazil,male,57,Niterói,24358-080
+Brazil,female,74,Nilópolis,26520-230
+Brazil,female,59,Marília,17519-440
+Brazil,male,82,Luziânia,72835-520
+Brazil,male,81,Itatiba,13257-602
+Brazil,female,64,"Montes Claros",39402-084
+Brazil,female,76,Campinas,13032-570
+Brazil,female,52,"São Paulo",02881-080
+Brazil,male,33,Jacareí,12306-733
+Brazil,male,74,"Planaltina de Goiás",73754-215
+Brazil,male,38,Fortaleza,60732-263
+Brazil,female,55,Araguaína,77814-480
+Brazil,female,52,Goiânia,74673-570
+Brazil,female,43,Varginha,37010-150
+Brazil,male,55,"Várzea Grande",78150-018
+Brazil,male,49,"Nova Iguaçu",26262-270
+Brazil,female,21,Itatiba,13257-851
+Brazil,male,33,Valinhos,13271-130
+Brazil,male,83,Maringá,87060-420
+Brazil,male,36,Curitiba,81580-100
+Brazil,female,21,Castanhal,68743-550
+Brazil,male,73,Chapecó,89801-251
+Brazil,male,59,"Porto Alegre",91710-110
+Brazil,female,45,"Rio de Janeiro",21610-570
+Brazil,male,77,Corumbá,79332-060
+Brazil,female,68,"Duque de Caxias",25056-180
+Brazil,male,44,Betim,32630-610
+Brazil,female,83,"São José do Rio Preto",15080-300
+Brazil,female,71,"São Paulo",03961-000
+Brazil,male,62,"São Paulo",04719-080
+Brazil,female,78,Goiânia,74375-622
+Brazil,female,48,Manaus,69088-133
+Brazil,female,29,"Poços de Caldas",37701-603
+Brazil,male,34,Paulista,53405-210
+Brazil,female,75,Taubaté,12030-270
+Brazil,female,20,Guarulhos,07022-230
+Brazil,female,59,"Rio de Janeiro",22735-160
+Brazil,male,20,"Porto Velho",78904-230
+Brazil,male,58,"Rio de Janeiro",21043-460
+Brazil,female,19,"São João da Boa Vista",13874-117
+Brazil,male,73,"Barra Mansa",27313-191
+Brazil,male,75,Mossoró,59625-380
+Brazil,female,70,Valinhos,13275-440
+Brazil,female,64,Bauru,17022-720
+Brazil,female,32,Pelotas,96080-100
+Brazil,female,74,Queimados,26321-170
+Brazil,female,31,"Vila Velha",29116-340
+Brazil,female,77,"Belo Horizonte",31990-545
+Brazil,male,77,"Santana de Parnaíba",06540-100
+Brazil,male,75,"Belo Horizonte",30440-670
+Brazil,female,57,Samambaia,72307-715
+Brazil,male,25,"São João Del Rei",36300-396
+Brazil,female,22,Manaus,69070-520
+Brazil,female,45,Patos,58704-450
+Brazil,male,30,"Santa Maria",72593-059
+Brazil,female,62,"Franco da Rocha",07803-000
+Brazil,male,59,Contagem,32073-160
+Brazil,female,38,"Rio de Janeiro",21311-250
+Brazil,male,53,Mogi-Mirim,13801-538
+Brazil,female,58,Salvador,40490-005
+Brazil,male,63,"São José dos Campos",12241-040
+Brazil,male,38,Itajaí,88306-821
+Brazil,male,75,"Rio de Janeiro",21735-050
+Brazil,female,19,"Campo Grande",79090-263
+Brazil,male,76,"Jaboatão dos Guararapes",54355-430
+Brazil,female,38,Goiânia,74475-012
+Brazil,male,82,Redenção,68553-300
+Brazil,female,26,Jaboticabal,14873-126
+Brazil,male,51,Londrina,86040-410
+Brazil,male,56,"Volta Redonda",27286-600
+Brazil,male,20,Serra,29174-644
+Brazil,male,70,"Vila Velha",29122-400
+Brazil,male,84,Taubaté,12040-442
+Brazil,male,64,Umuarama,87508-028
+Brazil,female,74,"Itapecerica da Serra",06871-130
+Brazil,male,63,Franca,14407-321
+Brazil,female,50,Araucária,83708-220
+Brazil,male,62,"São Luís",65031-100
+Brazil,male,71,"Belo Horizonte",31340-270
+Brazil,female,21,"Santo André",09185-730
+Brazil,female,69,Criciúma,88805-670
+Brazil,male,77,Limeira,13487-039
+Brazil,female,71,"Cachoeira do Sul",96505-120
+Brazil,female,72,"Teófilo Otoni",39803-201
+Brazil,female,66,Araraquara,14810-058
+Brazil,male,79,"João Pessoa",58063-390
+Brazil,male,60,Cascavel,85819-760
+Brazil,male,24,"São Paulo",01535-040
+Brazil,male,75,Uberlândia,38414-366
+Brazil,male,44,Itajaí,88304-104
+Brazil,female,35,"Belo Horizonte",30750-050
+Brazil,male,27,Goiânia,74463-540
+Brazil,female,81,Maracanaú,61934-040
+Brazil,male,52,Queimados,26337-110
+Brazil,female,21,"Feira de Santana",44045-340
+Brazil,male,25,Maringá,87025-530
+Brazil,female,82,Araçatuba,16074-187
+Brazil,male,34,"João Monlevade",35931-115
+Brazil,male,81,Belém,66814-310
+Brazil,female,52,"Santa Maria",72509-411
+Brazil,female,82,Araxá,38182-382
+Brazil,female,60,Dourados,79843-132
+Brazil,male,80,"São Caetano do Sul",09570-030
+Brazil,male,61,Florianópolis,88075-525
+Brazil,female,36,Catalão,75702-440
+Brazil,female,19,Curitiba,81240-510
+Brazil,female,72,Guarulhos,07121-000
+Brazil,female,45,Piracicaba,13405-414
+Brazil,male,79,Curitiba,82510-120
+Brazil,male,20,"Ribeirão das Neves",33930-160
+Brazil,female,39,"Rio de Janeiro",21250-440
+Brazil,male,40,Guarapari,29208-375
+Brazil,male,59,Itaguaí,23811-540
+Brazil,female,65,"Riacho Fundo",71881-157
+Brazil,female,41,"Jaboatão dos Guararapes",54460-180
+Brazil,male,65,"Campo Grande",79074-043
+Brazil,female,78,Recife,52080-120
+Brazil,female,64,"Campo Mourão",87305-230
+Brazil,female,39,"São Paulo",03388-060
+Brazil,male,73,Uberaba,38082-125
+Brazil,male,83,Franca,14403-153
+Brazil,female,43,"São Paulo",04231-000
+Brazil,male,67,Bagé,96407-190
+Brazil,female,40,Natal,59042-430
+Brazil,female,61,"São Paulo",04783-130
+Brazil,male,45,"Sete Lagoas",35703-270
+Brazil,female,52,Brasília,70380-724
+Brazil,female,58,Campinas,13061-320
+Brazil,female,75,Salvador,40830-170
+Brazil,female,28,"São Luís",65049-160
+Brazil,female,63,"São José do Rio Preto",15035-060
+Brazil,male,59,Luziânia,72813-260
+Brazil,male,29,Joinville,89207-538
+Brazil,male,33,Luziânia,72856-731
+Brazil,female,53,Sorocaba,18074-668
+Brazil,male,39,"Aparecida de Goiânia",74970-380
+Brazil,male,45,Japeri,26480-210
+Brazil,female,64,Contagem,32113-010
+Brazil,male,56,Taubaté,12060-013
+Brazil,female,64,Guarulhos,07177-010
+Brazil,male,26,Teresina,64014-540
+Brazil,male,34,"Belo Horizonte",31155-340
+Brazil,male,30,Santos,11081-090
+Brazil,male,42,Tatuí,18275-110
+Brazil,male,29,Belém,66093-055
+Brazil,female,37,"Aparecida de Goiânia",74926-050
+Brazil,female,60,"São José dos Campos",12209-004
+Brazil,female,57,"São Paulo",03237-120
+Brazil,male,20,"São João de Meriti",25550-420
+Brazil,male,65,Lorena,12600-250
+Brazil,female,53,Lages,88512-450
+Brazil,male,35,"Porto Alegre",91720-615
+Brazil,female,69,"São Luís",65020-202
+Brazil,male,32,"Rio de Janeiro",23016-310
+Brazil,male,83,Cotia,06704-425
+Brazil,male,68,"Volta Redonda",27211-780
+Brazil,male,58,Recife,52280-733
+Brazil,male,69,Serra,29168-865
+Brazil,male,72,"São Paulo",02883-060
+Brazil,male,66,"São Paulo",08011-400
+Brazil,female,54,Curitiba,81925-100
+Brazil,male,65,Cariacica,29148-330
+Brazil,female,33,Aracaju,49015-290
+Brazil,female,38,Manaus,69038-276
+Brazil,male,41,Santos,11065-400
+Brazil,female,67,"Santa Cruz do Sul",96830-827
+Brazil,female,33,Uberlândia,38408-676
+Brazil,male,67,"Rio de Janeiro",21852-510
+Brazil,male,81,"São Paulo",04510-010
+Brazil,female,39,Santarém,68035-400
+Brazil,male,84,"São Paulo",08431-820
+Brazil,male,71,Jundiaí,13211-823
+Brazil,male,34,Natal,59090-486
+Brazil,male,65,"São Paulo",03472-040
+Brazil,male,65,"Barra Mansa",27365-230
+Brazil,female,43,Curitiba,81170-670
+Brazil,male,56,Itaúna,35681-047
+Brazil,female,77,Brusque,88352-605
+Brazil,male,78,"São Paulo",05123-010
+Brazil,female,62,Anápolis,75075-280
+Brazil,female,59,Natal,59015-001
+Brazil,male,38,Samambaia,72313-601
+Brazil,female,84,"Belo Horizonte",31845-230
+Brazil,female,36,"Porto Alegre",90850-290
+Brazil,male,20,Castanhal,68742-760
+Brazil,male,49,Mauá,09361-400
+Brazil,male,32,Bauru,17064-503
+Brazil,female,72,Salvador,41100-760
+Brazil,male,40,"Montes Claros",39401-068
+Brazil,male,62,Barbacena,36205-348
+Brazil,male,67,Votorantim,18116-070
+Brazil,male,46,"Juiz de Fora",36045-540
+Brazil,female,59,Apucarana,86812-600
+Brazil,male,40,"Novo Hamburgo",93548-090
+Brazil,female,51,Jataí,75805-103
+Brazil,male,77,"Porto Alegre",91740-030
+Brazil,female,77,"São Paulo",04476-390
+Brazil,male,33,"Ponta Grossa",84020-765
+Brazil,female,81,Salvador,41925-720
+Brazil,female,67,Cariacica,29143-565
+Brazil,female,54,"Belo Horizonte",30882-010
+Brazil,female,66,Curitiba,80215-630
+Brazil,female,82,"Aparecida de Goiânia",74920-390
+Brazil,female,48,Indaiatuba,13337-051
+Brazil,male,32,Cachoeirinha,94950-450
+Brazil,male,60,Itaquaquecetuba,08588-570
+Brazil,male,49,Araguari,38440-218
+Brazil,male,84,"São Luís",65020-830
+Brazil,female,69,Londrina,86078-250
+Brazil,female,84,Belém,66918-770
+Brazil,female,80,"São Paulo",04776-130
+Brazil,female,67,Araguari,38446-084
+Brazil,male,83,Guarulhos,07155-410
+Brazil,male,73,Fortaleza,60545-520
+Brazil,male,32,"Campos dos Goytacazes",28085-620
+Brazil,female,85,"Vila Velha",29129-723
+Brazil,female,69,Araucária,83708-720
+Brazil,female,82,Guarulhos,07262-540
+Brazil,male,39,"João Pessoa",58013-360
+Brazil,male,26,Crato,63119-240
+Brazil,female,48,Guarulhos,07170-250
+Brazil,male,32,Macapá,68902-360
+Brazil,male,59,"Lençóis Paulista",18683-323
+Brazil,male,71,"Valparaíso de Goiás",72876-347
+Brazil,male,38,"São Paulo",04243-050
+Brazil,female,24,Patos,58704-405
+Brazil,female,75,Pelotas,96050-500
+Brazil,female,52,"São Paulo",04811-200
+Brazil,female,76,Pinhais,83327-135
+Brazil,male,38,Uberlândia,38402-244
+Brazil,female,85,"João Pessoa",58071-580
+Brazil,female,69,"Porto Alegre",91550-010
+Brazil,female,28,Petrópolis,25755-390
+Brazil,male,44,Campinas,13056-158
+Brazil,female,45,Samambaia,72333-532
+Brazil,male,22,Barueri,06413-160
+Brazil,male,73,Itatiba,13251-203
+Brazil,female,71,"Rio de Janeiro",22780-510
+Brazil,female,83,Maracanaú,61932-650
+Brazil,female,56,Natal,59056-000
+Brazil,male,62,"Campo Largo",83609-670
+Brazil,female,22,"Pará de Minas",35661-232
+Brazil,male,26,Araçatuba,16015-150
+Brazil,female,85,Planaltina,73320-110
+Brazil,male,70,Varginha,37006-110
+Brazil,male,80,Recife,50610-260
+Brazil,male,23,Salvador,41205-845
+Brazil,female,64,"São Paulo",04652-170
+Brazil,male,75,Fortaleza,60760-390
+Brazil,male,24,Birigüi,16200-748
+Brazil,male,75,Teresópolis,25963-575
+Brazil,female,79,Fortaleza,60730-110
+Brazil,female,59,Natal,59012-250
+Brazil,male,52,Manaus,69063-140
+Brazil,male,50,Caruaru,55018-160
+Brazil,male,66,"São Leopoldo",93044-750
+Brazil,female,34,Limeira,13485-094
+Brazil,female,56,Ituiutaba,38304-216
+Brazil,male,29,"São José do Rio Preto",15061-007
+Brazil,female,34,"Belo Horizonte",31370-400
+Brazil,male,26,Recife,51010-232
+Brazil,female,35,Cambé,86185-300
+Brazil,female,81,"São Gonçalo",24431-430
+Brazil,female,56,Indaiatuba,13338-440
+Brazil,female,40,"Itapecerica da Serra",06857-820
+Brazil,female,56,Uberaba,38082-070
+Brazil,male,41,Fortaleza,60868-070
+Brazil,female,28,Chapecó,89806-615
+Brazil,female,78,"Foz do Iguaçu",85863-470
+Brazil,female,66,Londrina,86025-120
+Brazil,male,62,Goiânia,74330-035
+Brazil,female,63,"São José dos Campos",12211-190
+Brazil,female,30,Piracicaba,13420-840
+Brazil,male,46,"Recanto das Emas",72650-705
+Brazil,female,73,"Caxias do Sul",95043-210
+Brazil,female,82,"Santa Maria",97030-080
+Brazil,female,47,"Campina Grande",58106-605
+Brazil,female,62,Samambaia,72317-305
+Brazil,female,45,"Novo Hamburgo",93348-040
+Brazil,female,49,Curitiba,82630-290
+Brazil,male,65,"Duque de Caxias",25245-780
+Brazil,male,43,"São Paulo",05866-030
+Brazil,male,40,"Rio de Janeiro",23067-320
+Brazil,male,76,Palhoça,88133-455
+Brazil,female,57,Fortaleza,60542-120
+Brazil,female,37,Jaú,17207-080
+Brazil,female,75,Taubaté,12080-270
+Brazil,female,68,"Rio de Janeiro",22621-060
+Brazil,female,68,"João Pessoa",58033-330
+Brazil,male,71,"Aparecida de Goiânia",74983-741
+Brazil,male,24,"Teófilo Otoni",39801-005
+Brazil,male,62,Curitiba,81900-230
+Brazil,female,63,Belém,66625-120
+Brazil,male,19,Guarulhos,07175-030
+Brazil,male,29,Recife,50750-110
+Brazil,male,22,"São João da Boa Vista",13872-499
+Brazil,female,65,"Volta Redonda",27214-175
+Brazil,male,27,"Ribeirão Preto",14066-260
+Brazil,male,23,Ceilândia,72225-225
+Brazil,male,43,Itapetininga,18210-000
+Brazil,male,69,Sorocaba,18080-758
+Brazil,female,73,Taubaté,12040-711
+Brazil,female,55,"Nova Iguaçu",26262-060
+Brazil,female,48,"Rio de Janeiro",22790-705
+Brazil,male,21,"São José dos Pinhais",83065-040
+Brazil,male,52,Guarulhos,07194-030
+Brazil,female,75,"São Paulo",04947-010
+Brazil,male,37,"São João da Boa Vista",13871-124
+Brazil,male,48,Limeira,13487-037
+Brazil,female,70,Toledo,85910-090
+Brazil,female,38,Birigüi,16202-423
+Brazil,male,66,Indaiatuba,13334-030
+Brazil,male,33,Atibaia,12946-788
+Brazil,male,63,"São Paulo",03362-010
+Brazil,male,43,Sobral,62030-370
+Brazil,male,65,Resende,27524-170
+Brazil,male,65,"Volta Redonda",27280-690
+Brazil,female,67,Alegrete,97542-270
+Brazil,male,55,Ceilândia,72250-302
+Brazil,female,44,"São João de Meriti",25565-460
+Brazil,male,77,"Barra Mansa",27325-280
+Brazil,female,81,Indaiatuba,13348-801
+Brazil,female,53,Jundiaí,13207-382
+Brazil,female,45,"Rio de Janeiro",20950-020
+Brazil,female,65,Pelotas,96090-310
+Brazil,male,58,Passos,37901-708
+Brazil,male,78,"Nova Iguaçu",26023-160
+Brazil,female,76,"Sete Lagoas",35702-095
+Brazil,female,52,Araçatuba,16020-383
+Brazil,male,32,"São Caetano do Sul",09580-430
+Brazil,male,57,Timóteo,35181-486
+Brazil,male,26,"Rio Verde",75905-780
+Brazil,male,57,Campinas,13065-470
+Brazil,male,27,Alvorada,94820-612
+Brazil,male,68,"Bragança Paulista",12924-108
+Brazil,male,23,"Campo Grande",79092-281
+Brazil,female,71,Palhoça,88135-101
+Brazil,female,21,"Belo Horizonte",31035-570
+Brazil,female,58,"Franco da Rocha",07830-280
+Brazil,female,81,"São Paulo",02246-060
+Brazil,male,41,"Sete Lagoas",35701-330
+Brazil,female,35,Taguatinga,72115-010
+Brazil,female,23,"Santo André",09061-740
+Brazil,male,39,Araçatuba,16050-155
+Brazil,male,55,"Belford Roxo",26173-010
+Brazil,female,41,Parnaíba,64200-430
+Brazil,male,20,Caruaru,55014-740
+Brazil,male,47,"São Paulo",08230-780
+Brazil,female,74,Bauru,17032-710
+Brazil,male,37,"Campo Grande",79082-076
+Brazil,male,71,"Presidente Prudente",19042-430
+Brazil,female,52,Gravataí,94080-430
+Brazil,female,36,Itajaí,88302-240
+Brazil,female,81,Passos,37901-016
+Brazil,male,58,"Novo Hamburgo",93510-070
+Brazil,male,83,Palmas,77001-174
+Brazil,male,22,"São Paulo",05876-020
+Brazil,male,63,"Teófilo Otoni",39800-230
+Brazil,male,19,"São Paulo",05353-050
+Brazil,female,29,Piracicaba,13402-606
+Brazil,female,60,Blumenau,89041-090
+Brazil,male,59,Sorocaba,18050-389
+Brazil,female,67,Campinas,13085-165
+Brazil,female,76,Rondonópolis,78720-826
+Brazil,female,70,"Itapecerica da Serra",06851-105
+Brazil,male,40,Brasília,70295-030
+Brazil,female,48,"João Pessoa",58046-700
+Brazil,male,70,Indaiatuba,13330-400
+Brazil,female,31,"São José dos Campos",12234-807
+Brazil,female,65,"Santana de Parnaíba",06524-005
+Brazil,female,49,Birigüi,16201-018
+Brazil,female,45,Guará,71060-060
+Brazil,female,35,Paulista,53419-350
+Brazil,female,49,"Belford Roxo",26123-310
+Brazil,female,31,"São Paulo",02832-130
+Brazil,male,24,Recife,50800-070
+Brazil,female,39,Atibaia,12948-413
+Brazil,female,70,"Rio de Janeiro",21311-300
+Brazil,male,40,Sarandi,87111-676
+Brazil,male,20,"Belo Horizonte",30690-060
+Brazil,male,63,Hortolândia,13186-491
+Brazil,female,44,Curitiba,81770-680
+Brazil,male,60,"Valparaíso de Goiás",72878-205
+Brazil,female,64,"Jaboatão dos Guararapes",54090-020
+Brazil,male,69,Franca,14405-172
+Brazil,female,52,Mogi-Guaçu,13846-077
+Brazil,male,56,Marabá,68510-090
+Brazil,male,82,Belém,66820-830
+Brazil,female,64,"Belo Horizonte",30770-440
+Brazil,female,46,"São José dos Campos",12227-350
+Brazil,female,46,Contagem,32242-190
+Brazil,male,35,Natal,59108-105
+Brazil,female,39,Salvador,40353-060
+Brazil,male,71,Osasco,06283-160
+Brazil,female,78,"São José dos Campos",12232-899
+Brazil,male,31,"São Luís",65040-090
+Brazil,male,65,"Rio de Janeiro",23035-275
+Brazil,male,28,Recife,52081-605
+Brazil,male,44,"Belo Horizonte",30532-160
+Brazil,male,22,Birigüi,16200-120
+Brazil,male,81,Recife,50900-520
+Brazil,male,37,Campinas,13054-600
+Brazil,male,64,Paulista,53429-110
+Brazil,female,37,Caruaru,55020-217
+Brazil,female,60,Crato,63113-590
+Brazil,female,81,"Paulo Afonso",48605-320
+Brazil,male,40,Araçatuba,16071-120
+Brazil,male,63,"Santo André",09190-370
+Brazil,female,27,"Rio de Janeiro",21380-520
+Brazil,male,31,"Ponta Grossa",84021-430
+Brazil,male,59,Ceilândia,72220-289
+Brazil,female,22,"Belo Horizonte",31365-260
+Brazil,male,36,Colatina,29703-141
+Brazil,male,51,Marília,17504-010
+Brazil,male,84,Contagem,32241-255
+Brazil,female,76,Salto,13322-132
+Brazil,male,83,"Várzea Grande",78142-070
+Brazil,female,41,Fortaleza,60733-090
+Brazil,male,58,Teresópolis,25973-150
+Brazil,male,31,Curitiba,81070-080
+Brazil,male,42,"São Lourenço da Mata",54735-784
+Brazil,male,57,"São José",88108-250
+Brazil,female,66,Florianópolis,88090-100
+Brazil,male,68,Sorocaba,18015-295
+Brazil,female,61,Piracicaba,13411-136
+Brazil,male,78,"Santo André",09150-200
+Brazil,female,60,Votorantim,18110-598
+Brazil,female,27,Guará,71050-070
+Brazil,male,81,Taguatinga,72162-329
+Brazil,female,66,"São João Del Rei",36309-022
+Brazil,female,25,"São Paulo",08391-591
+Brazil,female,21,"Duque de Caxias",25253-560
+Brazil,male,20,"João Pessoa",58064-180
+Brazil,female,63,"Campo Limpo Paulista",13232-287
+Brazil,male,53,"Barra Mansa",27347-370
+Brazil,male,53,Campinas,13083-884
+Brazil,female,21,Recife,52280-081
+Brazil,female,44,Taubaté,12071-560
+Brazil,male,38,"Jaboatão dos Guararapes",54325-021
+Brazil,female,79,"São Paulo",03589-170
+Brazil,male,67,Sorocaba,18052-424
+Brazil,female,73,Cascavel,85816-280
+Brazil,female,42,Brasília,70390-140
+Brazil,female,85,Campinas,13060-603
+Brazil,male,25,Caçapava,12283-320
+Brazil,female,48,"São Paulo",04001-080
+Brazil,female,57,Curitiba,81170-660
+Brazil,female,53,Gravataí,94070-420
+Brazil,female,43,"São Paulo",05773-040
+Brazil,male,61,"São Gonçalo",24744-390
+Brazil,female,63,Serra,29160-761
+Brazil,male,45,"Barra Mansa",27321-630
+Brazil,female,67,"São Paulo",03577-040
+Brazil,female,39,Salvador,40045-110
+Brazil,male,80,"Cachoeiro de Itapemirim",29305-310
+Brazil,female,69,Londrina,86079-280
+Brazil,male,50,"São Paulo",03685-000
+Brazil,female,77,Vitória,29052-760
+Brazil,female,30,Cariacica,29145-870
+Brazil,male,78,Londrina,86082-018
+Brazil,female,79,Pelotas,96095-060
+Brazil,female,40,Jacareí,12320-180
+Brazil,male,72,Recife,50970-040
+Brazil,male,22,"Aparecida de Goiânia",74921-470
+Brazil,male,59,"Novo Gama",72860-516
+Brazil,male,57,Lages,88511-110
+Brazil,male,25,Crato,63113-770
+Brazil,female,48,Jundiaí,13212-050
+Brazil,male,38,"São João de Meriti",25515-141
+Brazil,male,64,"São Paulo",04001-086
+Brazil,male,40,"São Paulo",04858-510
+Brazil,male,20,Apucarana,86807-200
+Brazil,female,51,"Porto Velho",78904-380
+Brazil,female,76,"Montes Claros",39404-278
+Brazil,male,73,"São José",88103-205
+Brazil,male,61,"Vila Velha",29117-230
+Brazil,male,68,Itaúna,35681-113
+Brazil,female,82,"Valparaíso de Goiás",72874-550
+Brazil,male,75,Fortaleza,60730-070
+Brazil,female,55,"Campo Largo",83608-640
+Brazil,male,35,"Campo Grande",79021-131
+Brazil,female,23,Maringá,87053-550
+Brazil,male,26,Caucaia,61626-020
+Brazil,male,54,Botucatu,18611-620
+Brazil,male,70,Campinas,13041-020
+Brazil,male,34,"Sete Lagoas",35700-153
+Brazil,male,74,Divinópolis,35501-603
+Brazil,male,81,Itabuna,45603-135
+Brazil,male,20,"Santa Luzia",33146-230
+Brazil,female,44,Suzano,08630-080
+Brazil,female,82,Guarulhos,07123-172
+Brazil,female,73,"Belo Horizonte",30410-050
+Brazil,female,28,"Feira de Santana",44070-530
+Brazil,male,79,"Taboão da Serra",06773-350
+Brazil,female,82,Ananindeua,67105-011
+Brazil,female,42,"Rio de Janeiro",23060-400
+Brazil,female,22,Curitiba,81920-320
+Brazil,male,31,Sumaré,13176-006
+Brazil,male,50,"Foz do Iguaçu",85862-298
+Brazil,male,65,Canoas,92415-040
+Brazil,female,85,"São Paulo",04851-403
+Brazil,female,81,"Novo Hamburgo",93415-390
+Brazil,female,41,Parnaíba,64210-490
+Brazil,female,56,Itapetininga,18201-450
+Brazil,female,60,"Rio de Janeiro",20531-110
+Brazil,female,29,"Nova Iguaçu",26012-680
+Brazil,female,66,Queimados,26367-220
+Brazil,female,45,Guarujá,11471-060
+Brazil,male,45,"Várzea Grande",78155-275
+Brazil,male,80,Florianópolis,88058-205
+Brazil,female,60,Manaus,69039-590
+Brazil,male,47,"São Paulo",04675-170
+Brazil,female,29,Ariquemes,78932-110
+Brazil,male,24,"Várzea Grande",78132-315
+Brazil,male,80,Itapira,13974-105
+Brazil,female,26,"São Gonçalo",24753-550
+Brazil,female,43,"Nova Iguaçu",26282-260
+Brazil,male,46,Itaituba,68182-150
+Brazil,female,39,Rondonópolis,78700-120
+Brazil,female,59,"Rio de Janeiro",21073-460
+Brazil,male,76,Jacareí,12324-560
+Brazil,male,37,"São Gonçalo",24738-398
+Brazil,male,48,Luziânia,72856-506
+Brazil,female,30,"Vila Velha",29116-150
+Brazil,male,46,Manaus,69054-391
+Brazil,male,80,"Vitória de Santo Antão",55610-180
+Brazil,female,55,"São José do Rio Preto",15092-410
+Brazil,female,58,Ipatinga,35160-233
+Brazil,female,52,"Santo André",09210-080
+Brazil,female,33,"São Paulo",08061-240
+Brazil,male,76,"São José dos Campos",12236-110
+Brazil,male,28,"São Paulo",01442-020
+Brazil,male,28,Taguatinga,72010-120
+Brazil,female,69,Marília,17524-390
+Brazil,female,26,Curitiba,82400-390
+Brazil,male,48,"João Monlevade",35930-390
+Brazil,female,22,Fortaleza,60520-100
+Brazil,male,44,Bebedouro,14704-020
+Brazil,female,72,Paranavaí,87709-280
+Brazil,female,57,Igarassu,53630-660
+Brazil,male,33,Salvador,40230-080
+Brazil,male,44,Itatiba,13253-491
+Brazil,female,25,Betim,32658-420
+Brazil,male,53,Petrópolis,25635-320
+Brazil,male,58,Taubaté,12032-070
+Brazil,female,75,Sumaré,13181-501
+Brazil,male,77,"São João de Meriti",25530-072
+Brazil,male,32,Londrina,86078-560
+Brazil,male,22,Mossoró,59631-430
+Brazil,female,32,"Teófilo Otoni",39800-057
+Brazil,male,27,"São Paulo",04823-310
+Brazil,male,24,Fortaleza,60010-510
+Brazil,female,73,Guarapuava,85020-560
+Brazil,female,58,"Duque de Caxias",25213-005
+Brazil,male,59,Salvador,40430-200
+Brazil,male,28,Itapetininga,18210-595
+Brazil,female,61,Maracanaú,61921-220
+Brazil,female,57,Limeira,13484-030
+Brazil,male,71,"Porto Alegre",90830-474
+Brazil,female,31,"Mogi das Cruzes",08730-060
+Brazil,male,71,"São Paulo",05523-090
+Brazil,male,63,"São Paulo",03715-040
+Brazil,male,47,Cotia,06705-525
+Brazil,male,31,"Francisco Beltrão",85604-275
+Brazil,male,76,"Rio de Janeiro",21012-110
+Brazil,male,70,Teresópolis,25954-330
+Brazil,male,82,"Campo Grande",79096-090
+Brazil,male,45,Campinas,13092-145
+Brazil,female,20,Itapetininga,18202-030
+Brazil,male,34,"Rio de Janeiro",20040-020
+Brazil,male,57,Americana,13471-620
+Brazil,female,24,Diadema,09960-330
+Brazil,female,33,Recife,50731-030
+Brazil,male,56,Contagem,32185-190
+Brazil,male,24,"São Roque",18133-180
+Brazil,female,22,"São Paulo",03275-015
+Brazil,male,69,Lages,88502-110
+Brazil,female,78,Pinhais,83322-410
+Brazil,male,35,Jundiaí,13215-040
+Brazil,female,46,"Presidente Prudente",19014-010
+Brazil,female,37,"Laranjeiras do Sul",85303-765
+Brazil,male,84,Anápolis,75096-670
+Brazil,female,47,Araguaína,77817-480
+Brazil,male,85,"Várzea Grande",78132-262
+Brazil,female,49,Sarandi,87111-620
+Brazil,male,77,"São Luís",65025-070
+Brazil,female,29,Macaé,27946-220
+Brazil,male,27,"São Paulo",02410-004
+Brazil,female,39,"Duque de Caxias",25050-090
+Brazil,male,20,"Santa Luzia",33082-220
+Brazil,female,21,Serra,29162-003
+Brazil,female,51,"Campo Grande",79063-820
+Brazil,male,49,Luziânia,72805-180
+Brazil,female,70,Salvador,41745-017
+Brazil,female,66,"Cachoeiro de Itapemirim",29310-528
+Brazil,female,56,"Montes Claros",39401-342
+Brazil,male,61,"Duque de Caxias",25270-698
+Brazil,female,19,"São Paulo",02322-070
+Brazil,male,76,Sarandi,87113-580
+Brazil,female,52,"São Leopoldo",93032-350
+Brazil,male,31,"São José dos Pinhais",83050-050
+Brazil,female,38,"São Paulo",05030-030
+Brazil,male,70,"Campo Grande",79112-470
+Brazil,female,20,Cuiabá,78045-070
+Brazil,female,59,"São Paulo",02238-090
+Brazil,male,75,"Mogi das Cruzes",08750-140
+Brazil,male,85,Caruaru,55022-140
+Brazil,female,81,"Mogi das Cruzes",08760-020
+Brazil,female,23,"Rio de Janeiro",23075-460
+Brazil,male,28,Florianópolis,88056-060
+Brazil,female,76,"Porto Alegre",91160-651
+Brazil,male,29,"São Paulo",02466-122
+Brazil,male,36,Palhoça,88132-755
+Brazil,female,24,"São Paulo",04562-060
+Brazil,male,23,Sabará,34515-200
+Brazil,male,68,Campinas,13044-025
+Brazil,male,35,"Santa Bárbara D'Oeste",13453-111
+Brazil,female,38,Itu,13308-532
+Brazil,male,47,Contagem,32042-580
+Brazil,male,33,"Ribeirão Preto",14055-070
+Brazil,male,74,Natal,59133-370
+Brazil,female,27,Campinas,13035-300
+Brazil,female,72,Bauru,17057-811
+Brazil,male,50,Itabira,35900-047
+Brazil,female,51,Dourados,79823-664
+Brazil,female,35,Salvador,40100-800
+Brazil,male,65,Americana,13475-465
+Brazil,male,39,Samambaia,72302-548
+Brazil,male,76,Manaus,69089-060
+Brazil,male,31,"Jaboatão dos Guararapes",54490-380
+Brazil,female,23,Timóteo,35182-329
+Brazil,female,52,Manaus,69038-286
+Brazil,male,35,Teresópolis,25955-365
+Brazil,male,62,Franca,14406-265
+Brazil,female,26,Caruaru,55020-605
+Brazil,male,52,"Rio Verde",75905-480
+Brazil,male,54,Guarulhos,07170-370
+Brazil,male,29,Itapevi,06680-805
+Brazil,male,19,Samambaia,72325-550
+Brazil,male,50,"São Paulo",04334-100
+Brazil,male,79,Divinópolis,35500-232
+Brazil,female,82,Curitiba,81210-180
+Brazil,male,51,"São Paulo",08340-550
+Brazil,female,58,Salvador,40720-520
+Brazil,male,23,Gurupi,77423-470
+Brazil,female,32,"Rio de Janeiro",20785-490
+Brazil,male,52,Fortaleza,60347-280
+Brazil,male,70,"São Paulo",03726-031
+Brazil,male,75,Natal,59035-250
+Brazil,male,79,"São Paulo",03518-000
+Brazil,male,23,Cascavel,85819-710
+Brazil,female,39,"Duque de Caxias",25050-370
+Brazil,male,70,"Lençóis Paulista",18682-344
+Brazil,female,80,Cruzeiro,70658-377
+Brazil,female,28,"São Paulo",02811-090
+Brazil,male,66,"Presidente Prudente",19030-110
+Brazil,female,57,Bauru,17015-040
+Brazil,female,70,Fortaleza,60812-112
+Brazil,female,76,Guarulhos,07044-021
+Brazil,female,66,"São Paulo",03344-015
+Brazil,female,46,"Patos de Minas",38700-210
+Brazil,male,43,"Jaboatão dos Guararapes",54410-015
+Brazil,male,24,Blumenau,89046-565
+Brazil,male,49,Uruguaiana,97500-640
+Brazil,female,27,Salvador,40015-400
+Brazil,female,40,"Juiz de Fora",36083-650
+Brazil,male,58,Campinas,13058-146
+Brazil,male,39,Uberlândia,38407-006
+Brazil,male,30,"São Bernardo do Campo",09662-060
+Brazil,male,47,Maceió,57052-675
+Brazil,female,61,Uberlândia,38411-092
+Brazil,male,67,"São Paulo",04618-002
+Brazil,male,38,"João Pessoa",58040-500
+Brazil,male,62,"Belo Horizonte",30150-000
+Brazil,male,82,"São Luís",65066-060
+Brazil,male,24,Cambé,86191-280
+Brazil,female,84,Bagé,96418-560
+Brazil,male,31,Leme,13613-120
+Brazil,male,30,Araguaína,77823-560
+Brazil,female,67,"Governador Valadares",35022-020
+Brazil,male,47,"Belo Horizonte",31160-310
+Brazil,male,51,Nilópolis,26520-390
+Brazil,female,24,Paranoá,71573-200
+Brazil,male,72,"Teófilo Otoni",39801-450
+Brazil,female,38,"Campos dos Goytacazes",28016-410
+Brazil,male,27,Toledo,85903-265
+Brazil,female,33,Manaus,69087-242
+Brazil,male,43,Lages,88525-590
+Brazil,male,84,Sobral,62011-020
+Brazil,female,74,Sobral,62020-240
+Brazil,male,27,"São Gonçalo",24725-410
+Brazil,female,24,"Ponta Grossa",84010-500
+Brazil,male,30,"Campo Limpo Paulista",13236-270
+Brazil,male,66,"Praia Grande",11703-420
+Brazil,male,57,"São Paulo",08235-190
+Brazil,male,82,"São Paulo",04836-340
+Brazil,female,20,"Planaltina de Goiás",73751-225
+Brazil,female,58,Curitiba,82120-380
+Brazil,female,37,Dourados,79841-590
+Brazil,male,50,Campinas,13084-773
+Brazil,male,83,Caraguatatuba,11667-815
+Brazil,male,60,"São Paulo",04851-000
+Brazil,female,45,Recife,50760-090
+Brazil,female,27,"Belo Horizonte",31160-130
+Brazil,male,27,Barbacena,36205-698
+Brazil,female,66,"Ferraz de Vasconcelos",08507-300
+Brazil,male,82,"Praia Grande",11710-050
+Brazil,male,34,Recife,50640-610
+Brazil,female,84,Goiânia,74350-810
+Brazil,male,36,"Rio de Janeiro",22793-297
+Brazil,female,72,Araraquara,14800-500
+Brazil,female,40,"Santa Maria",97070-010
+Brazil,female,29,"São Bernardo do Campo",09671-100
+Brazil,male,48,Bauru,17056-490
+Brazil,male,40,Formosa,73801-380
+Brazil,female,77,"Ribeirão Preto",14020-308
+Brazil,male,21,Camaragibe,54780-005
+Brazil,male,58,Araguaína,77809-130
+Brazil,male,75,Guarulhos,07134-030
+Brazil,male,37,Maceió,57040-190
+Brazil,female,32,Caraguatatuba,11663-310
+Brazil,male,51,"Governador Valadares",35020-590
+Brazil,female,28,Colombo,83411-560
+Brazil,female,19,Itatiba,13256-860
+Brazil,male,73,"São Paulo",04536-000
+Brazil,female,39,Olinda,53050-341
+Brazil,male,69,"São Gonçalo",24471-004
+Brazil,male,44,"Três Lagoas",79641-167
+Brazil,male,42,"Santo André",09181-040
+Brazil,male,47,Belém,66823-098
+Brazil,female,84,Chapecó,89801-241
+Brazil,female,61,"Ribeirão Preto",14070-369
+Brazil,female,38,Goiânia,74555-300
+Brazil,male,72,Campinas,13032-280
+Brazil,male,64,Bauru,17031-404
+Brazil,male,43,"Ribeirão Preto",14066-454
+Brazil,female,39,Barbacena,36202-027
+Brazil,male,71,Goiânia,74583-200
+Brazil,male,60,"Valparaíso de Goiás",72870-025
+Brazil,female,66,"Belford Roxo",26170-350
+Brazil,male,38,Caraguatatuba,11666-400
+Brazil,female,63,"São Paulo",04943-190
+Brazil,female,43,"São Paulo",04058-030
+Brazil,male,30,Contagem,32280-170
+Brazil,male,47,Niterói,24240-396
+Brazil,male,64,"Rio de Janeiro",23030-235
+Brazil,female,77,Manaus,69090-000
+Brazil,female,28,Guarapuava,85035-150
+Brazil,male,34,Teresina,64046-160
+Brazil,female,55,Mauá,09371-320
+Brazil,female,77,Goiânia,74415-240
+Brazil,male,25,"Feira de Santana",44010-050
+Brazil,male,23,"Taboão da Serra",06755-000
+Brazil,female,25,"Santa Maria",97030-550
+Brazil,female,56,Jataí,75805-005
+Brazil,male,70,Piraquara,83306-370
+Brazil,female,49,"São Paulo",04943-210
+Brazil,female,40,"Ferraz de Vasconcelos",08540-220
+Brazil,female,74,Formosa,73808-800
+Brazil,male,60,Serra,29161-100
+Brazil,female,76,"Campo Grande",79002-212
+Brazil,male,30,Cuiabá,78040-815
+Brazil,male,55,Mogi-Guaçu,13845-141
+Brazil,male,80,Cataguases,36774-098
+Brazil,female,62,"Poços de Caldas",37706-210
+Brazil,female,75,Petrolina,56314-590
+Brazil,male,84,"Santa Cruz do Sul",96822-210
+Brazil,male,47,Manaus,69084-602
+Brazil,male,35,"Rio de Janeiro",23050-140
+Brazil,male,61,Palmas,77001-024
+Brazil,female,34,"Volta Redonda",27255-370
+Brazil,female,66,Natal,59114-742
+Brazil,female,80,Embu,06835-360
+Brazil,female,19,Itu,13300-043
+Brazil,male,26,"Patos de Minas",38701-717
+Brazil,female,78,Manaus,69075-110
+Brazil,female,28,"Belo Horizonte",30310-070
+Brazil,male,58,Gravataí,94010-120
+Brazil,female,22,"Foz do Iguaçu",85858-390
+Brazil,male,46,"Cachoeiro de Itapemirim",29312-029
+Brazil,male,82,Garanhuns,55298-360
+Brazil,male,45,Piraquara,83301-210
+Brazil,male,34,Franca,14407-469
+Brazil,female,53,"João Monlevade",35930-021
+Brazil,female,41,"Pará de Minas",35660-356
+Brazil,male,21,"Poços de Caldas",37701-520
+Brazil,male,54,Cuiabá,78058-583
+Brazil,male,53,"São José dos Pinhais",83075-410
+Brazil,male,24,Recife,50940-590
+Brazil,female,34,"Rio de Janeiro",22772-450
+Brazil,male,36,Natal,59072-221
+Brazil,female,29,Teresina,64027-040
+Brazil,female,30,Uberlândia,38400-380
+Brazil,male,55,Salvador,40365-810
+Brazil,female,64,Bebedouro,14712-000
+Brazil,female,81,Cotia,06705-310
+Brazil,male,81,Divinópolis,35501-438
+Brazil,female,64,"Novo Gama",72860-591
+Brazil,female,81,"Rio de Janeiro",21535-520
+Brazil,male,71,"São Roque",18130-300
+Brazil,female,81,Fortaleza,60872-370
+Brazil,female,37,Americana,13478-601
+Brazil,female,35,Florianópolis,88080-018
+Brazil,male,65,Valinhos,13272-762
+Brazil,male,51,"Porto Velho",78903-029
+Brazil,male,68,Vitória,29040-691
+Brazil,male,62,"Nova Iguaçu",26062-180
+Brazil,female,57,"Riacho Fundo",71880-023
+Brazil,male,21,Criciúma,88818-682
+Brazil,female,46,"Feira de Santana",44022-100
+Brazil,male,28,Ceilândia,72220-244
+Brazil,female,66,Itumbiara,75515-440
+Brazil,female,28,"Campo Grande",79021-222
+Brazil,male,41,Goiânia,74885-200
+Brazil,female,40,"Caxias do Sul",95112-650
+Brazil,male,47,Ourinhos,19913-230
+Brazil,male,77,"São José dos Pinhais",83020-390
+Brazil,female,22,"Ribeirão das Neves",33823-490
+Brazil,female,47,Fortaleza,60761-650
+Brazil,male,30,"São Luís",65036-250
+Brazil,female,32,Araçatuba,16015-250
+Brazil,female,81,"Cachoeira do Sul",96505-114
+Brazil,female,54,"Aparecida de Goiânia",74973-110
+Brazil,female,27,Campinas,13059-613
+Brazil,female,35,Redenção,68553-310
+Brazil,male,83,"Francisco Beltrão",85606-405
+Brazil,male,52,Caraguatatuba,11662-230
+Brazil,female,83,"Volta Redonda",27288-610
+Brazil,male,62,Atibaia,12941-080
+Brazil,male,73,"Foz do Iguaçu",85855-105
+Brazil,male,19,Caruaru,55026-300
+Brazil,male,71,Uberlândia,38411-166
+Brazil,female,48,"São José dos Campos",12230-840
+Brazil,male,66,"São Paulo",08253-090
+Brazil,female,26,"Rio de Janeiro",20765-560
+Brazil,male,81,Campinas,13054-710
+Brazil,female,79,Recife,51260-281
+Brazil,female,21,Itaguaí,23830-020
+Brazil,female,26,"Nova Iguaçu",26030-180
+Brazil,male,23,"São Leopoldo",93022-300
+Brazil,male,36,Salvador,40335-420
+Brazil,male,53,Manaus,69099-277
+Brazil,male,58,Taguatinga,72161-602
+Brazil,male,57,Manaus,69038-660
+Brazil,male,21,"Belo Horizonte",30840-330
+Brazil,male,55,Recife,50760-800
+Brazil,female,79,Salvador,41651-060
+Brazil,male,73,Canoas,92325-120
+Brazil,male,49,"Mogi das Cruzes",08780-030
+Brazil,female,77,"São Paulo",04962-015
+Brazil,female,57,"São Lourenço da Mata",54710-160
+Brazil,female,65,"Barra Mansa",27365-080
+Brazil,female,67,"Volta Redonda",27240-710
+Brazil,female,85,Aracaju,49042-030
+Brazil,male,73,Recife,50690-050
+Brazil,female,44,Serra,29161-566
+Brazil,male,69,"São Paulo",04773-230
+Brazil,female,54,Guarujá,11450-310
+Brazil,female,27,"Rio Verde",75901-300
+Brazil,male,38,Jacareí,12307-500
+Brazil,female,33,"São Roque",18135-131
+Brazil,male,52,Guará,71010-179
+Brazil,female,70,"Mogi das Cruzes",08742-190
+Brazil,female,44,Uruguaiana,97500-180
+Brazil,female,52,Gravatá,55641-111
+Brazil,female,22,"São Paulo",08041-390
+Brazil,female,31,"Santa Maria",97015-430
+Brazil,female,73,Atibaia,12946-680
+Brazil,male,48,"Belo Horizonte",31640-380
+Brazil,female,74,"Duque de Caxias",25223-410
+Brazil,female,52,Curitiba,81170-550
+Brazil,female,20,Mogi-Mirim,13800-195
+Brazil,female,69,Uberaba,38056-338
+Brazil,female,72,Goiânia,74463-640
+Brazil,male,81,Contagem,32070-340
+Brazil,male,54,"Belford Roxo",26183-335
+Brazil,female,45,"São Paulo",02354-450
+Brazil,male,56,Guarapuava,85020-410
+Brazil,male,39,Bauru,17015-200
+Brazil,male,66,"Governador Valadares",35057-470
+Brazil,female,62,"Ponta Grossa",84062-105
+Brazil,female,69,"Nova Friburgo",28621-260
+Brazil,female,68,"São Paulo",05774-220
+Brazil,female,69,Florianópolis,88051-157
+Brazil,male,38,Sabará,34710-570
+Brazil,female,26,Campinas,13100-483
+Brazil,female,63,Araguaína,77818-030
+Brazil,male,47,"São Luís",65045-430
+Brazil,male,29,"São Paulo",04042-070
+Brazil,male,27,Goiânia,74413-140
+Brazil,male,69,Paranaguá,83212-390
+Brazil,male,70,"Rio de Janeiro",21525-630
+Brazil,male,83,"Valparaíso de Goiás",72876-224
+Brazil,male,53,Araucária,83701-710
+Brazil,male,28,"Belford Roxo",26177-275
+Brazil,male,35,Nilópolis,26510-340
+Brazil,male,37,Luziânia,72859-240
+Brazil,female,44,Cubatão,11538-130
+Brazil,female,30,"Governador Valadares",35052-610
+Brazil,male,38,"Jaraguá do Sul",89259-390
+Brazil,female,34,"Aparecida de Goiânia",74961-220
+Brazil,female,25,Natal,59139-312
+Brazil,female,81,"Núcleo Bandeirante",71720-588
+Brazil,male,27,"Campo Grande",79108-545
+Brazil,female,78,Itapetininga,18212-505
+Brazil,female,76,"Foz do Iguaçu",85862-389
+Brazil,female,39,Guarulhos,07141-433
+Brazil,female,81,Serra,29166-070
+Brazil,female,33,Curitiba,82560-260
+Brazil,female,22,Piracicaba,13401-453
+Brazil,male,47,"Patos de Minas",38701-620
+Brazil,female,35,"Valparaíso de Goiás",72872-386
+Brazil,male,82,Campinas,13106-250
+Brazil,male,73,Anápolis,75040-450
+Brazil,female,69,Curitiba,82640-710
+Brazil,female,65,"Jaboatão dos Guararapes",54430-250
+Brazil,male,36,"Juiz de Fora",36035-790
+Brazil,male,22,"São Paulo",04343-120
+Brazil,male,40,Limeira,13486-080
+Brazil,female,38,Campinas,13098-750
+Brazil,female,47,"Sete Lagoas",35700-134
+Brazil,male,51,Itu,13301-180
+Brazil,male,67,Taguatinga,71940-180
+Brazil,female,57,"Campo Grande",79075-400
+Brazil,male,73,Recife,50770-180
+Brazil,female,73,"Ribeirão das Neves",33933-686
+Brazil,male,69,Paulista,53429-670
+Brazil,male,56,Cuiabá,78058-785
+Brazil,female,33,Itajubá,37504-590
+Brazil,female,67,Ilhéus,45658-560
+Brazil,male,53,Ourinhos,19912-280
+Brazil,male,53,"Juiz de Fora",36025-580
+Brazil,male,40,"São Paulo",08111-430
+Brazil,female,80,"Santo André",09210-430
+Brazil,female,70,Limeira,13486-014
+Brazil,female,78,Araxá,38183-374
+Brazil,female,35,"Ribeirão das Neves",33860-470
+Brazil,male,78,Cacoal,78976-180
+Brazil,male,29,Garanhuns,55296-480
+Brazil,female,59,"Riacho Fundo",71805-303
+Brazil,female,42,Divinópolis,35502-504
+Brazil,male,54,Fortaleza,60180-380
+Brazil,male,67,Maracanaú,61933-200
+Brazil,female,28,Taubaté,12092-521
+Brazil,female,41,Paulista,53431-810
+Brazil,female,31,Vitória,29090-080
+Brazil,male,31,"São José dos Campos",12244-220
+Brazil,male,83,"Belo Horizonte",31130-370
+Brazil,female,82,Guarulhos,07130-240
+Brazil,female,26,Samambaia,72318-507
+Brazil,male,23,Campinas,13085-460
+Brazil,female,60,"Campina Grande",58105-450
+Brazil,male,31,"Vitória de Santo Antão",55602-080
+Brazil,female,44,"São Paulo",04814-010
+Brazil,female,77,Indaiatuba,13341-010
+Brazil,female,67,Luziânia,72859-249
+Brazil,female,42,Betim,32666-310
+Brazil,female,83,Guarulhos,07178-480
+Brazil,male,58,Guarulhos,07075-101
+Brazil,male,34,Timóteo,35180-124
+Brazil,male,42,"São Paulo",04455-240
+Brazil,female,48,Natal,59114-841
+Brazil,female,36,Itapira,13972-240
+Brazil,female,82,"São Paulo",01410-030
+Brazil,female,29,"Montes Claros",39402-136
+Brazil,male,73,"Rio Verde",75901-090
+Brazil,female,50,Petrópolis,25745-124
+Brazil,female,20,"São Paulo",04533-010
+Brazil,female,75,Campinas,13061-336
+Brazil,female,21,"São Paulo",05376-160
+Brazil,male,76,"Teófilo Otoni",39800-576
+Brazil,female,46,Palmas,77006-472
+Brazil,female,30,Guarulhos,07162-540
+Brazil,male,52,"São Paulo",08080-160
+Brazil,female,80,Igarassu,53610-370
+Brazil,female,60,Goiânia,74835-610
+Brazil,male,66,"Belo Horizonte",30335-330
+Brazil,male,22,Colatina,29702-480
+Brazil,female,22,Cascavel,85806-137
+Brazil,female,66,"Franco da Rocha",07866-000
+Brazil,female,19,"Aparecida de Goiânia",74990-070
+Brazil,female,49,Teresina,64078-263
+Brazil,male,64,"Riacho Fundo",71882-170
+Brazil,male,53,Guarapuava,85065-130
+Brazil,female,74,"João Pessoa",58025-365
+Brazil,female,80,Mogi-Guaçu,13845-350
+Brazil,female,26,"Belo Horizonte",30770-360
+Brazil,male,84,Fortaleza,60731-490
+Brazil,male,41,"Patos de Minas",38700-550
+Brazil,female,54,Mogi-Mirim,13800-421
+Brazil,male,42,Fortaleza,60851-110
+Brazil,female,63,Igarassu,53640-538
+Brazil,female,65,Bagé,96415-430
+Brazil,male,48,Goiânia,74594-116
+Brazil,female,70,Londrina,86071-570
+Brazil,male,55,"São Luís",65030-590
+Brazil,male,37,Barretos,14781-345
+Brazil,female,51,Sorocaba,18085-355
+Brazil,male,71,Samambaia,72305-808
+Brazil,male,54,"Novo Hamburgo",93415-270
+Brazil,female,82,Uberaba,38040-220
+Brazil,male,84,"São Gonçalo",24430-630
+Brazil,male,66,Maceió,57046-355
+Brazil,male,79,"Belo Horizonte",30710-280
+Brazil,female,64,Fortaleza,60733-104
+Brazil,male,77,"São José",88104-245
+Brazil,female,75,Ituiutaba,38307-428
+Brazil,male,20,Campinas,13061-131
+Brazil,female,63,Curitiba,82710-100
+Brazil,male,53,"Lençóis Paulista",18685-240
+Brazil,female,19,Uberaba,38071-380
+Brazil,female,80,"Rio de Janeiro",22641-630
+Brazil,male,54,Recife,50740-100
+Brazil,female,69,"Ribeirão Preto",14062-028
+Brazil,male,72,Natal,59042-090
+Brazil,female,20,"Cruz Alta",98010-370
+Brazil,male,39,"Belo Horizonte",30130-050
+Brazil,female,30,Manaus,69042-770
+Brazil,male,42,Colatina,29701-300
+Brazil,female,31,"Campo Grande",79090-222
+Brazil,female,38,"São Paulo",04571-170
+Brazil,male,28,Palmas,77006-670
+Brazil,male,48,Itapetininga,18207-460
+Brazil,female,77,"Aparecida de Goiânia",74914-520
+Brazil,male,50,"Presidente Prudente",19033-717
+Brazil,male,84,"São Paulo",05335-040
+Brazil,female,64,"Belo Horizonte",30170-060
+Brazil,female,56,"São Paulo",05822-020
+Brazil,male,74,Campinas,13060-611
+Brazil,male,23,Fortaleza,60360-820
+Brazil,female,33,Salvador,40210-750
+Brazil,female,68,Sorocaba,18053-370
+Brazil,female,27,Maracanaú,61910-060
+Brazil,female,39,Ipatinga,35164-046
+Brazil,male,27,"Vila Velha",29123-120
+Brazil,male,61,Contagem,32017-700
+Brazil,female,54,Uberaba,38057-610
+Brazil,male,72,Umuarama,87501-180
+Brazil,male,68,"São Paulo",04217-010
+Brazil,male,44,Curitiba,82400-040
+Brazil,male,57,Curitiba,82510-220
+Brazil,male,85,"São Bernardo do Campo",09661-090
+Brazil,male,29,"Campo Grande",79017-250
+Brazil,male,79,Itapevi,06693-350
+Brazil,male,35,Vitória,29090-420
+Brazil,female,76,Goiânia,74333-270
+Brazil,female,79,Goiânia,74391-276
+Brazil,male,56,"Porto Alegre",91120-150
+Brazil,female,53,"São Paulo",03287-050
+Brazil,female,36,Samambaia,72307-202
+Brazil,male,75,Votorantim,18114-360
+Brazil,male,61,"João Pessoa",58070-530
+Brazil,male,44,"Três Rios",25807-120
+Brazil,male,45,Curitiba,81200-540
+Brazil,male,81,"Ponta Grossa",84022-120
+Brazil,male,69,"Campo Grande",79114-170
+Brazil,female,81,"Rio de Janeiro",23031-191
+Brazil,male,80,Criciúma,88811-515
+Brazil,male,79,Itajaí,88302-580
+Brazil,male,56,Itaúna,35681-244
+Brazil,female,82,Itabira,35903-605
+Brazil,male,22,"São Paulo",02965-150
+Brazil,female,32,Araxá,38182-414
+Brazil,female,23,"São Paulo",02250-180
+Brazil,male,85,"Ponta Grossa",84070-170
+Brazil,female,42,Joinville,89211-015
+Brazil,female,38,Santarém,68025-400
+Brazil,male,30,"São Paulo",04685-003
+Brazil,male,55,Planaltina,73340-503
+Brazil,male,39,"São Paulo",01007-020
+Brazil,male,83,Birigüi,16202-090
+Brazil,male,43,Guaratinguetá,12515-080
+Brazil,female,72,"Rio de Janeiro",21250-150
+Brazil,female,82,Santos,11045-301
+Brazil,female,29,Ananindeua,67040-180
+Brazil,female,70,"São Paulo",02842-220
+Brazil,male,83,Jataí,75800-074
+Brazil,female,31,Ourinhos,19906-190
+Brazil,male,74,"Rio de Janeiro",23040-170
+Brazil,male,74,Itaguaí,23820-830
+Brazil,female,45,Belém,66811-420
+Brazil,male,27,"Ribeirão das Neves",33805-590
+Brazil,male,82,"Franco da Rocha",07804-140
+Brazil,male,20,Salvador,41750-105
+Brazil,male,78,"Campo Grande",79115-030
+Brazil,female,53,"Nova Iguaçu",26021-470
+Brazil,female,72,"Ribeirão Pires",09423-060
+Brazil,female,43,Osasco,06070-440
+Brazil,male,47,Bauru,17037-830
+Brazil,male,29,Maringá,87020-800
+Brazil,female,65,Blumenau,89070-270
+Brazil,male,68,Paulista,53429-760
+Brazil,female,21,Araxá,38180-238
+Brazil,male,32,"Campo Grande",79060-334
+Brazil,male,32,Campinas,13080-330
+Brazil,male,31,Cuiabá,78028-420
+Brazil,male,19,Samambaia,72304-529
+Brazil,male,30,Goiânia,74484-742
+Brazil,male,81,Brasília,70864-520
+Brazil,male,53,"Santo André",09060-400
+Brazil,female,57,"Santa Cruz do Sul",96815-370
+Brazil,male,50,"Porto Alegre",91520-400
+Brazil,female,61,Betim,32637-522
+Brazil,female,24,Salvador,40226-065
+Brazil,female,66,"São Luís",65026-140
+Brazil,female,78,Fortaleza,60351-090
+Brazil,male,27,"Volta Redonda",27210-370
+Brazil,male,20,Londrina,86079-150
+Brazil,male,80,Caçapava,12291-120
+Brazil,female,75,"Jaraguá do Sul",89252-460
+Brazil,female,27,Anápolis,75123-160
+Brazil,female,31,Carapicuíba,06351-150
+Brazil,male,75,Guarujá,11461-120
+Brazil,male,81,"Campina Grande",58105-635
+Brazil,female,36,Fortaleza,60430-800
+Brazil,female,32,"Cruz Alta",98025-190
+Brazil,male,58,"Jaboatão dos Guararapes",54310-230
+Brazil,male,32,"São Paulo",03908-100
+Brazil,male,66,Guarulhos,07162-290
+Brazil,male,36,"Sapucaia do Sul",93220-200
+Brazil,male,67,"São José dos Campos",12248-057
+Brazil,male,57,Queimados,26311-400
+Brazil,female,78,"Rio de Janeiro",23028-390
+Brazil,female,70,Franca,14401-286
+Brazil,male,25,"São Gonçalo",24436-320
+Brazil,female,79,"Juiz de Fora",36021-310
+Brazil,female,48,Sumaré,13177-380
+Brazil,female,38,Belém,66843-620
+Brazil,female,84,Curitiba,81240-530
+Brazil,male,46,"Ribeirão das Neves",33943-782
+Brazil,male,49,Colombo,83407-370
+Brazil,male,65,"São Paulo",05813-100
+Brazil,male,57,Pindamonhangaba,12401-280
+Brazil,female,27,Bagé,96408-610
+Brazil,female,75,Recife,51260-723
+Brazil,male,31,Votuporanga,15501-030
+Brazil,female,44,"Volta Redonda",27285-120
+Brazil,male,34,Teresina,64055-510
+Brazil,female,38,"São Paulo",02990-100
+Brazil,male,58,"Campo Grande",79010-470
+Brazil,female,82,Cruzeiro,70675-307
+Brazil,female,42,"Ponta Grossa",84036-530
+Brazil,male,33,"Governador Valadares",35057-190
+Brazil,male,63,Florianópolis,88030-357
+Brazil,female,43,"Presidente Prudente",19015-260
+Brazil,male,26,Natal,59088-650
+Brazil,male,70,Sumaré,13178-350
+Brazil,male,25,Serra,29165-360
+Brazil,female,40,Vitória,29031-830
+Brazil,female,47,"Vitória de Santo Antão",55612-194
+Brazil,female,35,"São José",88110-570
+Brazil,female,69,"São José dos Pinhais",83030-150
+Brazil,female,81,Belém,66119-010
+Brazil,male,26,"Belford Roxo",26183-700
+Brazil,female,84,Botucatu,18608-221
+Brazil,female,53,"Cachoeiro de Itapemirim",29301-410
+Brazil,female,41,Londrina,86056-845
+Brazil,male,53,Igarassu,53610-297
+Brazil,female,54,"Santa Luzia",33115-600
+Brazil,female,56,"Ribeirão das Neves",33935-200
+Brazil,female,25,Fortaleza,60868-080
+Brazil,female,53,"Rio de Janeiro",21380-330
+Brazil,female,80,Araraquara,14806-250
+Brazil,male,66,"Ribeirão das Neves",33938-220
+Brazil,female,21,Caruaru,55006-331
+Brazil,male,42,"São Luís",65058-505
+Brazil,male,23,Salvador,41905-415
+Brazil,male,33,"Belo Horizonte",30660-350
+Brazil,male,57,Cariacica,29148-623
+Brazil,male,54,Goiânia,74440-100
+Brazil,female,73,"São Paulo",03818-200
+Brazil,male,83,Maceió,57046-095
+Brazil,female,57,"Cachoeiro de Itapemirim",29305-640
+Brazil,female,81,"Sete Lagoas",35702-586
+Brazil,female,71,Recife,52090-035
+Brazil,male,22,"São Paulo",04844-540
+Brazil,female,35,"São Paulo",02311-230
+Brazil,female,36,Queimados,26349-210
+Brazil,male,66,Criciúma,88806-762
+Brazil,male,74,"Nova Iguaçu",26065-060
+Brazil,male,80,Garanhuns,55294-290
+Brazil,female,48,Goiânia,74843-590
+Brazil,male,47,"Vila Velha",29113-135
+Brazil,male,36,Barbacena,36202-504
+Brazil,female,49,Jaboticabal,14870-330
+Brazil,male,80,Campinas,13083-869
+Brazil,female,52,Brasília,70337-020
+Brazil,female,42,Valinhos,13271-655
+Brazil,male,45,Curitiba,81520-000
+Brazil,male,53,Jundiaí,13207-781
+Brazil,male,65,"São Paulo",04146-010
+Brazil,male,62,Itaquaquecetuba,08598-720
+Brazil,female,22,"Ponta Grossa",84063-060
+Brazil,female,19,Colombo,83407-700
+Brazil,male,70,"São José",88101-150
+Brazil,female,81,"João Pessoa",58059-122
+Brazil,female,37,"Santa Luzia",33080-322
+Brazil,male,84,Paranavaí,87704-300
+Brazil,female,31,"São Paulo",02409-050
+Brazil,female,31,"Belo Horizonte",30840-520
+Brazil,female,47,"Belo Horizonte",31555-380
+Brazil,female,67,"Duque de Caxias",25070-250
+Brazil,female,81,"São Gonçalo",24435-700
+Brazil,male,57,Teresópolis,25976-510
+Brazil,male,66,Itaguaí,23810-206
+Brazil,female,63,Bayeux,58306-090
+Brazil,female,36,Brusque,88357-362
+Brazil,male,73,Suzano,08695-800
+Brazil,female,21,"São Bernardo do Campo",09845-210
+Brazil,female,19,"Campos dos Goytacazes",28080-015
+Brazil,male,22,Recife,50110-407
+Brazil,female,51,Brasília,70384-530
+Brazil,female,75,"Presidente Prudente",19040-340
+Brazil,female,34,"Campo Limpo Paulista",13238-262
+Brazil,male,49,Passos,37901-516
+Brazil,male,85,"Ponta Grossa",84035-030
+Brazil,male,46,Itapevi,06655-275
+Brazil,male,58,Teresópolis,25995-430
+Brazil,female,79,Goiânia,74840-380
+Brazil,female,32,"Vitória de Santo Antão",55602-491
+Brazil,male,38,Tatuí,18277-709
+Brazil,male,73,Guarapari,29214-210
+Brazil,male,20,"São Carlos",13574-701
+Brazil,male,81,Atibaia,12947-510
+Brazil,male,36,"Belo Horizonte",31630-010
+Brazil,male,82,"Montes Claros",39404-102
+Brazil,female,52,Brazlândia,72736-005
+Brazil,male,54,Joinville,89230-620
+Brazil,male,38,"Campina Grande",58109-493
+Brazil,female,69,Anápolis,75025-040
+Brazil,male,49,Barueri,06413-160
+Brazil,female,43,Itabira,35900-646
+Brazil,male,77,"Aparecida de Goiânia",74966-450
+Brazil,male,27,Serra,29172-120
+Brazil,female,73,"Caxias do Sul",95030-190
+Brazil,female,22,Natal,59032-530
+Brazil,female,38,"Rio de Janeiro",21071-010
+Brazil,male,82,"São Leopoldo",93115-140
+Brazil,female,71,"Pato Branco",85505-070
+Brazil,male,54,Araraquara,14806-755
+Brazil,female,64,Goiânia,74553-460
+Brazil,male,60,"Ribeirão Preto",14031-294
+Brazil,female,32,Goiânia,74494-102
+Brazil,female,67,"São Paulo",03726-060
+Brazil,male,34,Divinópolis,35500-269
+Brazil,male,69,"São José dos Campos",12239-028
+Brazil,male,62,Vitória,29030-791
+Brazil,female,29,"Lago Norte",71525-015
+Brazil,female,19,"Belo Horizonte",31652-300
+Brazil,male,20,"Ponte Nova",35430-145
+Brazil,female,19,"São Gonçalo",24738-740
+Brazil,female,28,Araguaína,77807-230
+Brazil,female,74,Recife,52150-280
+Brazil,female,71,Araxá,38182-262
+Brazil,male,23,Jundiaí,13208-027
+Brazil,male,55,"Vitória de Santo Antão",55614-081
+Brazil,female,28,Fortaleza,60531-600
+Brazil,male,51,"Rio de Janeiro",23032-220
+Brazil,male,25,Parintins,69152-050
+Brazil,female,43,"Santo André",09250-175
+Brazil,female,44,Americana,13467-210
+Brazil,male,53,Mossoró,59619-500
+Brazil,female,49,Capanema,68701-190
+Brazil,male,63,"Campina Grande",58104-245
+Brazil,female,21,Bebedouro,14706-104
+Brazil,male,60,"Belo Horizonte",31365-210
+Brazil,male,30,Fortaleza,60440-190
+Brazil,female,31,Sorocaba,18066-200
+Brazil,female,29,Cataguases,36770-078
+Brazil,male,26,Cascavel,85816-150
+Brazil,male,63,"Campos dos Goytacazes",28035-630
+Brazil,male,26,"Bragança Paulista",12919-280
+Brazil,female,73,"Boa Vista",69314-370
+Brazil,male,50,Salvador,41905-190
+Brazil,female,78,"Duque de Caxias",25030-160
+Brazil,female,69,Campinas,13065-270
+Brazil,male,52,"Rio de Janeiro",21735-010
+Brazil,female,52,Guarapari,29206-500
+Brazil,male,46,Itapevi,06694-370
+Brazil,female,32,Luziânia,72856-433
+Brazil,female,27,"São Paulo",05272-130
+Brazil,male,52,"Boa Vista",69317-075
+Brazil,female,37,Luziânia,72815-110
+Brazil,male,51,"Juiz de Fora",36060-190
+Brazil,male,39,"São Paulo",05160-280
+Brazil,male,68,Sorocaba,18056-650
+Brazil,female,70,Paranoá,71572-012
+Brazil,male,34,Esteio,93285-070
+Brazil,male,60,Guarulhos,07134-400
+Brazil,male,63,Itabira,35900-124
+Brazil,female,19,Luziânia,72822-530
+Brazil,female,45,Brasília,70343-010
+Brazil,female,27,Cotia,06717-700
+Brazil,female,26,"São Paulo",02652-051
+Brazil,male,68,Caucaia,61623-010
+Brazil,male,68,Timóteo,35180-154
+Brazil,male,47,Fortaleza,60441-340
+Brazil,male,84,Corumbá,79332-080
+Brazil,female,61,Cascavel,85803-440
+Brazil,female,74,"Boa Vista",69303-200
+Brazil,female,48,"São Paulo",02368-030
+Brazil,female,59,"Rio de Janeiro",21932-115
+Brazil,male,30,Palhoça,88136-205
+Brazil,male,36,Osasco,06236-270
+Brazil,female,21,Mesquita,26554-180
+Brazil,male,25,Fortaleza,60361-090
+Brazil,female,84,"Praia Grande",11723-230
+Brazil,male,64,Itatiba,13257-857
+Brazil,male,44,Fortaleza,60341-510
+Brazil,male,77,Guará,71020-340
+Brazil,female,28,Curitiba,81925-417
+Brazil,male,53,Mesquita,26554-290
+Brazil,male,33,"Jaboatão dos Guararapes",54345-510
+Brazil,female,31,Fortaleza,60180-370
+Brazil,male,39,Recife,52190-380
+Brazil,male,76,"Belo Horizonte",31630-450
+Brazil,male,33,Curitiba,82300-420
+Brazil,male,64,"São José do Rio Preto",15077-240
+Brazil,male,62,Guarapuava,85067-290
+Brazil,male,32,Itapevi,06670-320
+Brazil,female,85,"São José do Rio Preto",15014-490
+Brazil,female,79,"Porto Alegre",90610-360
+Brazil,male,82,"São José dos Campos",12231-760
+Brazil,male,20,"Vila Velha",29118-150
+Brazil,female,19,"Passo Fundo",99070-390
+Brazil,male,58,Campinas,13100-238
+Brazil,male,67,Brusque,88357-362
+Brazil,male,56,Recife,52120-470
+Brazil,female,83,"Belo Horizonte",31310-180
+Brazil,male,34,"Duque de Caxias",25025-220
+Brazil,male,41,Paragominas,68625-430
+Brazil,female,59,Guarulhos,07096-021
+Brazil,male,39,Americana,13475-703
+Brazil,female,84,Parnaíba,64202-330
+Brazil,female,36,Goiânia,74580-290
+Brazil,female,62,Itabira,35900-241
+Brazil,male,42,Olinda,53320-440
+Brazil,female,81,"Porto Alegre",90160-190
+Brazil,female,25,"Rio Grande",96204-270
+Brazil,female,51,"Ponta Grossa",84060-470
+Brazil,male,33,"Passo Fundo",99010-570
+Brazil,female,66,Colombo,83404-440
+Brazil,male,28,Recife,50761-250
+Brazil,male,48,Guarulhos,07051-090
+Brazil,male,25,Fortaleza,60821-750
+Brazil,male,52,"São José do Rio Preto",15043-485
+Brazil,female,80,"João Pessoa",58083-599
+Brazil,male,82,Goiânia,74475-346
+Brazil,female,58,"Lago Sul",71615-420
+Brazil,male,58,"São João de Meriti",25525-180
+Brazil,male,74,Queimados,26361-040
+Brazil,female,66,Belém,66823-087
+Brazil,female,45,"Rio de Janeiro",21860-230
+Brazil,female,69,Belém,66065-090
+Brazil,male,49,"Recanto das Emas",72621-400
+Brazil,female,85,"São Luís",65040-461
+Brazil,female,35,Salvador,41500-108
+Brazil,male,43,"Rio de Janeiro",21040-460
+Brazil,female,84,Barbacena,36200-688
+Brazil,female,23,"Rio de Janeiro",22763-370
+Brazil,female,70,Salvador,41192-125
+Brazil,female,42,"Rio de Janeiro",20397-160
+Brazil,male,32,Manaus,69084-370
+Brazil,female,81,Cotia,06709-680
+Brazil,male,83,Carapicuíba,06395-340
+Brazil,male,28,"Nova Friburgo",28621-560
+Brazil,female,47,"João Pessoa",58011-310
+Brazil,female,46,"São Paulo",04773-240
+Brazil,female,43,"São Paulo",05267-100
+Brazil,male,69,Alegrete,97543-053
+Brazil,female,57,Sousa,58805-075
+Brazil,female,50,"São Paulo",08391-601
+Brazil,female,57,"São Paulo",01536-000
+Brazil,male,67,"Cabo Frio",28922-235
+Brazil,female,35,Caçapava,12289-250
+Brazil,male,41,"Campo Grande",79118-150
+Brazil,female,84,"Almirante Tamandaré",83504-290
+Brazil,female,27,Alvorada,94855-590
+Brazil,male,73,Vitória,29042-590
+Brazil,female,82,"Barra Mansa",27351-050
+Brazil,male,27,Recife,52061-110
+Brazil,female,53,"Santa Maria",72503-712
+Brazil,male,43,Fortaleza,60352-050
+Brazil,female,66,Guarapari,29215-690
+Brazil,male,33,Florianópolis,88032-679
+Brazil,male,40,Itu,13308-193
+Brazil,male,65,Salvador,40140-461
+Brazil,female,50,"Governador Valadares",35059-430
+Brazil,female,76,Passos,37904-146
+Brazil,male,35,"Belo Horizonte",31550-270
+Brazil,female,28,Petrolina,56302-560
+Brazil,male,75,"Aparecida de Goiânia",74963-340
+Brazil,male,44,Jacareí,12301-570
+Brazil,male,28,Belém,66083-410
+Brazil,female,66,Mauá,09360-520
+Brazil,male,54,Aracaju,49048-490
+Brazil,male,62,"Nova Iguaçu",26061-040
+Brazil,male,36,Arapiraca,57304-700
+Brazil,female,22,Tatuí,18275-430
+Brazil,male,65,"São Luís",65053-650
+Brazil,male,22,Cruzeiro,12704-370
+Brazil,male,42,"Laranjeiras do Sul",85303-600
+Brazil,female,59,Cuiabá,78085-750
+Brazil,female,20,Anápolis,75105-040
+Brazil,female,50,Joinville,89209-476
+Brazil,male,74,Fortaleza,60532-350
+Brazil,male,22,"Duque de Caxias",25085-595
+Brazil,female,69,Nilópolis,26510-470
+Brazil,female,75,"Vila Velha",29107-285
+Brazil,male,19,"São Paulo",03977-700
+Brazil,female,29,Americana,13466-539
+Brazil,female,79,"Porto Alegre",91787-194
+Brazil,male,37,"São Paulo",02728-010
+Brazil,female,45,Formosa,73808-224
+Brazil,female,30,Cotia,06716-560
+Brazil,male,59,"Passo Fundo",99050-250
+Brazil,male,49,Limeira,13481-384
+Brazil,female,33,"Rio Claro",13503-015
+Brazil,female,37,"Governador Valadares",35053-320
+Brazil,female,53,"Recanto das Emas",72620-109
+Brazil,female,67,Niterói,24325-000
+Brazil,male,42,Natal,59037-020
+Brazil,male,48,"João Pessoa",58050-140
+Brazil,male,75,Aracaju,49081-020
+Brazil,female,63,Limeira,13481-115
+Brazil,male,24,Embu,06804-030
+Brazil,female,26,"Rio de Janeiro",21236-270
+Brazil,male,30,Ananindeua,67030-180
+Brazil,female,55,Goiânia,74560-570
+Brazil,male,56,Samambaia,72313-600
+Brazil,female,29,Maceió,57043-580
+Brazil,male,41,"Campos dos Goytacazes",28070-650
+Brazil,female,72,Recife,52190-250
+Brazil,male,48,"Belo Horizonte",30830-100
+Brazil,male,35,"São Paulo",02261-030
+Brazil,male,71,Botucatu,18601-761
+Brazil,female,68,"Governador Valadares",35052-806
+Brazil,male,39,Blumenau,89057-676
+Brazil,female,31,Curitiba,81510-600
+Brazil,female,23,Piracicaba,13403-035
+Brazil,female,77,Guará,71200-035
+Brazil,male,31,Palmas,77020-054
+Brazil,female,52,"São Paulo",04864-180
+Brazil,female,52,"Planaltina de Goiás",73751-471
+Brazil,female,71,"Belo Horizonte",30450-050
+Brazil,male,68,"Campo Grande",79022-464
+Brazil,male,62,"Belo Horizonte",30642-360
+Brazil,male,77,"Cachoeiro de Itapemirim",29302-360
+Brazil,male,40,Queimados,26345-110
+Brazil,female,20,Valinhos,13271-393
+Brazil,male,74,"São Paulo",03735-310
+Brazil,female,57,Carapicuíba,06345-580
+Brazil,male,21,Mogi-Guaçu,13840-121
+Brazil,male,58,"São Paulo",04856-390
+Brazil,female,38,Natal,59139-395
+Brazil,female,85,"São Paulo",02321-120
+Brazil,male,27,Mesquita,26562-310
+Brazil,female,79,"São Luís",65072-370
+Brazil,male,41,Samambaia,72305-707
+Brazil,male,60,"Nova Friburgo",28621-640
+Brazil,female,19,"Rio de Janeiro",21510-012
+Brazil,male,46,Luziânia,72859-238
+Brazil,female,21,"São Gonçalo",24436-530
+Brazil,male,82,"Volta Redonda",27220-430
+Brazil,male,62,"Aparecida de Goiânia",74993-160
+Brazil,female,21,Jundiaí,13214-400
+Brazil,female,83,"Campo Grande",79021-430
+Brazil,male,55,"Belo Horizonte",31320-510
+Brazil,male,33,"Planaltina de Goiás",73754-210
+Brazil,male,30,"São Paulo",03225-140
+Brazil,male,22,Lages,88516-200
+Brazil,female,73,"São Paulo",04917-070
+Brazil,male,38,"Vila Velha",29111-065
+Brazil,male,37,"Campo Grande",79042-040
+Brazil,female,66,"Poços de Caldas",37706-293
+Brazil,male,82,"Ribeirão Preto",14066-017
+Brazil,male,38,"São Paulo",04929-370
+Brazil,female,40,Araçatuba,16056-790
+Brazil,female,43,Curitiba,81570-320
+Brazil,male,81,Contagem,32060-225
+Brazil,male,69,Araguaína,77823-380
+Brazil,male,73,"Campo Mourão",87308-187
+Brazil,female,75,Cruzeiro,70670-510
+Brazil,male,51,Niterói,24040-230
+Brazil,female,32,Araxá,38183-210
+Brazil,female,79,"São Paulo",04641-150
+Brazil,male,31,Xinguara,68557-280
+Brazil,male,51,"Barra Mansa",27313-240
+Brazil,female,40,"Campo Grande",79004-650
+Brazil,male,28,Brusque,88352-501
+Brazil,female,21,Bauru,17022-780
+Brazil,male,39,Barbacena,36202-366
+Brazil,male,84,Cruzeiro,70648-088
+Brazil,male,62,"Vitória de Santo Antão",55612-060
+Brazil,female,24,"São Paulo",08450-430
+Brazil,male,31,Belém,66919-010
+Brazil,male,44,Pelotas,96040-120
+Brazil,male,25,Planaltina,73330-094
+Brazil,female,68,Osasco,06162-050
+Brazil,male,42,Dourados,79841-080
+Brazil,male,83,"Porto Alegre",91520-380
+Brazil,male,45,"Boa Vista",69312-050
+Brazil,female,55,Campinas,13035-400
+Brazil,male,46,"Patos de Minas",38701-528
+Brazil,female,30,"São José do Rio Preto",15076-040
+Brazil,male,61,"Belo Horizonte",30692-460
+Brazil,female,55,Macapá,68907-180
+Brazil,female,85,Limeira,13484-096
+Brazil,female,50,Manaus,69050-141
+Brazil,male,82,Bauru,17013-090
+Brazil,female,68,Camaragibe,54762-380
+Brazil,female,56,Planaltina,73340-200
+Brazil,female,84,Castanhal,68742-225
+Brazil,male,43,Florianópolis,88035-400
+Brazil,male,44,Carapicuíba,06326-020
+Brazil,female,37,Caraguatatuba,11676-250
+Brazil,male,68,"Sapucaia do Sul",93216-490
+Brazil,female,29,"Campina Grande",58101-490
+Brazil,male,52,"Várzea Grande",78125-680
+Brazil,male,57,Toledo,85909-450
+Brazil,female,69,"São Paulo",02551-000
+Brazil,female,63,Caçapava,12287-600
+Brazil,male,83,Maceió,57070-510
+Brazil,male,26,"Passo Fundo",99030-390
+Brazil,male,59,Goiânia,74620-405
+Brazil,male,27,Sobral,62041-410
+Brazil,female,40,"Santo André",09171-130
+Brazil,male,36,"Rio de Janeiro",23095-690
+Brazil,female,81,"Montes Claros",39404-585
+Brazil,female,25,Campinas,13087-440
+Brazil,female,42,"São Gonçalo",24752-320
+Brazil,male,24,Serra,29167-300
+Brazil,female,31,Recife,52111-620
+Brazil,male,67,"Barra Mansa",27343-411
+Brazil,male,54,"Campo Grande",79009-320
+Brazil,male,32,Barbacena,36204-180
+Brazil,male,69,Colombo,83414-120
+Brazil,male,43,Ceilândia,72260-686
+Brazil,male,43,"Foz do Iguaçu",85857-400
+Brazil,male,42,Marília,17512-890
+Brazil,male,40,"Montes Claros",39403-221
+Brazil,male,75,Lages,88504-100
+Brazil,female,48,"Laranjeiras do Sul",85303-450
+Brazil,male,44,Fortaleza,60762-110
+Brazil,female,65,"Santo André",09250-710
+Brazil,female,71,Fortaleza,60750-030
+Brazil,male,81,Formosa,73805-875
+Brazil,male,48,"Lago Sul",71630-035
+Brazil,female,45,Jaboticabal,14883-358
+Brazil,male,57,Manaus,69087-672
+Brazil,female,70,Gurupi,77415-600
+Brazil,male,28,"Santa Bárbara D'Oeste",13458-580
+Brazil,female,46,Bauru,17052-300
+Brazil,female,84,Ananindeua,67115-690
+Brazil,male,64,Sarandi,87111-690
+Brazil,female,40,Crato,63113-640
+Brazil,female,25,"São Luís",65053-420
+Brazil,female,31,Sumaré,13175-600
+Brazil,male,39,"São Paulo",04051-040
+Brazil,female,27,"São Paulo",03090-000
+Brazil,female,71,Ananindeua,67010-040
+Brazil,female,47,Sabará,34585-030
+Brazil,female,68,Paulista,53422-200
+Brazil,female,75,Maceió,57048-530
+Brazil,male,63,Betim,32666-520
+Brazil,male,54,Votuporanga,15503-294
+Brazil,female,34,Pindamonhangaba,12424-700
+Brazil,male,82,Londrina,86077-010
+Brazil,male,47,Santos,11060-410
+Brazil,female,50,"São Paulo",08257-010
+Brazil,male,43,"João Pessoa",58056-040
+Brazil,female,81,"Governador Valadares",35053-300
+Brazil,female,56,Pirassununga,13635-120
+Brazil,female,23,Uruguaiana,97505-410
+Brazil,female,71,"São José dos Campos",12228-750
+Brazil,male,41,"Campo Grande",79070-341
+Brazil,male,27,Salvador,41120-070
+Brazil,male,23,Paulista,53417-780
+Brazil,female,27,Cuiabá,78098-590
+Brazil,male,63,"Porto Alegre",91550-210
+Brazil,male,84,Japeri,26483-450
+Brazil,female,37,Teresina,64046-685
+Brazil,female,53,Sabará,34505-810
+Brazil,female,48,Resende,27522-250
+Brazil,female,83,"São Paulo",03012-040
+Brazil,female,67,Bauru,17017-290
+Brazil,male,69,Teresópolis,25977-095
+Brazil,female,40,Queimados,26321-390
+Brazil,male,74,Londrina,86082-710
+Brazil,female,45,Apucarana,86812-580
+Brazil,female,56,"Vila Velha",29125-782
+Brazil,male,37,"Rio Grande",96213-320
+Brazil,female,81,"São Paulo",05574-130
+Brazil,female,43,Salvador,41216-030
+Brazil,female,21,Ipatinga,35164-215
+Brazil,female,23,Jaboticabal,14887-034
+Brazil,male,80,Itapetininga,18206-773
+Brazil,male,66,Barueri,06433-030
+Brazil,male,36,Itapeva,18406-350
+Brazil,female,29,"Cachoeiro de Itapemirim",29302-480
+Brazil,female,53,"Porto Alegre",91420-711
+Brazil,female,85,Salvador,40100-040
+Brazil,female,27,Itabira,35902-072
+Brazil,male,22,"Nova Iguaçu",26060-050
+Brazil,female,64,Maringá,87035-540
+Brazil,female,20,Anápolis,75123-650
+Brazil,female,70,"Porto Alegre",90040-060
+Brazil,female,68,Alegrete,97547-350
+Brazil,male,22,Jundiaí,13212-227
+Brazil,female,67,Guarulhos,07183-060
+Brazil,male,69,"Capão Bonito",18304-280
+Brazil,male,49,"São Paulo",04830-360
+Brazil,male,46,"Itapecerica da Serra",06867-200
+Brazil,female,73,"Governador Valadares",35051-800
+Brazil,female,78,Jundiaí,13202-720
+Brazil,female,38,Gurupi,77440-280
+Brazil,female,72,Timon,65636-430
+Brazil,female,33,"Caxias do Sul",95034-270
+Brazil,male,55,"Várzea Grande",78150-118
+Brazil,female,71,Joinville,89223-300
+Brazil,male,52,Fortaleza,60750-090
+Brazil,female,84,"São José dos Campos",12247-740
+Brazil,female,41,"Sapucaia do Sul",93224-320
+Brazil,male,47,"Santa Maria",97095-040
+Brazil,female,56,"São José dos Campos",12228-171
+Brazil,male,56,"Nova Friburgo",28611-070
+Brazil,male,75,Cotia,06701-010
+Brazil,male,62,Cubatão,11542-120
+Brazil,male,44,Salvador,40435-680
+Brazil,female,54,"São Paulo",02248-080
+Brazil,female,37,Guará,71015-041
+Brazil,male,30,"Cachoeiro de Itapemirim",29311-733
+Brazil,male,23,"Rio de Janeiro",20530-530
+Brazil,male,57,Salvador,40335-460
+Brazil,female,70,"Sete Lagoas",35700-561
+Brazil,female,71,"Rio de Janeiro",21555-480
+Brazil,male,83,"São João de Meriti",25520-701
+Brazil,female,51,Petrópolis,25750-140
+Brazil,female,37,Petrolina,56318-430
+Brazil,male,53,Blumenau,89050-080
+Brazil,male,74,Guarulhos,07022-110
+Brazil,female,30,Olinda,53350-590
+Brazil,male,35,Guarapuava,85050-120
+Brazil,male,34,Paranoá,71575-560
+Brazil,male,62,"São Carlos",13567-670
+Brazil,male,34,Suzano,08675-190
+Brazil,male,47,Rondonópolis,78720-290
+Brazil,female,74,"São Paulo",08280-110
+Brazil,female,63,Hortolândia,13186-292
+Brazil,female,65,Cachoeirinha,94965-360
+Brazil,male,77,Contagem,32370-280
+Brazil,female,60,"Rio de Janeiro",21210-680
+Brazil,male,56,Taguatinga,71939-180
+Brazil,male,54,Goiânia,74810-400
+Brazil,male,19,"São João de Meriti",25535-200
+Brazil,male,27,"Campo Grande",79102-002
+Brazil,female,80,"São Luís",65072-780
+Brazil,male,47,Luziânia,72855-149
+Brazil,female,54,Piraquara,83306-420
+Brazil,male,25,"Bragança Paulista",12929-100
+Brazil,female,84,"Mogi das Cruzes",08775-450
+Brazil,female,27,"Rio de Janeiro",22725-830
+Brazil,male,75,Aracaju,49072-480
+Brazil,male,73,"Barra do Piraí",27150-310
+Brazil,female,19,Timon,65636-860
+Brazil,male,84,Franca,14404-113
+Brazil,female,76,Recife,51011-470
+Brazil,female,60,"São Paulo",08081-030
+Brazil,female,62,Curitiba,82930-120
+Brazil,male,25,"Campo Limpo Paulista",13236-261
+Brazil,male,38,Guará,71010-164
+Brazil,male,31,Leme,13617-349
+Brazil,male,84,"São Paulo",04433-160
+Brazil,female,24,"São Gonçalo",24457-240
+Brazil,male,71,"São Paulo",04637-020
+Brazil,male,79,Gravataí,94050-060
+Brazil,female,33,Hortolândia,13184-220
+Brazil,female,36,Piraquara,83302-100
+Brazil,female,23,Londrina,86041-405
+Brazil,male,32,"Cachoeira do Sul",96503-280
+Brazil,female,20,Brasília,70252-070
+Brazil,female,51,Ceilândia,72235-523
+Brazil,female,65,Petrolina,56304-450
+Brazil,male,48,Tubarão,88701-580
+Brazil,female,77,Caçapava,12289-005
+Brazil,male,82,"Jaboatão dos Guararapes",54450-360
+Brazil,male,81,Alegrete,97541-470
+Brazil,male,59,Birigüi,16202-335
+Brazil,male,82,Caraguatatuba,11665-335
+Brazil,female,25,Belém,66821-090
+Brazil,female,42,Marília,17519-590
+Brazil,female,81,"Aparecida de Goiânia",74971-030
+Brazil,female,54,"São Paulo",03362-075
+Brazil,male,54,Guarapuava,85045-265
+Brazil,male,42,Manaus,69054-747
+Brazil,male,41,Hortolândia,13183-752
+Brazil,male,60,Juazeiro,48901-410
+Brazil,female,19,"Aparecida de Goiânia",74946-320
+Brazil,female,52,"Jaboatão dos Guararapes",54410-512
+Brazil,female,28,"Novo Gama",72865-314
+Brazil,male,38,Fortaleza,60531-640
+Brazil,male,68,"Telêmaco Borba",84268-170
+Brazil,female,40,"São Paulo",05684-040
+Brazil,male,25,Salvador,41940-630
+Brazil,male,29,"Santo André",09230-000
+Brazil,male,62,Diadema,09940-560
+Brazil,male,69,"Juiz de Fora",36016-430
+Brazil,male,42,"São Paulo",08191-190
+Brazil,male,44,Cuiabá,78058-843
+Brazil,female,26,Joinville,89222-000
+Brazil,female,41,Uberaba,38082-113
+Brazil,male,32,Gravataí,94160-190
+Brazil,female,49,"São Paulo",08041-290
+Brazil,female,39,Brasília,70761-640
+Brazil,female,56,"Feira de Santana",44022-390
+Brazil,female,55,Guarapuava,85020-240
+Brazil,male,29,"Aparecida de Goiânia",74932-170
+Brazil,female,77,"João Pessoa",58064-500
+Brazil,male,31,"São Paulo",05126-110
+Brazil,female,66,Salvador,40800-100
+Brazil,female,66,Curitiba,82120-230
+Brazil,female,81,Camaragibe,54756-580
+Brazil,female,31,Bauru,17067-590
+Brazil,male,82,"Mogi das Cruzes",08771-020
+Brazil,female,41,"Governador Valadares",35024-250
+Brazil,male,50,Uberlândia,38400-168
+Brazil,female,81,"Belo Horizonte",30850-450
+Brazil,female,55,Araguari,38442-077
+Brazil,male,27,"São Paulo",02917-110
+Brazil,male,52,Goiânia,74655-315
+Brazil,male,85,Alvorada,94850-430
+Brazil,female,32,"Ribeirão Preto",14055-048
+Brazil,female,63,Belém,66822-480
+Brazil,male,70,Olinda,53160-220
+Brazil,female,69,"São Paulo",04233-420
+Brazil,male,42,Mogi-Mirim,13807-548
+Brazil,female,66,Criciúma,88802-660
+Brazil,male,51,"São Paulo",02405-095
+Brazil,female,53,Sorocaba,18053-150
+Brazil,female,22,"Rio de Janeiro",23052-530
+Brazil,female,80,Hortolândia,13188-300
+Brazil,male,32,Umuarama,87505-410
+Brazil,female,71,Mococa,13734-040
+Brazil,male,63,"Pará de Minas",35660-418
+Brazil,male,60,Viamão,94510-240
+Brazil,female,38,"Barra Mansa",27337-190
+Brazil,male,66,"Belford Roxo",26171-210
+Brazil,male,29,"São José do Rio Preto",15047-057
+Brazil,male,37,Maringá,87045-080
+Brazil,male,71,"Belo Horizonte",30610-230
+Brazil,female,56,Gurupi,77440-380
+Brazil,male,73,Goiânia,74085-370
+Brazil,male,33,Guará,71010-220
+Brazil,female,83,Londrina,86081-120
+Brazil,female,82,Criciúma,88802-475
+Brazil,female,72,Betim,32553-770
+Brazil,male,56,Arapongas,86708-420
+Brazil,male,68,Guaratinguetá,12508-100
+Brazil,female,79,Fortaleza,60192-010
+Brazil,female,32,Itaguaí,23845-580
+Brazil,female,37,"São Paulo",05183-210
+Brazil,female,52,Itapevi,06657-540
+Brazil,male,47,"Campo Grande",79103-330
+Brazil,female,84,Itabuna,45602-660
+Brazil,female,42,Caucaia,61602-150
+Brazil,female,20,Petrópolis,25710-021
+Brazil,male,50,"Nova Iguaçu",26255-291
+Brazil,male,51,Alagoinhas,48020-510
+Brazil,male,61,Santos,11095-000
+Brazil,female,56,Tupã,17600-420
+Brazil,female,70,"Aparecida de Goiânia",74958-210
+Brazil,male,63,"São Bernardo do Campo",09720-390
+Brazil,female,69,"Novo Hamburgo",93510-160
+Brazil,female,19,"Campo Grande",79050-570
+Brazil,female,60,Campinas,13033-195
+Brazil,female,68,"Pará de Minas",35660-077
+Brazil,female,53,"Rio de Janeiro",22765-470
+Brazil,male,59,Natal,59014-178
+Brazil,female,69,Cruzeiro,70650-272
+Brazil,female,56,Palmas,77022-092
+Brazil,female,72,Mossoró,59625-495
+Brazil,female,67,"Aparecida de Goiânia",74923-007
+Brazil,female,32,Uberaba,38067-030
+Brazil,female,33,Maracanaú,61912-000
+Brazil,male,21,Recife,50640-590
+Brazil,male,84,"Rio de Janeiro",22793-700
+Brazil,female,66,Manaus,69099-150
+Brazil,male,66,"Santa Maria",72546-800
+Brazil,female,74,Salvador,41190-322
+Brazil,male,44,Corumbá,79304-410
+Brazil,female,37,"São José do Rio Preto",15081-090
+Brazil,male,70,Valinhos,13277-505
+Brazil,female,27,"São Carlos",13568-807
+Brazil,male,33,"São Paulo",05207-070
+Brazil,female,57,Blumenau,89025-440
+Brazil,male,61,Fortaleza,60410-080
+Brazil,female,38,Guarulhos,07183-420
+Brazil,female,29,Criciúma,88802-500
+Brazil,male,83,Birigüi,16203-186
+Brazil,female,70,Uberaba,38073-021
+Brazil,female,42,"Riacho Fundo",71805-711
+Brazil,female,53,Alvorada,94820-250
+Brazil,female,38,Formosa,73813-380
+Brazil,female,30,Carapicuíba,06340-100
+Brazil,male,35,Maceió,57084-290
+Brazil,female,22,Florianópolis,88036-640
+Brazil,male,42,Joinville,89228-830
+Brazil,female,79,Fortaleza,60184-260
+Brazil,male,83,Sorocaba,18017-208
+Brazil,male,38,"Ribeirão Preto",14075-510
+Brazil,female,35,Samambaia,72333-544
+Brazil,male,34,Aracaju,49051-060
+Brazil,male,56,Manaus,69059-190
+Brazil,male,35,"Bragança Paulista",12914-460
+Brazil,female,85,"Poços de Caldas",37701-411
+Brazil,male,85,Uberlândia,38414-498
+Brazil,male,64,"Rio de Janeiro",21060-270
+Brazil,male,27,Piracicaba,13405-205
+Brazil,male,29,Manaus,69067-396
+Brazil,female,21,Teresina,64034-000
+Brazil,male,37,Passos,37900-118
+Brazil,male,82,Chapecó,89812-250
+Brazil,male,49,Sorocaba,18043-050
+Brazil,female,70,"Belo Horizonte",31250-120
+Brazil,male,40,"São Leopoldo",93020-490
+Brazil,male,29,"Aparecida de Goiânia",74948-160
+Brazil,male,19,Salvador,40140-320
+Brazil,female,19,Ananindeua,67105-099
+Brazil,female,22,"Novo Hamburgo",93420-230
+Brazil,female,42,Queimados,26390-240
+Brazil,male,40,Fortaleza,60543-405
+Brazil,male,46,Paranaguá,83203-760
+Brazil,male,35,Campinas,13075-285
+Brazil,male,66,Bauru,17067-440
+Brazil,male,45,Salvador,40715-450
+Brazil,male,66,Vitória,29025-055
+Brazil,male,76,Osasco,06020-012
+Brazil,male,84,"Boa Vista",69301-120
+Brazil,female,55,"São Lourenço da Mata",54740-030
+Brazil,male,52,Palmas,77001-752
+Brazil,male,66,Natal,59127-012
+Brazil,male,58,Taguatinga,72110-370
+Brazil,female,51,Guarulhos,07020-120
+Brazil,male,30,"Rio Branco",69914-810
+Brazil,male,69,"São Paulo",05861-400
+Brazil,female,21,"São José dos Pinhais",83070-240
+Brazil,male,49,"São Paulo",04821-270
+Brazil,female,66,"São Luís",65035-620
+Brazil,male,19,"Taboão da Serra",06763-265
+Brazil,female,78,Samambaia,72305-531
+Brazil,male,60,Petrópolis,25655-180
+Brazil,female,84,"Rio de Janeiro",23547-110
