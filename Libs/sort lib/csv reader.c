@@ -15,7 +15,12 @@ int main(){
     FILE *file;
     CSV csv;
     
+<<<<<<< HEAD:Libs/csv reader.c
     file = fopen("data2.csv", "r");
+=======
+    
+    file = fopen("file.csv", "r");
+>>>>>>> d2253bb427b2084aa09423dc9270c68727968ba0:Libs/sort lib/csv reader.c
     if(!file){
         puts("Invalid file! 666\n");
         exit(666);
