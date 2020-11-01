@@ -15,9 +15,7 @@ int main(){
     FILE *file;
     CSV csv;
     
-    
-    
-    file = fopen("file.csv", "r");
+    file = fopen("data2.csv", "r");
     if(!file){
         puts("Invalid file! 666\n");
         exit(666);
@@ -38,15 +36,14 @@ void readCsv(FILE *f, CSV *c){
     
     while(fgets(texto, 100, f)) {
         texto[strlen(texto) - 1] = '\0';
-        printf("%s, ", texto);
         word = strtok(texto, ",");
         while(word){
             c -> array[words_amount] = word;
             word = strtok(NULL, ",");
             words_amount++;
         }
-        puts("");
-        //printArray(*c, words_amount);
+        printArray(*c, words_amount);
+        words_amount = 0;
     }
 }
 
