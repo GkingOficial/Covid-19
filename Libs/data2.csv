@@ -1,21 +1,51 @@
-﻿Gender,NameSet,City
-female,Brazil,"São Paulo"
-female,Brazil,"Duque de Caxias"
-male,Brazil,Serra
-male,Brazil,"São Paulo"
-female,Brazil,Guarulhos
-female,Brazil,Salvador
-male,Brazil,Ourinhos
-female,Brazil,"São Paulo"
-female,Brazil,Caraguatatuba
-female,Brazil,"Belo Horizonte"
-male,Brazil,Campinas
-male,Brazil,"Santa Luzia"
-male,Brazil,"São José dos Campos"
-male,Brazil,Queimados
-female,Brazil,Indaiatuba
-male,Brazil,Curitiba
-male,Brazil,"Belo Horizonte"
-male,Brazil,"São Bernardo do Campo"
-female,Brazil,Jacareí
-female,Brazil,"Duque de Caxias"
+﻿NameSet,Gender,City,ZipCode
+Brazil,male,"Nova Iguaçu",26041-610
+Brazil,male,Jaú,17212-340
+Brazil,female,Cruzeiro,70650-152
+Brazil,female,Criciúma,88815-670
+Brazil,male,"Santo André",09180-300
+Brazil,male,"Porto Velho",78908-740
+Brazil,male,"São Paulo",02224-210
+Brazil,female,"São Paulo",03667-070
+Brazil,female,Jandira,06640-025
+Brazil,male,Maracanaú,61921-010
+Brazil,female,Carpina,55819-705
+Brazil,male,Pirassununga,13632-360
+Brazil,female,Cataguases,36772-364
+Brazil,male,Caruaru,55038-725
+Brazil,female,Tubarão,88703-300
+Brazil,male,Sarandi,87114-620
+Brazil,male,Americana,13472-470
+Brazil,male,"São Paulo",05831-240
+Brazil,male,"Santo André",09190-150
+Brazil,male,Curitiba,80220-030
+Brazil,male,"São Lourenço da Mata",54720-650
+Brazil,male,Castanhal,68746-670
+Brazil,male,Cruzeiro,70648-103
+Brazil,male,"Itapecerica da Serra",06871-200
+Brazil,male,"Praia Grande",11707-460
+Brazil,male,Lins,16402-659
+Brazil,female,"Belo Horizonte",31250-010
+Brazil,female,"São Paulo",03588-000
+Brazil,male,"Porto Velho",78902-070
+Brazil,male,"Juiz de Fora",36088-150
+Brazil,female,Hortolândia,13188-286
+Brazil,female,"Sete Lagoas",35703-359
+Brazil,male,Passos,37904-194
+Brazil,male,"Ribeirão das Neves",33927-017
+Brazil,male,"Santa Bárbara D'Oeste",13458-452
+Brazil,male,Ananindeua,67040-720
+Brazil,male,Blumenau,89046-230
+Brazil,female,"Cachoeira do Sul",96505-835
+Brazil,female,Natal,59054-500
+Brazil,female,Tubarão,88701-555
+Brazil,male,Salvador,40355-610
+Brazil,male,Blumenau,89010-305
+Brazil,female,"São Paulo",03388-110
+Brazil,female,"Nova Iguaçu",26210-230
+Brazil,female,Pindamonhangaba,12442-090
+Brazil,female,Luziânia,72800-290
+Brazil,female,Barreiras,47807-620
+Brazil,male,"Três Rios",25805-310
+Brazil,male,Leme,13612-272
+Brazil,female,Osasco,06030-192
