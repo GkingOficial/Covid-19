@@ -6,7 +6,7 @@ typedef struct{
     int row;
     int column;
     char **array;
-} CSV;
+}CSV;
 
 void readCsv(FILE *, CSV *);
 void printArray(CSV , int );
@@ -29,17 +29,30 @@ void readCsv(FILE *f, CSV *c){
     
     c -> array = NULL;
     c -> array = (char **)malloc(sizeof(char *) * words_amount);
+    // Talisson, por que aqui você não está alocando nada? words_amount deveria ter a quantidade de colunas que estaríamos trabalhando na nossa tabela do CSV não?
+    
     if(!c -> array){
         puts("Error allocating memory! 999");
         exit(999);
     }
     
-    while(fgets(texto, 100, f)) {
+    while(fgets(texto, 34, f)) {
+        // A função fgets coloca o '\0' automaticamente
+        // Mas no caso tu colocou para substituir o '\n' né?
+        
+        printf("%s", texto);
+        printf("Aqui está => %c <==\n", texto[strlen(texto) - 1]);
         texto[strlen(texto) - 1] = '\0';
-        word = strtok(texto, ",");
+        printf("%s", texto);
+
+        printf("\n\n");
+        word = strtok(texto, ", ");
+
         while(word){
+            puts(word);
+
             c -> array[words_amount] = word;
-            word = strtok(NULL, ",");
+            word = strtok(NULL, ", ");
             words_amount++;
         }
         printArray(*c, words_amount);
@@ -52,5 +65,5 @@ void printArray(CSV csv, int amount){
     for(int i = 0; i < amount; i++){
         printf("%s, ", csv.array[i]);
     }
-    puts("\b\b|");
+    puts("\b\b|\n\n\n\n\n");
 }
