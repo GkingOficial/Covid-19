@@ -15,7 +15,7 @@ int main(){
     FILE *file;
     CSV csv;
     
-    file = fopen("data2.csv", "r");
+    file = fopen("file.csv", "r");
     if(!file){
         puts("Invalid file! 666\n");
         exit(666);
@@ -36,7 +36,7 @@ void readCsv(FILE *f, CSV *c){
         exit(999);
     }
     
-    while(fgets(texto, 500, f)) {
+    while(fgets(texto, 100, f)) {
         // A função fgets coloca o '\0' automaticamente
         // Mas no caso tu colocou para substituir o '\n' né?
         
@@ -46,13 +46,13 @@ void readCsv(FILE *f, CSV *c){
         printf("%s", texto);
 
         printf("\n\n");
-        word = strtok(texto, ", ");
+        word = strtok(texto, ",");
 
         while(word){
             puts(word);
 
             c -> array[words_amount] = word;
-            word = strtok(NULL, ", ");
+            word = strtok(NULL, ",");
             words_amount++;
         }
         printArray(*c, words_amount);
