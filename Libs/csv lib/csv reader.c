@@ -29,7 +29,6 @@ void readCsv(FILE *f, CSV *c){
     
     c -> array = NULL;
     c -> array = (char **)malloc(sizeof(char *) * words_amount);
-    // Talisson, por que aqui você não está alocando nada? words_amount deveria ter a quantidade de colunas que estaríamos trabalhando na nossa tabela do CSV não?
     
     if(!c -> array){
         puts("Error allocating memory! 999");
@@ -37,25 +36,17 @@ void readCsv(FILE *f, CSV *c){
     }
     
     while(fgets(texto, 100, f)) {
-        // A função fgets coloca o '\0' automaticamente
-        // Mas no caso tu colocou para substituir o '\n' né?
         
-        printf("%s", texto);
-        printf("Aqui está o \\n => %c <==\n", texto[strlen(texto) - 1]);
         texto[strlen(texto) - 1] = '\0';
-        printf("%s", texto);
-
-        printf("\n\n");
         word = strtok(texto, ",");
 
         while(word){
-            puts(word);
-
             c -> array[words_amount] = word;
             word = strtok(NULL, ",");
             words_amount++;
         }
-        printArray(*c, words_amount);
+        
+        printf("%s, %s, %s%c", c->array[0], c->array[1], c->array[2], '\n');
         words_amount = 0;
     }
 }
