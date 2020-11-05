@@ -3,7 +3,7 @@
 
 int main(){
   FILE *f = fopen("file.csv", "r");
-  int rows = 0, columns = 1;
+  int rows = 1, columns = 1;
   char c;
   
   while(c = getc(f), c != '\n'){
@@ -16,8 +16,7 @@ int main(){
     if(c == '\n'){
       rows++;
     }
-    //printf("*%c, ", c);
   }
 
-  printf("\nRows: %d\nColumns: %d\n", rows, columns);
+  printf("Rows: %d\nColumns: %d\n", rows, columns);
 }
