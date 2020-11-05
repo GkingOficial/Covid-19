@@ -2,6 +2,5 @@
 #include <stdlib.h>
 
 int main(){
-  char c;
-  while(c = getch(file) != '\n');
+  printf("Hello world\n");
 }
