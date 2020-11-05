@@ -5,56 +5,57 @@
 typedef struct{
     int row;
     int column;
-    char **array;
+    char ***array;
 }CSV;
 
-void readCsv(FILE *, CSV *);
-void printArray(CSV , int );
+void readCSV(FILE *, CSV *);
+void printCSV(CSV);
 
 int main(){
     FILE *file;
     CSV csv;
     
     file = fopen("file.csv", "r");
-    if(!file){
-        puts("Invalid file! 666\n");
-        exit(666);
-    }
-    readCsv(file, &csv);
+    readCSV(file, &csv);
+    printCSV(csv);
 }
 
-void readCsv(FILE *f, CSV *c){
+void readCSV(FILE *f, CSV *c){
     char texto[100], *word;
-    int i = 0, words_amount = 0;
+    int i, j, column = 0, row = 0;
     
     c -> array = NULL;
-    c -> array = (char **)malloc(sizeof(char *) * words_amount);
-    
-    if(!c -> array){
-        puts("Error allocating memory! 999");
-        exit(999);
+    c -> array = (char ***)malloc(sizeof(char **) * 4);
+    for(i=0;i<4;i++) {
+        c->array[i] = (char **)malloc(sizeof(char *) * 3);
+        for(j=0;j<3;j++) {
+            c->array[i][j] = (char *)malloc(sizeof(char) * 40);
+        }
     }
-    
+
     while(fgets(texto, 100, f)) {
         
         texto[strlen(texto) - 1] = '\0';
+        //puts(texto);
         word = strtok(texto, ",");
 
-        while(word){
-            c -> array[words_amount] = word;
+        while(word) {
+            //puts(word);
+            strcpy(c->array[row][column], word);
+
             word = strtok(NULL, ",");
-            words_amount++;
+            column++;
         }
-        
-        printf("%s, %s, %s%c", c->array[0], c->array[1], c->array[2], '\n');
-        words_amount = 0;
+        column = 0;
+        row++;
     }
 }
 
-void printArray(CSV csv, int amount){
-    printf("|");
-    for(int i = 0; i < amount; i++){
-        printf("%s, ", csv.array[i]);
+void printCSV(CSV csv){
+    for(int i = 0; i < 4; i++) {
+        for(int j = 0; j < 3; j++) {
+            printf("%s, ", csv.array[i][j]);
+        }
+        printf("\b\b\n");
     }
-    puts("\b\b|\n\n\n\n\n");
 }
