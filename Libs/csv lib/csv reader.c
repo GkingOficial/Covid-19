@@ -8,24 +8,39 @@ typedef struct{
     char ***array;
 }CSV;
 
+void setRowsAndColumns(FILE *f, CSV *csv);
 void readCSV(FILE *, CSV *);
 void printCSV(CSV);
-int returnRows(CSV);
-int returnColumns(CSV);
-int lengthOfRows(FILE * f);
-int lengthOfColumns(FILE * f);
+
 
 int main(){
     FILE *file;
     CSV csv;
     
     file = fopen("file.csv", "r");
-    // readCSV(file, &csv);
-    // printCSV(csv);
+    setRowsAndColumns(file, &csv);
+    file = fopen("file.csv", "r");
+    readCSV(file, &csv);
+    
+    printCSV(csv);
+}
 
-    // printf("Rows: %d%cColumns: %d%c", returnRows(csv), '\n', returnColumns(csv), '\n');
-    printf("Length of columns: %i%c", lengthOfColumns(file), '\n');
-    printf("Length of rows: %i%c", lengthOfRows(file), '\n');
+void setRowsAndColumns(FILE *f, CSV *csv) {
+    char c;
+    int rows = 1, columns = 1;
+
+    while(c = getc(f), c != '\n'){
+        if(c == ','){
+            columns++;
+        }
+    }
+    while(c = getc(f), !feof(f)){
+        if(c == '\n'){
+            rows++;
+        }
+    }
+    csv->column = columns;
+    csv->row = rows;
 }
 
 void readCSV(FILE *f, CSV *c){
@@ -33,9 +48,9 @@ void readCSV(FILE *f, CSV *c){
     int i, j, column, row;
     
     c -> array = NULL;
-    c -> array = (char ***)malloc(sizeof(char **) * 4);
+    c -> array = (char ***)malloc(sizeof(char **) * c->row);
     for(i=0;i<4;i++) {
-        c->array[i] = (char **)malloc(sizeof(char *) * 3);
+        c->array[i] = (char **)malloc(sizeof(char *) * c->column);
     }
 
     row = 0;
@@ -55,8 +70,6 @@ void readCSV(FILE *f, CSV *c){
         }
         row++;
     }
-    c->column = column;
-    c->row = row;
 }
 
 void printCSV(CSV csv){
@@ -68,35 +81,3 @@ void printCSV(CSV csv){
     }
 }
 
-int returnRows(CSV csv) {
-    return csv.row;
-}
-
-int returnColumns(CSV csv) {
-    return csv.column;
-}
-
-int lengthOfRows(FILE *f) {
-    char texto[100];
-    int length = 0;
-
-    while(fgets(texto, 100, f)) {
-        texto[strlen(texto) - 1] = '\0';
-        length++;
-    }
-    return length;
-}
-
-int lengthOfColumns(FILE *f) {
-    char texto[100];
-    int i, length = 1;
-
-    fgets(texto, 100, f);
-    texto[strlen(texto) - 1] = '\0';
-    for(i=0; i<strlen(texto);i++) {
-        if(texto[i] == ',') {
-            length++;
-        }
-    }
-    return length;
-}
