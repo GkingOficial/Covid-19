@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(){
-  FILE *f = fopen('file.csv', 'r');
+  FILE *f = fopen("file.csv", "r");
   int row = 0, column = 0;
   char c;
   
@@ -12,7 +12,7 @@ int main(){
     }
 
     if(ch == '\n'){
-
+      column++;
     }
   }
 
