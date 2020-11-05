@@ -25,6 +25,7 @@ int main(){
 
     // printf("Rows: %d%cColumns: %d%c", returnRows(csv), '\n', returnColumns(csv), '\n');
     printf("Length of columns: %i%c", lengthOfColumns(file), '\n');
+    printf("Length of rows: %i%c", lengthOfRows(file), '\n');
 }
 
 void readCSV(FILE *f, CSV *c){
@@ -76,7 +77,14 @@ int returnColumns(CSV csv) {
 }
 
 int lengthOfRows(FILE *f) {
+    char texto[100];
+    int length = 0;
 
+    while(fgets(texto, 100, f)) {
+        texto[strlen(texto) - 1] = '\0';
+        length++;
+    }
+    return length;
 }
 
 int lengthOfColumns(FILE *f) {
