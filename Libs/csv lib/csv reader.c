@@ -10,14 +10,21 @@ typedef struct{
 
 void readCSV(FILE *, CSV *);
 void printCSV(CSV);
+int returnRows(CSV);
+int returnColumns(CSV);
+int lengthOfRows(FILE * f);
+int lengthOfColumns(FILE * f);
 
 int main(){
     FILE *file;
     CSV csv;
     
     file = fopen("file.csv", "r");
-    readCSV(file, &csv);
-    printCSV(csv);
+    // readCSV(file, &csv);
+    // printCSV(csv);
+
+    // printf("Rows: %d%cColumns: %d%c", returnRows(csv), '\n', returnColumns(csv), '\n');
+    printf("Length of columns: %i%c", lengthOfColumns(file), '\n');
 }
 
 void readCSV(FILE *f, CSV *c){
@@ -58,4 +65,30 @@ void printCSV(CSV csv){
         }
         printf("\b\b\n");
     }
+}
+
+int returnRows(CSV csv) {
+    return csv.row;
+}
+
+int returnColumns(CSV csv) {
+    return csv.column;
+}
+
+int lengthOfRows(FILE *f) {
+
+}
+
+int lengthOfColumns(FILE *f) {
+    char texto[100];
+    int i, length = 1;
+
+    fgets(texto, 100, f);
+    texto[strlen(texto) - 1] = '\0';
+    for(i=0; i<strlen(texto);i++) {
+        if(texto[i] == ',') {
+            length++;
+        }
+    }
+    return length;
 }
