@@ -77,7 +77,7 @@ void printCSV(CSV csv){
         for(int j = 0; j < csv.column; j++) {
             printf("%s, ", csv.array[i][j]);
         }
-        printf("\b\b\n");
+        puts("\b\b");
     }
 }
 
