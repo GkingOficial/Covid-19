@@ -2,7 +2,6 @@
 #include<stdlib.h>
 
 typedef struct {
-    // cada inteiro representando uma porcentagem
     int muitoMal;
     int mal;
     int neutro;
@@ -10,7 +9,6 @@ typedef struct {
     int muitoBem;
 }ESTADO_PSICOLOGICO;
 typedef struct {
-    // cada inteiro representando uma porcentagem
     int muitoMal;
     int mal;
     int neutro;
@@ -18,27 +16,34 @@ typedef struct {
     int muitoBem;
 }QUALIDADE_DA_ALIMENTACAO;
 typedef struct {
-    // cada inteiro representando uma porcentagem
     int muitoMal;
     int mal;
-    int neutro;
     int bem;
     int muitoBem;
 }QUALIDADE_DO_SONO;
 typedef struct {
-    // cada inteiro representando uma porcentagem
     int muitoMal;
     int mal;
-    int neutro;
     int bem;
     int muitoBem;
 }NIVEL_DE_SEDENTARISMO;
 
 typedef struct {
-    char Estado[30];
-    int casos;
+    char estado[30];
+    int numeroDeCasos;
+    int estadoPsicologicoMaisEscolhido;
+    int alimentacaoMaisEscolhido;
+    int sonoMaisEscolhido;
+    int sedentarismoMaisEscolhido;
     ESTADO_PSICOLOGICO psicologico;
     QUALIDADE_DA_ALIMENTACAO alimentacao;
     QUALIDADE_DO_SONO sono;
     NIVEL_DE_SEDENTARISMO sedentarismo;
-}NODE;
+}NODE1;
+
+typedef struct {
+    char estado[30];
+    int numeroDeCasos;
+    int estadoPsicologicoMaisEscolhido;
+    ESTADO_PSICOLOGICO psicologico;
+}NODE2;
