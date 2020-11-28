@@ -143,7 +143,7 @@ void remocaoPorFusao(BINARY_TREE *tree) {
                 aux = *tree;
                 *tree = (*tree)->left;
             }
-            free(aux);
+        free(aux);
     }
 }
 
@@ -172,6 +172,6 @@ void remocaoPorCopia(BINARY_TREE *tree) {
                     aux->father->left->father = aux->father;
                 }
             }
-            free(aux);
+        free(aux);
     }
 }
