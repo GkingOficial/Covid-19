@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#define TRUE 1
 typedef struct node {
     struct node *left;
     struct node *right;
@@ -11,7 +12,7 @@ typedef NODE *BINARY_TREE;
 void makeTree(BINARY_TREE *tree, int value);
 void setLeft(BINARY_TREE tree, int value);
 void setRight(BINARY_TREE tree, int value);
-int value(BINARY_TREE tree);
+int valueOfNode(BINARY_TREE tree);
 BINARY_TREE left(BINARY_TREE tree);
 BINARY_TREE right(BINARY_TREE tree);
 BINARY_TREE father(BINARY_TREE tree);
@@ -19,8 +20,11 @@ BINARY_TREE brother(BINARY_TREE tree);
 int isLeft(BINARY_TREE tree);
 int isRight(BINARY_TREE tree);
 
+void insertElement(BINARY_TREE *tree, int value);
+
 int main() {
-    
+    BINARY_TREE tree;
+    makeTree(&tree, 10);
 }
 
 void makeTree(BINARY_TREE *tree, int value) {
@@ -57,7 +61,7 @@ void setRight(BINARY_TREE tree, int value) {
     tree->right->father = tree;
 }
 
-int value(BINARY_TREE tree) {
+int valueOfNode(BINARY_TREE tree) {
     return tree->value;
 }
 
@@ -95,4 +99,79 @@ int isRight(BINARY_TREE tree) {
     if (father(tree))
         return (!isleft(tree));
     return (0);
+}
+
+void insertElement(BINARY_TREE *tree, int value) {
+    if (!(*tree))
+        makeTree(tree, value);
+    else {
+        BINARY_TREE father = *tree;
+        do {
+            if (value < valueOfNode(father)) {
+                if(father->left)
+                    father = father->left;
+                else {
+                    setLeft(father, value);
+                    break;
+                }
+            } else {
+                if(father->right)
+                    father = father->right;
+                else {
+                    setRight(father, value);
+                    break;
+                }
+            }
+        } while(TRUE);
+    }
+}
+
+void remocaoPorFusao(BINARY_TREE *tree) {
+    if (*tree) {
+        BINARY_TREE aux = *tree;
+        if (!((*tree)->right))
+            *tree = (*tree)->left;
+        else
+            if ((*tree)->left == NULL)
+                *tree = (*tree)->right;
+            else {
+                aux = (*tree)->left;
+                while (aux->right)
+                aux = aux->right;
+                aux->right = (*tree)->right;
+                aux->right ->father= aux;
+                aux = *tree;
+                *tree = (*tree)->left;
+            }
+            free(aux);
+    }
+}
+
+void remocaoPorCopia(BINARY_TREE *tree) {
+    if (*tree) {
+        BINARY_TREE aux = *tree;
+        if ((*tree)->right == NULL) {
+            *tree = (*tree)->left;
+            (*tree)->father=NULL;
+        } else
+            if ((*tree)->left == NULL) {
+                *tree = (*tree)->right;
+                (*tree)->father=NULL;
+            } else {
+                aux = (*tree)->right;
+                while (aux->left!=NULL)
+                    aux = aux->left;
+
+                (*tree)->value = aux->value;
+
+                if (aux->father == *tree) {
+                    aux->father->right = aux->right;
+                    aux->father->right->father = aux->father;
+                } else {
+                    aux->father->left = aux->right;
+                    aux->father->left->father = aux->father;
+                }
+            }
+            free(aux);
+    }
 }
