@@ -23,7 +23,6 @@ int isRight(BINARY_TREE tree);
 
 void insertElement(BINARY_TREE *tree, int value);
 void percursoEmLargura(BINARY_TREE *tree);
-void printLeftAndRight(BINARY_TREE tree);
 
 void remocaoPorFusao(BINARY_TREE *tree);
 void remocaoPorCopia(BINARY_TREE *tree);

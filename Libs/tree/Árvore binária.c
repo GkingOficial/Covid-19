@@ -119,18 +119,17 @@ void percursoEmLargura(BINARY_TREE *tree) {
     if(*tree) {
         int i;
         BINARY_TREE direita, esquerda, father = *tree;
-        printf("%d...", (father)->value);
+        LINKED_LINE *filas = (LINKED_LINE *)malloc(sizeof(LINKED_LINE) * 1);
 
-        
-    }
-}
+        insertElementIntoLine(filas[0], father->value);
 
-void printLeftAndRight(BINARY_TREE tree) {
-    if(left(tree)) {
-        printf("%d...", left(tree)->value);
-    }
-    if(right(tree)) {
-        printf("%d...", right(tree)->value);
+        filas = (LINKED_LINE *)realloc(filas, sizeof(LINKED_LINE) * 2);
+        insertElementIntoLine(filas[1], left(father));
+        insertElementIntoLine(filas[1], right(father));
+
+        filas = (LINKED_LINE *)realloc(filas, sizeof(LINKED_LINE) * 3);
+        insertElementIntoLine(filas[2], left(father));
+        insertElementIntoLine(filas[2], right(father));
     }
 }
 
