@@ -141,6 +141,7 @@ void insertElement(BINARY_TREE *tree, int value) {
     }
 }
 
+// Usar filas para resolver o problema
 void percursoEmLargura(BINARY_TREE *tree) {
     if(*tree) {
         int i;
