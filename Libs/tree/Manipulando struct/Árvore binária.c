@@ -51,24 +51,30 @@ void setLeft(BINARY_TREE tree, VALUES values) {
     tree->left->father = tree;
 }
 
-void setRight(BINARY_TREE tree, int value) {
+void setRight(BINARY_TREE tree, VALUES values) {
     tree->right = (BINARY_TREE) malloc (sizeof (NODE));
     if (!(tree->right)) {
         printf("Erro! Nao existe memoria disponivel!");
         exit (1);
     }
-    tree->right->value = value;
-    tree->right->right = NULL;
-    tree->right->left = NULL;
+    strcpy(tree->left->informations.estado, values.estado);
+
+    tree->right->informations.casos = values.casos;
+    tree->right->informations.saude.estadoPsicologico = values.saude.estadoPsicologico;
+    tree->right->informations.saude.qualidadeDaAlimentacao = values.saude.qualidadeDaAlimentacao;
+    tree->right->informations.saude.qualidadeDoSono = values.saude.qualidadeDoSono;
+    tree->right->informations.saude.sedentarismo = values.saude.sedentarismo;
+
+    tree->right->right = tree->right->left = NULL;
     tree->right->father = tree;
 }
 
-int valueOfNode(BINARY_TREE tree) {
+VALUES valueOfNode(BINARY_TREE tree) {
     if(tree == NULL) {
         printf("\nThe tree is empty!\n\n");
         exit(2);
     }
-    return tree->value;
+    return tree->informations;
 }
 
 BINARY_TREE left(BINARY_TREE tree) {
@@ -107,9 +113,9 @@ int isRight(BINARY_TREE tree) {
     return (0);
 }
 
-void insertElement(BINARY_TREE *tree, int value) {
+void insertElement(BINARY_TREE *tree, VALUES values) {
     if (!(*tree))
-        makeTree(tree, value);
+        makeTree(tree, values);
     else {
         BINARY_TREE father = *tree;
         do {
