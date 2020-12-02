@@ -27,7 +27,12 @@ void removalByCopy(BINARY_TREE *tree);
 
 // Raiz - Esquerda - Direita
 void preOrderRoute(BINARY_TREE tree);
-// Esquerda - Raíz - Direita
-void routeInOder(BINARY_TREE tree);
-// Raiz - Esquerda - Direita
+// Esquerda - Direita - Raíz
 void postOrderRoute(BINARY_TREE tree);
+
+
+// Esquerda - Raíz - Direita
+void ascendingOrder(BINARY_TREE tree);
+// Direita - Raíz - Esquerda
+void descendingOrder(BINARY_TREE tree);
+

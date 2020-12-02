@@ -12,9 +12,11 @@ int main() {
 
     preOrderRoute(tree);
     printf("\n");
-    routeInOder(tree);
-    printf("\n");
     postOrderRoute(tree);
+    printf("\n");
+    ascendingOrder(tree);
+    printf("\n");
+    descendingOrder(tree);
     printf("\n");
 }
 
@@ -179,18 +181,26 @@ void preOrderRoute(BINARY_TREE tree) {
     }
 }
 
-void routeInOder(BINARY_TREE tree) {
-    if (tree) {
-        routeInOder(left(tree));
-        printf("%d...", valueOfNode(tree));
-        routeInOder(right(tree));
-    }
-}
-
 void postOrderRoute(BINARY_TREE tree) {
     if (tree) {
         postOrderRoute(left(tree));
         postOrderRoute(right(tree));
         printf("%d...", valueOfNode(tree));
+    }
+}
+
+void ascendingOrder(BINARY_TREE tree) {
+    if (tree) {
+        ascendingOrder(left(tree));
+        printf("%d...", valueOfNode(tree));
+        ascendingOrder(right(tree));
+    }
+}
+
+void descendingOrder(BINARY_TREE tree) {
+    if(tree) {
+        descendingOrder(right(tree));
+        printf("%d...", valueOfNode(tree));
+        descendingOrder(left(tree));
     }
 }
