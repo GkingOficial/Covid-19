@@ -18,17 +18,17 @@ typedef struct node {
 }NODE;
 typedef NODE *BINARY_TREE;
 
-void makeTree(BINARY_TREE *tree, VALUES informations);
-void setLeft(BINARY_TREE tree, VALUES informations);
-void setRight(BINARY_TREE tree, VALUES informations);
-int valueOfNode(BINARY_TREE tree);
+void makeTree(BINARY_TREE *tree, VALUES values);
+void setLeft(BINARY_TREE tree, VALUES values);
+void setRight(BINARY_TREE tree, VALUES values);
+VALUES valueOfNode(BINARY_TREE tree);
 BINARY_TREE left(BINARY_TREE tree);
 BINARY_TREE right(BINARY_TREE tree);
 BINARY_TREE father(BINARY_TREE tree);
 BINARY_TREE brother(BINARY_TREE tree);
 int isLeft(BINARY_TREE tree);
 int isRight(BINARY_TREE tree);
-void insertElement(BINARY_TREE *tree, int value);
+void insertElement(BINARY_TREE *tree, VALUES values);
 
 void removalByFusion(BINARY_TREE *tree);
 void removalByCopy(BINARY_TREE *tree);

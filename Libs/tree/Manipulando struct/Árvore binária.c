@@ -1,16 +1,10 @@
 #include"./Árvore binária.h"
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
 
 int main() {
     BINARY_TREE tree;
-    makeTree(&tree, 46);
-    insertElement(&tree, 15);
-    insertElement(&tree, 9);
-    insertElement(&tree, 45);
-    insertElement(&tree, 100);
-    insertElement(&tree, 78);
-    insertElement(&tree, 29);
 
     preOrderRoute(tree);
     printf("\n");
@@ -22,25 +16,38 @@ int main() {
     printf("\n");
 }
 
-void makeTree(BINARY_TREE *tree, int value) {
+void makeTree(BINARY_TREE *tree, VALUES values) {
     *tree = (BINARY_TREE) malloc (sizeof (NODE));
     if (!(*tree)) {
         printf("Erro! Nao existe memoria disponivel!");
         exit (1);
     }
-    (*tree)->value = value;
+    strcpy((*tree)->informations.estado, values.estado);
+
+    (*tree)->informations.casos = values.casos;
+    (*tree)->informations.saude.estadoPsicologico = values.saude.estadoPsicologico;
+    (*tree)->informations.saude.qualidadeDaAlimentacao = values.saude.qualidadeDaAlimentacao;
+    (*tree)->informations.saude.qualidadeDoSono = values.saude.qualidadeDoSono;
+    (*tree)->informations.saude.sedentarismo = values.saude.sedentarismo;
+
     (*tree)->left = (*tree)->father = (*tree)->right = NULL;
 }
 
-void setLeft(BINARY_TREE tree, int value) {
+void setLeft(BINARY_TREE tree, VALUES values) {
     tree->left = (BINARY_TREE) malloc (sizeof (NODE));
     if (!(tree->left)) {
         printf("Erro! Nao existe memoria disponivel!");
         exit (1);
     }
-    tree->left->value = value;
-    tree->left->left = NULL;
-    tree->left->right = NULL;
+    strcpy(tree->left->informations.estado, values.estado);
+
+    tree->left->informations.casos = values.casos;
+    tree->left->informations.saude.estadoPsicologico = values.saude.estadoPsicologico;
+    tree->left->informations.saude.qualidadeDaAlimentacao = values.saude.qualidadeDaAlimentacao;
+    tree->left->informations.saude.qualidadeDoSono = values.saude.qualidadeDoSono;
+    tree->left->informations.saude.sedentarismo = values.saude.sedentarismo;
+
+    tree->left->left = tree->left->right = NULL;
     tree->left->father = tree;
 }
 
