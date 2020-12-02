@@ -7,8 +7,17 @@ int main() {
     setLeft(tree, 7);
     setRight(tree, 12);
 
-    percursoEmLargura(&tree);
-    // printLeftAndRight(tree);
+    setLeft(left(tree), 13);
+    setRight(left(tree), 15);
+    setLeft(right(tree), 21);
+    setRight(right(tree), 22);
+
+    preOrderRoute(tree);
+    printf("\n");
+    routeInOder(tree);
+    printf("\n");
+    postOrderRoute(tree);
+    printf("\n");
 }
 
 void makeTree(BINARY_TREE *tree, int value) {
@@ -114,26 +123,7 @@ void insertElement(BINARY_TREE *tree, int value) {
     }
 }
 
-// Usar filas para resolver o problema
-void percursoEmLargura(BINARY_TREE *tree) {
-    if(*tree) {
-        int i;
-        BINARY_TREE direita, esquerda, father = *tree;
-        LINKED_LINE *filas = (LINKED_LINE *)malloc(sizeof(LINKED_LINE) * 1);
-
-        insertElementIntoLine(filas[0], father->value);
-
-        filas = (LINKED_LINE *)realloc(filas, sizeof(LINKED_LINE) * 2);
-        insertElementIntoLine(filas[1], left(father));
-        insertElementIntoLine(filas[1], right(father));
-
-        filas = (LINKED_LINE *)realloc(filas, sizeof(LINKED_LINE) * 3);
-        insertElementIntoLine(filas[2], left(father));
-        insertElementIntoLine(filas[2], right(father));
-    }
-}
-
-void remocaoPorFusao(BINARY_TREE *tree) {
+void removalByFusion(BINARY_TREE *tree) {
     if (*tree) {
         BINARY_TREE aux = *tree;
         if (!((*tree)->right))
@@ -154,7 +144,7 @@ void remocaoPorFusao(BINARY_TREE *tree) {
     }
 }
 
-void remocaoPorCopia(BINARY_TREE *tree) {
+void removalByCopy(BINARY_TREE *tree) {
     if (*tree) {
         BINARY_TREE aux = *tree;
         if ((*tree)->right == NULL) {
@@ -180,5 +170,29 @@ void remocaoPorCopia(BINARY_TREE *tree) {
                 }
             }
         free(aux);
+    }
+}
+
+void preOrderRoute(BINARY_TREE tree) {
+    if (tree) {
+        printf("%d...", valueOfNode(tree));
+        preOrderRoute(left(tree));
+        preOrderRoute(right(tree));
+    }
+}
+
+void routeInOder(BINARY_TREE tree) {
+    if (tree) {
+        routeInOder(left(tree));
+        printf("%d...", valueOfNode(tree));
+        routeInOder(right(tree));
+    }
+}
+
+void postOrderRoute(BINARY_TREE tree) {
+    if (tree) {
+        postOrderRoute(left(tree));
+        postOrderRoute(right(tree));
+        printf("%d...", valueOfNode(tree));
     }
 }

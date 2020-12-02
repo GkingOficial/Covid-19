@@ -15,7 +15,7 @@ int isEmpty(LINKED_LINE line) {
 }
 
 void insertElementIntoLine(LINKED_LINE line, int value) {
-    NODE *alocado = (NODE *)malloc(sizeof(NODE));
+    LINE_NODE *alocado = (LINE_NODE *)malloc(sizeof(LINE_NODE));
     if(!alocado) {
         printf("\nNot storage enough\n\n");
         exit(1);
@@ -45,7 +45,7 @@ void deleteFirstElement(LINKED_LINE line) {
         printf("\nThe line is empty\n\n");
         exit(2);
     } else {
-        NODE *aux = line->firstNode;
+        LINE_NODE *aux = line->firstNode;
         line->firstNode = line->firstNode->next;
         if(aux == line->lastNode)
             line->lastNode = line->firstNode;
@@ -61,7 +61,7 @@ int returnAndDeleteElement(LINKED_LINE line) {
         exit(2);
     } else {
         value = line->firstNode->value;
-        NODE *aux = line->firstNode;
+        LINE_NODE *aux = line->firstNode;
         line->firstNode = line->firstNode->next;
         if(aux == line->lastNode)
             line->lastNode = line->firstNode;
@@ -91,7 +91,7 @@ void destroyLine2(LINKED_LINE line) {
         printf("\nThe line is empty\n\n");
         exit(2);
     } else {
-        NODE *aux = line->firstNode;
+        LINE_NODE *aux = line->firstNode;
         while(aux) {
             line->firstNode = aux->next;
             free(aux);

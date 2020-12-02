@@ -1,12 +1,12 @@
 #include<stdio.h>
 #include<stdlib.h>
-typedef struct node {
+typedef struct line_node {
     int value;
-    struct node * next;
-}NODE;
+    struct line_node * next;
+} LINE_NODE;
 typedef struct {
-    NODE *firstNode;
-    NODE *lastNode;
+    LINE_NODE *firstNode;
+    LINE_NODE *lastNode;
     int length;
 }HEAD_NODE;
 typedef HEAD_NODE *LINKED_LINE ;
