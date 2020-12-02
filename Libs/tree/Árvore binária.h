@@ -25,6 +25,9 @@ void insertElement(BINARY_TREE *tree, int value);
 void removalByFusion(BINARY_TREE *tree);
 void removalByCopy(BINARY_TREE *tree);
 
+// Raiz - Esquerda - Direita
 void preOrderRoute(BINARY_TREE tree);
+// Esquerda - Raíz - Direita
 void routeInOder(BINARY_TREE tree);
+// Raiz - Esquerda - Direita
 void postOrderRoute(BINARY_TREE tree);

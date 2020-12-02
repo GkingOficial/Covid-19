@@ -2,15 +2,13 @@
 
 int main() {
     BINARY_TREE tree;
-    makeTree(&tree, 9);
-
-    setLeft(tree, 7);
-    setRight(tree, 12);
-
-    setLeft(left(tree), 13);
-    setRight(left(tree), 15);
-    setLeft(right(tree), 21);
-    setRight(right(tree), 22);
+    makeTree(&tree, 46);
+    insertElement(&tree, 15);
+    insertElement(&tree, 9);
+    insertElement(&tree, 45);
+    insertElement(&tree, 100);
+    insertElement(&tree, 78);
+    insertElement(&tree, 29);
 
     preOrderRoute(tree);
     printf("\n");
