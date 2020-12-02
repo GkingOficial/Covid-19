@@ -4,7 +4,31 @@
 #include<string.h>
 
 int main() {
+    char stateName[] = "São Paulo";
     BINARY_TREE tree;
+    VALUES informationsDoEstado;
+    
+    strcpy(informationsDoEstado.estado, stateName);
+    
+    informationsDoEstado.saude.estadoPsicologico = 7;
+    informationsDoEstado.saude.qualidadeDaAlimentacao = 3;
+    informationsDoEstado.saude.qualidadeDoSono = 0;
+    informationsDoEstado.saude.sedentarismo = 10;
+
+    informationsDoEstado.casos = 46;
+    makeTree(&tree, informationsDoEstado);
+    informationsDoEstado.casos = 15;
+    insertElement(&tree, informationsDoEstado);
+    informationsDoEstado.casos = 9;
+    insertElement(&tree, informationsDoEstado);
+    informationsDoEstado.casos = 45;
+    insertElement(&tree, informationsDoEstado);
+    informationsDoEstado.casos = 100;
+    insertElement(&tree, informationsDoEstado);
+    informationsDoEstado.casos = 78;
+    insertElement(&tree, informationsDoEstado);
+    informationsDoEstado.casos = 29;
+    insertElement(&tree, informationsDoEstado);
 
     preOrderRoute(tree);
     printf("\n");
@@ -57,7 +81,7 @@ void setRight(BINARY_TREE tree, VALUES values) {
         printf("Erro! Nao existe memoria disponivel!");
         exit (1);
     }
-    strcpy(tree->left->informations.estado, values.estado);
+    strcpy(tree->right->informations.estado, values.estado);
 
     tree->right->informations.casos = values.casos;
     tree->right->informations.saude.estadoPsicologico = values.saude.estadoPsicologico;
@@ -119,18 +143,18 @@ void insertElement(BINARY_TREE *tree, VALUES values) {
     else {
         BINARY_TREE father = *tree;
         do {
-            if (value < valueOfNode(father)) {
+            if (values.casos < valueOfNode(father).casos) {
                 if(father->left)
                     father = father->left;
                 else {
-                    setLeft(father, value);
+                    setLeft(father, values);
                     break;
                 }
             } else {
                 if(father->right)
                     father = father->right;
                 else {
-                    setRight(father, value);
+                    setRight(father, values);
                     break;
                 }
             }
@@ -174,7 +198,13 @@ void removalByCopy(BINARY_TREE *tree) {
                 while (aux->left!=NULL)
                     aux = aux->left;
 
-                (*tree)->value = aux->value;
+                strcpy((*tree)->informations.estado, aux->informations.estado);
+
+                (*tree)->informations.casos = aux->informations.casos;
+                (*tree)->informations.saude.estadoPsicologico = aux->informations.saude.estadoPsicologico;
+                (*tree)->informations.saude.qualidadeDaAlimentacao = aux->informations.saude.qualidadeDaAlimentacao;
+                (*tree)->informations.saude.qualidadeDoSono = aux->informations.saude.qualidadeDoSono;
+                (*tree)->informations.saude.sedentarismo = aux->informations.saude.sedentarismo;
 
                 if (aux->father == *tree) {
                     aux->father->right = aux->right;
@@ -190,7 +220,7 @@ void removalByCopy(BINARY_TREE *tree) {
 
 void preOrderRoute(BINARY_TREE tree) {
     if (tree) {
-        printf("%d...", valueOfNode(tree));
+        printf("%d...", valueOfNode(tree).casos);
         preOrderRoute(left(tree));
         preOrderRoute(right(tree));
     }
@@ -200,14 +230,14 @@ void postOrderRoute(BINARY_TREE tree) {
     if (tree) {
         postOrderRoute(left(tree));
         postOrderRoute(right(tree));
-        printf("%d...", valueOfNode(tree));
+        printf("%d...", valueOfNode(tree).casos);
     }
 }
 
 void ascendingOrder(BINARY_TREE tree) {
     if (tree) {
         ascendingOrder(left(tree));
-        printf("%d...", valueOfNode(tree));
+        printf("%d...", valueOfNode(tree).casos);
         ascendingOrder(right(tree));
     }
 }
@@ -215,7 +245,7 @@ void ascendingOrder(BINARY_TREE tree) {
 void descendingOrder(BINARY_TREE tree) {
     if(tree) {
         descendingOrder(right(tree));
-        printf("%d...", valueOfNode(tree));
+        printf("%d...", valueOfNode(tree).casos);
         descendingOrder(left(tree));
     }
 }
