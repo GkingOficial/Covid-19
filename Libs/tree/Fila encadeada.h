@@ -1,5 +1,3 @@
-#include<stdio.h>
-#include<stdlib.h>
 typedef struct line_node {
     int value;
     struct line_node * next;

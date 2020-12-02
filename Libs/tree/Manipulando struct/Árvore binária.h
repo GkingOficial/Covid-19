@@ -1,15 +1,26 @@
 #define TRUE 1
+typedef struct {
+    int sedentarismo;
+    int qualidadeDoSono;
+    int qualidadeDaAlimentacao;
+    int estadoPsicologico;
+}HEALTH_INFORMATION;
+typedef struct {
+    char estado[30];
+    int casos;
+    HEALTH_INFORMATION saude;
+}VALUES;
 typedef struct node {
     struct node *left;
     struct node *right;
     struct node *father;
-    int value;
+    VALUES informations;
 }NODE;
 typedef NODE *BINARY_TREE;
 
-void makeTree(BINARY_TREE *tree, int value);
-void setLeft(BINARY_TREE tree, int value);
-void setRight(BINARY_TREE tree, int value);
+void makeTree(BINARY_TREE *tree, VALUES informations);
+void setLeft(BINARY_TREE tree, VALUES informations);
+void setRight(BINARY_TREE tree, VALUES informations);
 int valueOfNode(BINARY_TREE tree);
 BINARY_TREE left(BINARY_TREE tree);
 BINARY_TREE right(BINARY_TREE tree);

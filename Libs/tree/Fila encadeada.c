@@ -1,4 +1,6 @@
 #include"./Fila encadeada.h"
+#include<stdio.h>
+#include<stdlib.h>
 
 void createLine(LINKED_LINE *line) {
     (*line) = (HEAD_NODE *) malloc(sizeof(HEAD_NODE));
