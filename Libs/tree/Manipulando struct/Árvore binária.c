@@ -141,7 +141,7 @@ void insertElement(BINARY_TREE *tree, VALUES values) {
     if (!(*tree))
         makeTree(tree, values);
     else {
-        BINARY_TREE father = *tree;
+        BINARY_TREE father = (*tree);
         do {
             if (values.casos < valueOfNode(father).casos) {
                 if(father->left)
