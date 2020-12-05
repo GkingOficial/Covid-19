@@ -9,26 +9,18 @@ int main() {
     FILE *file;
     CSV csv;
     BINARY_TREE tree;
-    VALUES values;
-    int maconha = 90;
-    char variable[10];
-    // sprintf(variable, "%s", #varname);
-
     
-    // file = fopen("amostra de dados.csv", "r");
-    // setRowsAndColumns(file, &csv);
-    // file = fopen("amostra de dados.csv", "r");
-    // readCSV(file, &csv);
+    file = fopen("amostra de dados.csv", "r");
+    setRowsAndColumns(file, &csv);
+    file = fopen("amostra de dados.csv", "r");
+    readCSV(file, &csv);
     
-    // generateTree(&tree, &csv, 1);
-    // ascendingOrder(tree);
-    // printf("\n");
-    // descendingOrder(tree);
-    // printf("\n");
+    generateTree(&tree, &csv, 3);
+    ascendingOrder(tree);
+    printf("\n");
+    descendingOrder(tree);
+    printf("\n");
 
-    DUMP(maconha);
-    sprintf(stdin, "%s", variable);
-    puts(variable);
 }
 
 void setRowsAndColumns(FILE *file, CSV *csv) {
@@ -199,7 +191,25 @@ void insertElement(BINARY_TREE *tree, VALUES values, int organizate) {
     else {
         BINARY_TREE father = (*tree);
         do {
-            if (values.casos < valueOfNode(father).casos) {
+            int option = 0;
+            if(organizate == 1) {
+                if(values.casos < valueOfNode(father).casos)
+                    option = 1;
+            } else if(organizate == 2) {
+                if(values.saude.sedentarismo < valueOfNode(father).saude.sedentarismo)
+                    option = 1;
+            } else if(organizate == 3) {
+                if(values.saude.qualidadeDoSono < valueOfNode(father).saude.qualidadeDoSono)
+                    option = 1;
+            } else if(organizate == 4) {
+                if(values.saude.qualidadeDaAlimentacao < valueOfNode(father).saude.qualidadeDaAlimentacao)
+                    option = 1;
+            } else if(organizate == 5) {
+                if(values.saude.estadoPsicologico < valueOfNode(father).saude.estadoPsicologico)
+                    option = 1;
+            }
+
+            if(option) {
                 if(father->left)
                     father = father->left;
                 else {
@@ -293,7 +303,7 @@ void postOrderRoute(BINARY_TREE tree) {
 void ascendingOrder(BINARY_TREE tree) {
     if (tree) {
         ascendingOrder(left(tree));
-        printf("%d...", valueOfNode(tree).casos);
+        printf("%d...", valueOfNode(tree).saude.qualidadeDoSono);
         ascendingOrder(right(tree));
     }
 }
@@ -301,7 +311,7 @@ void ascendingOrder(BINARY_TREE tree) {
 void descendingOrder(BINARY_TREE tree) {
     if(tree) {
         descendingOrder(right(tree));
-        printf("%d...", valueOfNode(tree).casos);
+        printf("%d...", valueOfNode(tree).saude.qualidadeDoSono);
         descendingOrder(left(tree));
     }
 }
@@ -309,7 +319,8 @@ void descendingOrder(BINARY_TREE tree) {
 void generateTree(BINARY_TREE *tree, CSV *csv, int organizate) {
     int line;
     VALUES *values;
-    for(line = 1; line <= csv->row; line++) {
+    makeTree(tree, (*fromCSVToValue(csv, 1)));
+    for(line = 2; line <= csv->row; line++) {
         values = fromCSVToValue(csv, line);
         insertElement(tree, *values, organizate);
     }
