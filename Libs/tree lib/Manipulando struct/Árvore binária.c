@@ -7,9 +7,9 @@ int main() {
     FILE *file;
     CSV csv;
     
-    file = fopen("file.csv", "r");
+    file = fopen("amostra de dados.csv", "r");
     setRowsAndColumns(file, &csv);
-    file = fopen("file.csv", "r");
+    file = fopen("amostra de dados.csv", "r");
     readCSV(file, &csv);
     
     printCSV(csv);
