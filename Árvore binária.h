@@ -1,3 +1,7 @@
+#include"../../csv lib/csv reader.h"
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
 #define TRUE 1
 typedef struct {
     int sedentarismo;
@@ -44,3 +48,5 @@ void ascendingOrder(BINARY_TREE tree);
 // Direita - Raíz - Esquerda
 void descendingOrder(BINARY_TREE tree);
 
+void generateTree(BINARY_TREE *tree, CSV *csv, int organizate);
+VALUES fromCSVToValue(CSV *csv, int line);

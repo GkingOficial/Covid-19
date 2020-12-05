@@ -4,40 +4,15 @@
 #include<string.h>
 
 int main() {
-    char stateName[] = "São Paulo";
-    BINARY_TREE tree;
-    VALUES informationsDoEstado;
+    FILE *file;
+    CSV csv;
     
-    strcpy(informationsDoEstado.estado, stateName);
+    file = fopen("file.csv", "r");
+    setRowsAndColumns(file, &csv);
+    file = fopen("file.csv", "r");
+    readCSV(file, &csv);
     
-    informationsDoEstado.saude.estadoPsicologico = 7;
-    informationsDoEstado.saude.qualidadeDaAlimentacao = 3;
-    informationsDoEstado.saude.qualidadeDoSono = 0;
-    informationsDoEstado.saude.sedentarismo = 10;
-
-    informationsDoEstado.casos = 46;
-    makeTree(&tree, informationsDoEstado);
-    informationsDoEstado.casos = 15;
-    insertElement(&tree, informationsDoEstado);
-    informationsDoEstado.casos = 9;
-    insertElement(&tree, informationsDoEstado);
-    informationsDoEstado.casos = 45;
-    insertElement(&tree, informationsDoEstado);
-    informationsDoEstado.casos = 100;
-    insertElement(&tree, informationsDoEstado);
-    informationsDoEstado.casos = 78;
-    insertElement(&tree, informationsDoEstado);
-    informationsDoEstado.casos = 29;
-    insertElement(&tree, informationsDoEstado);
-
-    preOrderRoute(tree);
-    printf("\n");
-    postOrderRoute(tree);
-    printf("\n");
-    ascendingOrder(tree);
-    printf("\n");
-    descendingOrder(tree);
-    printf("\n");
+    printCSV(csv);
 }
 
 void makeTree(BINARY_TREE *tree, VALUES values) {
@@ -249,3 +224,23 @@ void descendingOrder(BINARY_TREE tree) {
         descendingOrder(left(tree));
     }
 }
+
+// void generateTree(BINARY_TREE *tree, CSV *csv, int organizate) {
+//     int line;
+//     VALUES values;
+//     for(line = 2; line <= csv->row; line++) {
+//         values = fromCSVToValue(csv, line);
+//         insertElement(tree, values);
+//     }
+// }
+
+// VALUES fromCSVToValue(CSV *csv, int line) {
+//     VALUES values;
+//     strcpy(values.estado, csv->array[line - 1][0]);
+//     values.casos = csv->array[line - 1][1];
+//     values.saude.sedentarismo = csv->array[line - 1][2];
+//     values.saude.qualidadeDoSono = csv->array[line - 1][3];
+//     values.saude.qualidadeDaAlimentacao = csv->array[line - 1][4];
+//     values.saude.estadoPsicologico = csv->array[line - 1][5];
+//     return values;
+// }

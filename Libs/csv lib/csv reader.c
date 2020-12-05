@@ -1,40 +1,18 @@
-#include <stdio.h>
+#include "./csv reader.h"
 #include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
 
-typedef struct{
-    int row;
-    int column;
-    char ***array;
-}CSV;
-
-void setRowsAndColumns(FILE *f, CSV *csv);
-void readCSV(FILE *, CSV *);
-void printCSV(CSV);
-
-
-int main(){
-    FILE *file;
-    CSV csv;
-    
-    file = fopen("file.csv", "r");
-    setRowsAndColumns(file, &csv);
-    file = fopen("file.csv", "r");
-    readCSV(file, &csv);
-    
-    printCSV(csv);
-}
-
-void setRowsAndColumns(FILE *f, CSV *csv) {
+void setRowsAndColumns(FILE *file, CSV *csv) {
     char c;
     int rows = 1, columns = 1;
 
-    while(c = getc(f), c != '\n'){
+    while(c = getc(file), c != '\n'){
         if(c == ','){
             columns++;
         }
     }
-    while(c = getc(f), !feof(f)){
+    while(c = getc(file), !feof(file)){
         if(c == '\n'){
             rows++;
         }
@@ -43,18 +21,18 @@ void setRowsAndColumns(FILE *f, CSV *csv) {
     csv->row = rows;
 }
 
-void readCSV(FILE *f, CSV *c){
+void readCSV(FILE *file, CSV *csv){
     char texto[100], *word;
     int i, j, column, row;
     
-    c -> array = NULL;
-    c -> array = (char ***)malloc(sizeof(char **) * c->row);
+    csv -> array = NULL;
+    csv -> array = (char ***)malloc(sizeof(char **) * csv->row);
     for(i=0;i<4;i++) {
-        c->array[i] = (char **)malloc(sizeof(char *) * c->column);
+        csv->array[i] = (char **)malloc(sizeof(char *) * csv->column);
     }
 
     row = 0;
-    while(fgets(texto, 100, f)) {
+    while(fgets(texto, 100, file)) {
         column = 0;
         
         texto[strlen(texto) - 1] = '\0';
@@ -62,8 +40,8 @@ void readCSV(FILE *f, CSV *c){
 
         while(word) {
             int lengthOfWord = strlen(word);
-            c->array[row][column] = (char *)malloc(sizeof(char) * (lengthOfWord + 1));
-            strcpy(c->array[row][column], word);
+            csv->array[row][column] = (char *)malloc(sizeof(char) * (lengthOfWord + 1));
+            strcpy(csv->array[row][column], word);
             column++;
 
             word = strtok(NULL, ",");
@@ -80,4 +58,3 @@ void printCSV(CSV csv){
         puts("\b\b");
     }
 }
-
