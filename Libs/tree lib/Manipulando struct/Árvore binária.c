@@ -2,17 +2,24 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+#include<math.h>
 
 int main() {
     FILE *file;
     CSV csv;
+    BINARY_TREE tree;
+    VALUES values;
     
     file = fopen("amostra de dados.csv", "r");
     setRowsAndColumns(file, &csv);
     file = fopen("amostra de dados.csv", "r");
     readCSV(file, &csv);
     
-    printCSV(csv);
+    printVALUES(fromCSVToValue(&csv, 1));
+    printVALUES(fromCSVToValue(&csv, 2));
+    printVALUES(fromCSVToValue(&csv, 3));
+    printVALUES(fromCSVToValue(&csv, 4));
+    printVALUES(fromCSVToValue(&csv, 5));
 }
 
 void setRowsAndColumns(FILE *file, CSV *csv) {
@@ -37,10 +44,16 @@ void readCSV(FILE *file, CSV *csv){
     char texto[100], *word;
     int i, j, column, row;
     
-    csv -> array = NULL;
-    csv -> array = (char ***)malloc(sizeof(char **) * csv->row);
-    for(i=0;i<4;i++) {
+    csv->array = NULL;
+    csv->array = (char ***)malloc(sizeof(char **) * csv->row);
+    if(csv->array == NULL) {
+        printf("There is not storage enough\n");
+    }
+    for(i=0; i<csv->row; i++) {
         csv->array[i] = (char **)malloc(sizeof(char *) * csv->column);
+        if(csv->array[i] == NULL) {
+            printf("There is not storage enough\n");
+        }
     }
 
     row = 0;
@@ -53,6 +66,9 @@ void readCSV(FILE *file, CSV *csv){
         while(word) {
             int lengthOfWord = strlen(word);
             csv->array[row][column] = (char *)malloc(sizeof(char) * (lengthOfWord + 1));
+            if(csv->array[row][column] == NULL) {
+                printf("There is not storage enough\n");
+            }
             strcpy(csv->array[row][column], word);
             column++;
 
@@ -70,11 +86,6 @@ void printCSV(CSV csv){
         puts("\b\b");
     }
 }
-
-
-
-
-
 
 void makeTree(BINARY_TREE *tree, VALUES values) {
     *tree = (BINARY_TREE) malloc (sizeof (NODE));
@@ -286,22 +297,34 @@ void descendingOrder(BINARY_TREE tree) {
     }
 }
 
-// void generateTree(BINARY_TREE *tree, CSV *csv, int organizate) {
-//     int line;
-//     VALUES values;
-//     for(line = 2; line <= csv->row; line++) {
-//         values = fromCSVToValue(csv, line);
-//         insertElement(tree, values);
-//     }
-// }
+void generateTree(BINARY_TREE *tree, CSV *csv, int organizate) {
+    int line;
+    VALUES *values;
+    
+    for(line = 2; line <= csv->row; line++) {
+        values = fromCSVToValue(csv, line);
+        printVALUES(&values);
+        insertElement(tree, *values);
+    }
+}
 
-// VALUES fromCSVToValue(CSV *csv, int line) {
-//     VALUES values;
-//     strcpy(values.estado, csv->array[line - 1][0]);
-//     values.casos = csv->array[line - 1][1];
-//     values.saude.sedentarismo = csv->array[line - 1][2];
-//     values.saude.qualidadeDoSono = csv->array[line - 1][3];
-//     values.saude.qualidadeDaAlimentacao = csv->array[line - 1][4];
-//     values.saude.estadoPsicologico = csv->array[line - 1][5];
-//     return values;
-// }
+VALUES *fromCSVToValue(CSV *csv, int line) {
+    VALUES *values = (VALUES *)malloc(sizeof(VALUES));
+
+    strcpy(values->estado, csv->array[line - 1][0]);
+    values->casos = atoi(csv->array[line - 1][1]);
+    values->saude.sedentarismo = atoi(csv->array[line - 1][2]);
+    values->saude.qualidadeDoSono = atoi(csv->array[line - 1][3]);
+    values->saude.qualidadeDaAlimentacao = atoi(csv->array[line - 1][4]);
+    values->saude.estadoPsicologico = atoi(csv->array[line - 1][5]);
+    return values;
+}
+
+printVALUES(VALUES *values) {
+    printf("%s = %s%c", "Estado", values->estado, '\n');
+    printf("%s = %d%c", "Casos", values->casos, '\n');
+    printf("%s = %d%c", "Sedentarismo", values->saude.sedentarismo, '\n');
+    printf("%s = %d%c", "Sono", values->saude.qualidadeDoSono, '\n');
+    printf("%s = %d%c", "Alimentação", values->saude.qualidadeDaAlimentacao, '\n');
+    printf("%s = %d%s", "Estado psicológico", values->saude.estadoPsicologico, "\n\n");
+}
