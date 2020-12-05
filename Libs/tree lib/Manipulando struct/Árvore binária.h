@@ -63,3 +63,4 @@ void descendingOrder(BINARY_TREE tree);
 void generateTree(BINARY_TREE *tree, CSV *csv, int organizate);
 VALUES *fromCSVToValue(CSV *csv, int line);
 printVALUES(VALUES *values);
+int putOnTheLeftSide(VALUES values1, VALUES values2, int organizate);
