@@ -3,23 +3,32 @@
 #include<stdlib.h>
 #include<string.h>
 #include<math.h>
+#define DUMP(varname) fscanf(#varname, "%s", stdin);
 
 int main() {
     FILE *file;
     CSV csv;
     BINARY_TREE tree;
     VALUES values;
+    int maconha = 90;
+    char variable[10];
+    // sprintf(variable, "%s", #varname);
+
     
-    file = fopen("amostra de dados.csv", "r");
-    setRowsAndColumns(file, &csv);
-    file = fopen("amostra de dados.csv", "r");
-    readCSV(file, &csv);
+    // file = fopen("amostra de dados.csv", "r");
+    // setRowsAndColumns(file, &csv);
+    // file = fopen("amostra de dados.csv", "r");
+    // readCSV(file, &csv);
     
-    printVALUES(fromCSVToValue(&csv, 1));
-    printVALUES(fromCSVToValue(&csv, 2));
-    printVALUES(fromCSVToValue(&csv, 3));
-    printVALUES(fromCSVToValue(&csv, 4));
-    printVALUES(fromCSVToValue(&csv, 5));
+    // generateTree(&tree, &csv, 1);
+    // ascendingOrder(tree);
+    // printf("\n");
+    // descendingOrder(tree);
+    // printf("\n");
+
+    DUMP(maconha);
+    sprintf(stdin, "%s", variable);
+    puts(variable);
 }
 
 void setRowsAndColumns(FILE *file, CSV *csv) {
@@ -184,7 +193,7 @@ int isRight(BINARY_TREE tree) {
     return (0);
 }
 
-void insertElement(BINARY_TREE *tree, VALUES values) {
+void insertElement(BINARY_TREE *tree, VALUES values, int organizate) {
     if (!(*tree))
         makeTree(tree, values);
     else {
@@ -300,11 +309,9 @@ void descendingOrder(BINARY_TREE tree) {
 void generateTree(BINARY_TREE *tree, CSV *csv, int organizate) {
     int line;
     VALUES *values;
-    
-    for(line = 2; line <= csv->row; line++) {
+    for(line = 1; line <= csv->row; line++) {
         values = fromCSVToValue(csv, line);
-        printVALUES(&values);
-        insertElement(tree, *values);
+        insertElement(tree, *values, organizate);
     }
 }
 

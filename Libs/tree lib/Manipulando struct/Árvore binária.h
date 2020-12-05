@@ -44,7 +44,7 @@ BINARY_TREE father(BINARY_TREE tree);
 BINARY_TREE brother(BINARY_TREE tree);
 int isLeft(BINARY_TREE tree);
 int isRight(BINARY_TREE tree);
-void insertElement(BINARY_TREE *tree, VALUES values);
+void insertElement(BINARY_TREE *tree, VALUES values, int organizate);
 
 void removalByFusion(BINARY_TREE *tree);
 void removalByCopy(BINARY_TREE *tree);
