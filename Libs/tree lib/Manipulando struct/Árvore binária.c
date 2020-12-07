@@ -20,13 +20,12 @@ int main() {
     setRowsAndColumns(file, &csv);
     file = fopen("amostra de dados.csv", "r");
     readCSV(file, &csv);
-    
-    generateTree(&tree, &csv, CASOS);
-    ascendingOrder(tree);
-    printf("\n");
-    descendingOrder(tree);
-    printf("\n");
-
+    printCSV(csv);
+    // generateTree(&tree, &csv, CASOS);
+    // ascendingOrder(tree);
+    // printf("\n");
+    // descendingOrder(tree);
+    // printf("\n");
 }
 
 void setRowsAndColumns(FILE *file, CSV *csv) {
@@ -88,7 +87,7 @@ void readCSV(FILE *file, CSV *csv){
 void printCSV(CSV csv){
     for(int i = 0; i < csv.row; i++) {
         for(int j = 0; j < csv.column; j++) {
-            printf("%s, ", csv.array[i][j]);
+            printf("%s| ", csv.array[i][j]);
         }
         puts("\b\b");
     }
@@ -192,7 +191,7 @@ int isRight(BINARY_TREE tree) {
 }
 
 int putOnTheLeftSide(VALUES values1, VALUES values2, int organizate) {
-    switch (organizate) {
+    switch(organizate) {
         case 1: return values1.casos < values2.casos;
         case 2: return values1.saude.sedentarismo < values2.saude.sedentarismo;
         case 3: return values1.saude.qualidadeDoSono < values2.saude.qualidadeDoSono;
@@ -315,10 +314,10 @@ void descendingOrder(BINARY_TREE tree) {
 }
 
 void generateTree(BINARY_TREE *tree, CSV *csv, int organizate) {
-    int line;
+    int line = 2;
     VALUES *values;
-    makeTree(tree, (*fromCSVToValue(csv, 1)));
-    for(line = 2; line <= csv->row; line++) {
+    makeTree(tree, (*fromCSVToValue(csv, line)));
+    for(line++; line <= csv->row; line++) {
         values = fromCSVToValue(csv, line);
         insertElement(tree, *values, organizate);
     }
@@ -336,7 +335,7 @@ VALUES *fromCSVToValue(CSV *csv, int line) {
     return values;
 }
 
-printVALUES(VALUES *values) {
+void printVALUES(VALUES *values) {
     printf("%s = %s%c", "Estado", values->estado, '\n');
     printf("%s = %d%c", "Casos", values->casos, '\n');
     printf("%s = %d%c", "Sedentarismo", values->saude.sedentarismo, '\n');
