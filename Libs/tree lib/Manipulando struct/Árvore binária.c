@@ -85,9 +85,13 @@ void readCSV(FILE *file, CSV *csv){
 }
 
 void printCSV(CSV csv){
-    for(int i = 0; i < csv.row; i++) {
+    for(int j = 0; j < csv.column; j++) {
+        printf("%*s| ", -12,csv.array[0][j]);
+    }
+    puts("");
+    for(int i = 1; i < csv.row; i++) {
         for(int j = 0; j < csv.column; j++) {
-            printf("%s| ", csv.array[i][j]);
+            printf("%*s| ", -12, csv.array[i][j]);
         }
         puts("\b\b");
     }
