@@ -4,7 +4,7 @@
 #include<string.h>
 #include<math.h>
 
-#define DUMP(varname) fscanf(#varname, "%s", stdin);
+#define DUMP(varname) fprintf(stderr, "%s", #varname);
 #define CASOS 1
 #define SEDENTARISMO 2
 #define SONO 3
