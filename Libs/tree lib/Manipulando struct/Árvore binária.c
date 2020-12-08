@@ -61,38 +61,43 @@ int main() {
 
         if(strcmp(choiceSelect, "Casos") == 0) {
             if(treeOrdering == CASOS){
-                VALUES values = buscaPorCasos();
-                
+                BINARY_TREE *treeOfQuery = buscaPorCasos();
+                ascendingOrder(treeOfQuery);
             } else {
                 make
             }
         } else if(strcmp(choiceSelect, "Sedentarismo") == 0) {
             if(treeOrdering == SEDENTARISMO){
-                
+                BINARY_TREE *treeOfQuery = buscaPorSedentarismo();
+                ascendingOrder(treeOfQuery);
             } else {
                 
             }
         } else if(strcmp(choiceSelect, "Sono") == 0) {
             if(treeOrdering == SONO){
-                
+                BINARY_TREE *treeOfQuery = buscaPorSono();
+                ascendingOrder(treeOfQuery);
             } else {
                 
             }
         } else if(strcmp(choiceSelect, "Alimentacao") == 0) {
             if(treeOrdering == ALIMENTACAO){
-                
+                BINARY_TREE *treeOfQuery = buscaPorAlimentacao();
+                ascendingOrder(treeOfQuery);
             } else {
                 
             }
         } else if(strcmp(choiceSelect, "Psicologico") == 0) {
             if(treeOrdering == PSICOLOGICO){
-                
+                BINARY_TREE *treeOfQuery = buscaPorPsicologico();
+                ascendingOrder(treeOfQuery);
             } else {
                 
             }
         } else if(strcmp(choiceSelect, "Estado") == 0) {
             if(treeOrdering == ESTADOS){
-                
+                BINARY_TREE *treeOfQuery = buscaPorEstado();
+                ascendingOrder(treeOfQuery);
             } else {
                 
             }
