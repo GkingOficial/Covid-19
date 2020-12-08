@@ -22,10 +22,6 @@ int main() {
     readCSV(file, &csv);
     printCSV(csv);
     printf("\n\n\n\n\n\n");
-
-    generateTree(&tree, &csv, CASOS);
-    printTitle(csv);
-    ascendingOrder(tree);
 }
 
 void setRowsAndColumns(FILE *file, CSV *csv) {
