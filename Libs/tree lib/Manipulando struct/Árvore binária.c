@@ -5,23 +5,102 @@
 #include<math.h>
 
 #define DUMP(varname) fprintf(stderr, "%s", #varname);
+#define NONE 0
 #define CASOS 1
 #define SEDENTARISMO 2
 #define SONO 3
 #define ALIMENTACAO 4
 #define PSICOLOGICO 5
+#define ESTADOS 6
+
+int treeOrdering = NONE;
 
 int main() {
     FILE *file;
     CSV csv;
-    BINARY_TREE tree;
-    
+    BINARY_TREE tree = NULL;
+    char optionUser[30];
+    int choice;
+
+    // Tela inicial
     file = fopen("amostra de dados.csv", "r");
     setRowsAndColumns(file, &csv);
     file = fopen("amostra de dados.csv", "r");
     readCSV(file, &csv);
     printCSV(csv);
-    printf("\n\n\n\n\n\n");
+    printf("\n\n");
+
+    // Solicitação para o usuário
+    scanf("%[^\n]", optionUser);
+
+    // Ordenação
+    if(strcmp(optionUser, "ordenate") == 0) {
+        printf("Ordernar por...\n[ 1 ] Quantidade de casos\n[ 2 ] Nível de sedentarismo\n[ 3 ] Qualidade do sono\n[ 4 ] Qualidade da alimentação\n[ 5 ] Qualidade psicológica\n[ 6 ] Ordem alfabética dos estados\n");
+        printf("Escolha uma opção: ");
+        scanf("%d", &choice);
+
+        generateTree(&tree, &csv, choice);
+        treeOrdering = choice;
+
+        printf("\n\n");
+        ascendingOrder(tree);
+
+    } else if(strcmp(optionUser, "generate csv file") == 0) {
+        char nameOfFile[30];
+        scanf("%[^\n]", nameOfFile);
+
+        if(treeOrdering > 0) {
+            generateFromTreeToCSVFile(&tree, nameOfFile);
+        } else {
+            generateFromCsvToCSVFile(&csv, nameOfFile);
+        }
+
+    } else if(strcmp(optionUser, "SELECT * WHERE") == 0) {
+        char choiceSelect[30];
+        scanf("%[^\n]", choiceSelect);
+
+        if(strcmp(choiceSelect, "Casos") == 0) {
+            if(treeOrdering == CASOS){
+                VALUES values = buscaPorCasos();
+                
+            } else {
+                make
+            }
+        } else if(strcmp(choiceSelect, "Sedentarismo") == 0) {
+            if(treeOrdering == SEDENTARISMO){
+                
+            } else {
+                
+            }
+        } else if(strcmp(choiceSelect, "Sono") == 0) {
+            if(treeOrdering == SONO){
+                
+            } else {
+                
+            }
+        } else if(strcmp(choiceSelect, "Alimentacao") == 0) {
+            if(treeOrdering == ALIMENTACAO){
+                
+            } else {
+                
+            }
+        } else if(strcmp(choiceSelect, "Psicologico") == 0) {
+            if(treeOrdering == PSICOLOGICO){
+                
+            } else {
+                
+            }
+        } else if(strcmp(choiceSelect, "Estado") == 0) {
+            if(treeOrdering == ESTADOS){
+                
+            } else {
+                
+            }
+        }
+        printf("Escolha uma opção: ");
+        scanf("%d", &choice);
+    }
+    
 }
 
 void setRowsAndColumns(FILE *file, CSV *csv) {
@@ -365,4 +444,12 @@ void printVALUES(VALUES *values) {
     printf("%s = %d%c", "Sono", values->saude.qualidadeDoSono, '\n');
     printf("%s = %d%c", "Alimentação", values->saude.qualidadeDaAlimentacao, '\n');
     printf("%s = %d%s", "Estado psicológico", values->saude.estadoPsicologico, "\n\n");
+}
+
+FILE *generateFromTreeToCSVFile(BINARY_TREE *tree, char *nameOfFile) {
+
+}
+
+FILE *generateFromCsvToCSVFile(CSV *csv, char *nameOfFile) {
+
 }
