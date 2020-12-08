@@ -84,17 +84,45 @@ void readCSV(FILE *file, CSV *csv){
     }
 }
 
+// void printCSV(CSV csv){
+//     int margem = -8;
+//     for(int j = 0; j < csv.column; j++) {
+//         printf("%*s%*s| ", 12, csv.array[0][j], 12, "");
+//     }
+//     puts("");
+//     for(int i = 1; i < csv.row; i++) {
+//         for(int j = 0; j < csv.column; j++) {
+//             printf("%*s%*s| ", 12, csv.array[i][j], 12, "");
+//         }
+//         puts("\b\b");
+//     }
+// }
+
 void printCSV(CSV csv){
-    for(int j = 0; j < csv.column; j++) {
-        printf("%*s| ", -12,csv.array[0][j]);
+    int padding = 15;
+    int i, j;
+    for(j = 0; j < csv.column; j++) {
+        int padlen = (padding - strlen(csv.array[0][j])) / 2;
+        // printf("%s|", csv.array[0][j]);
+        printf("%*s%s%*s|", padlen, "", csv.array[0][j], padlen, "");
     }
     puts("");
-    for(int i = 1; i < csv.row; i++) {
-        for(int j = 0; j < csv.column; j++) {
-            printf("%*s| ", -12, csv.array[i][j]);
+    for(i = 1; i < csv.row; i++) {
+        for(j = 0; j < csv.column; j++) {
+            int padlen = (padding - strlen(csv.array[i][j])) / 2;
+            if(j >= 2) {
+                printf("%*s%s%%%*s|", padlen, "", csv.array[i][j], padlen, "");
+            } else {
+                printf("%*s%s%*s|", padlen, "", csv.array[i][j], padlen, "");
+            }
         }
         puts("\b\b");
     }
+}
+
+void centerText(char *text, int fieldWidth) {
+    int padlen = (fieldWidth - strlen(text)) / 2;
+    printf("%*s%s%*s\n", padlen, "", text, padlen, "");
 }
 
 void makeTree(BINARY_TREE *tree, VALUES values) {
