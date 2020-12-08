@@ -28,7 +28,6 @@ int main() {
     file = fopen("amostra de dados.csv", "r");
     readCSV(file, &csv);
     printCSV(csv);
-    printf("\n\n");
 
     // Solicitação para o usuário
     scanf("%[^\n]", optionUser);
@@ -41,8 +40,6 @@ int main() {
 
         generateTree(&tree, &csv, choice);
         treeOrdering = choice;
-
-        printf("\n\n");
         ascendingOrder(tree);
 
     } else if(strcmp(optionUser, "generate csv file") == 0) {
@@ -60,50 +57,47 @@ int main() {
         scanf("%[^\n]", choiceSelect);
 
         if(strcmp(choiceSelect, "Casos") == 0) {
-            if(treeOrdering == CASOS){
-                BINARY_TREE *treeOfQuery = buscaPorCasos();
-                ascendingOrder(treeOfQuery);
-            } else {
-                make
+            if(treeOrdering != CASOS) {
+                generateTree(&tree, &csv, CASOS);
             }
+            BINARY_TREE *treeOfQuery = buscaPorCasos();
+            ascendingOrder(treeOfQuery);
+
         } else if(strcmp(choiceSelect, "Sedentarismo") == 0) {
-            if(treeOrdering == SEDENTARISMO){
-                BINARY_TREE *treeOfQuery = buscaPorSedentarismo();
-                ascendingOrder(treeOfQuery);
-            } else {
-                
+            if(treeOrdering != SEDENTARISMO) {
+                generateTree(&tree, &csv, SEDENTARISMO);
             }
+            BINARY_TREE *treeOfQuery = buscaPorSedentarismo();
+            ascendingOrder(treeOfQuery);
+
         } else if(strcmp(choiceSelect, "Sono") == 0) {
-            if(treeOrdering == SONO){
-                BINARY_TREE *treeOfQuery = buscaPorSono();
-                ascendingOrder(treeOfQuery);
-            } else {
-                
+            if(treeOrdering != SONO) {
+                generateTree(&tree, &csv, SONO);
             }
+            BINARY_TREE *treeOfQuery = buscaPorSono();
+            ascendingOrder(treeOfQuery);
+
         } else if(strcmp(choiceSelect, "Alimentacao") == 0) {
-            if(treeOrdering == ALIMENTACAO){
-                BINARY_TREE *treeOfQuery = buscaPorAlimentacao();
-                ascendingOrder(treeOfQuery);
-            } else {
-                
+            if(treeOrdering != ALIMENTACAO) {
+                generateTree(&tree, &csv, ALIMENTACAO);
             }
+            BINARY_TREE *treeOfQuery = buscaPorAlimentacao();
+            ascendingOrder(treeOfQuery);
+
         } else if(strcmp(choiceSelect, "Psicologico") == 0) {
-            if(treeOrdering == PSICOLOGICO){
-                BINARY_TREE *treeOfQuery = buscaPorPsicologico();
-                ascendingOrder(treeOfQuery);
-            } else {
-                
+            if(treeOrdering != PSICOLOGICO) {
+                generateTree(&tree, &csv, PSICOLOGICO);
             }
+            BINARY_TREE *treeOfQuery = buscaPorPsicologico();
+            ascendingOrder(treeOfQuery);
+
         } else if(strcmp(choiceSelect, "Estado") == 0) {
-            if(treeOrdering == ESTADOS){
-                BINARY_TREE *treeOfQuery = buscaPorEstado();
-                ascendingOrder(treeOfQuery);
-            } else {
-                
+            if(treeOrdering != ESTADOS) {
+                generateTree(&tree, &csv, ESTADOS);
             }
+            BINARY_TREE *treeOfQuery = buscaPorEstado();
+            ascendingOrder(treeOfQuery);
         }
-        printf("Escolha uma opção: ");
-        scanf("%d", &choice);
     }
     
 }
@@ -184,8 +178,8 @@ void printCSV(CSV csv){
                 printf("%*s%*s| ", -12, csv.array[i][j], 4, "");
             }
         }
-        puts("\b\b");
     }
+    printf("\n\n");
 }
 
 
@@ -458,3 +452,4 @@ FILE *generateFromTreeToCSVFile(BINARY_TREE *tree, char *nameOfFile) {
 FILE *generateFromCsvToCSVFile(CSV *csv, char *nameOfFile) {
 
 }
+
