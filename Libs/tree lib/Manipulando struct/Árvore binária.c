@@ -21,11 +21,11 @@ int main() {
     file = fopen("amostra de dados.csv", "r");
     readCSV(file, &csv);
     printCSV(csv);
-    // generateTree(&tree, &csv, CASOS);
-    // ascendingOrder(tree);
-    // printf("\n");
-    // descendingOrder(tree);
-    // printf("\n");
+    printf("\n\n\n\n\n\n");
+
+    generateTree(&tree, &csv, CASOS);
+    printTitle(csv);
+    ascendingOrder(tree);
 }
 
 void setRowsAndColumns(FILE *file, CSV *csv) {
@@ -84,8 +84,14 @@ void readCSV(FILE *file, CSV *csv){
     }
 }
 
+void printTitle(CSV csv) {
+    for(int j = 0; j < csv.column; j++) {
+        printf("%*s%*s| ", -12, csv.array[0][j], 4, "");
+    }
+    puts("");
+}
+
 void printCSV(CSV csv){
-    int margem = -8;
     for(int j = 0; j < csv.column; j++) {
         printf("%*s%*s| ", -12, csv.array[0][j], 4, "");
     }
@@ -315,7 +321,13 @@ void postOrderRoute(BINARY_TREE tree) {
 void ascendingOrder(BINARY_TREE tree) {
     if (tree) {
         ascendingOrder(left(tree));
-        printf("%d...", valueOfNode(tree).casos);
+        printf("%*s%*s| ", -12, valueOfNode(tree).estado, 4, "");
+        printf("%-12d| ", valueOfNode(tree).casos);
+        printf("%-12d| ", valueOfNode(tree).saude.sedentarismo);
+        printf("%-12d| ", valueOfNode(tree).saude.qualidadeDoSono);
+        printf("%-12d| ", valueOfNode(tree).saude.qualidadeDaAlimentacao);
+        printf("%-12d| ", valueOfNode(tree).saude.estadoPsicologico);
+        puts("");
         ascendingOrder(right(tree));
     }
 }

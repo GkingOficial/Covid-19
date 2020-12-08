@@ -11,7 +11,7 @@ typedef struct{
 void setRowsAndColumns(FILE *file, CSV *csv);
 void readCSV(FILE *file, CSV *csv);
 void printCSV(CSV csv);
-
+void printTitle(CSV csv);
 
 
 
