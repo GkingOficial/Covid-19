@@ -84,41 +84,24 @@ void readCSV(FILE *file, CSV *csv){
     }
 }
 
-// void printCSV(CSV csv){
-//     int margem = -8;
-//     for(int j = 0; j < csv.column; j++) {
-//         printf("%*s%*s| ", 12, csv.array[0][j], 12, "");
-//     }
-//     puts("");
-//     for(int i = 1; i < csv.row; i++) {
-//         for(int j = 0; j < csv.column; j++) {
-//             printf("%*s%*s| ", 12, csv.array[i][j], 12, "");
-//         }
-//         puts("\b\b");
-//     }
-// }
-
 void printCSV(CSV csv){
-    int padding = 15;
-    int i, j;
-    for(j = 0; j < csv.column; j++) {
-        int padlen = (padding - strlen(csv.array[0][j])) / 2;
-        // printf("%s|", csv.array[0][j]);
-        printf("%*s%s%*s|", padlen, "", csv.array[0][j], padlen, "");
+    int margem = -8;
+    for(int j = 0; j < csv.column; j++) {
+        printf("%*s%*s| ", -12, csv.array[0][j], 4, "");
     }
     puts("");
-    for(i = 1; i < csv.row; i++) {
-        for(j = 0; j < csv.column; j++) {
-            int padlen = (padding - strlen(csv.array[i][j])) / 2;
+    for(int i = 1; i < csv.row; i++) {
+        for(int j = 0; j < csv.column; j++) {
             if(j >= 2) {
-                printf("%*s%s%%%*s|", padlen, "", csv.array[i][j], padlen, "");
+                printf("%*s%*s| ", -12, csv.array[i][j], 4, "%");
             } else {
-                printf("%*s%s%*s|", padlen, "", csv.array[i][j], padlen, "");
+                printf("%*s%*s| ", -12, csv.array[i][j], 4, "");
             }
         }
         puts("\b\b");
     }
 }
+
 
 void centerText(char *text, int fieldWidth) {
     int padlen = (fieldWidth - strlen(text)) / 2;
