@@ -29,8 +29,10 @@ int main() {
 
     do {
         // Solicitação para o usuário
+        printf(">>> ");
+        setbuf(stdin, NULL);
         scanf("%[^\n]", optionUser);
-
+        
         // Ordenação
         if(strcmp(optionUser, "ordenate") == 0) {
             printf("Ordernar por...\n[ 1 ] Quantidade de casos\n[ 2 ] Nível de sedentarismo\n[ 3 ] Qualidade do sono\n[ 4 ] Qualidade da alimentação\n[ 5 ] Qualidade psicológica\n[ 6 ] Ordem alfabética dos estados\n");
@@ -39,6 +41,7 @@ int main() {
 
             generateTree(&tree, &csv, choice);
             treeOrdering = choice;
+            printf("Arvore ordenada por %d\n", choice);
 
 
             printf("Tipo de ordenação:\n[ 1 ] Crescente\n[ 2 ] Decrescente\nEscolha a opção: ");
@@ -48,41 +51,49 @@ int main() {
             } else {
                 descendingOrder(tree);
             }
-        } else if(strcmp(optionUser, "generate csv file") == 0) {
-            char nameOfFile[30];
-            scanf("%[^\n]", nameOfFile);
-
-            if(treeOrdering > 0) {
-                generateFromTreeToCSVFile(&tree, nameOfFile);
-            } else {
-                generateFromCsvToCSVFile(&csv, nameOfFile);
-            }
-        } else if(strcmp(optionUser, "search") == 0) {
-            int quantidade;
-            BINARY_TREE *busca;
-            printf("Procurar com base em...\n[ 1 ] Quantidade de casos\n[ 2 ] Nível de sedentarismo\n[ 3 ] Qualidade do sono\n[ 4 ] Qualidade da alimentação\n[ 5 ] Qualidade psicológica\n");
-            printf("Escolha uma opção: ");
-            scanf("%d", &choice);
-            printf("Quantidade: ", quantidade);
-            scanf("%d", &quantidade);
-
-            generateTree(&tree, &csv, choice);
-            treeOrdering = choice;
-
-            if(choice == CASOS) {
-                busca = buscaNaArvore(&tree, quantidade, CASOS);
-            } else if(choice == SEDENTARISMO) {
-                busca = buscaNaArvore(&tree, quantidade, SEDENTARISMO);
-            } else if(choice == SONO) {
-                busca = buscaNaArvore(&tree, quantidade, SONO);
-            } else if(choice == ALIMENTACAO) {
-                busca = buscaNaArvore(&tree, quantidade, ALIMENTACAO);
-            } else if(choice == PSICOLOGICO) {
-                busca = buscaNaArvore(&tree, quantidade, PSICOLOGICO);
-            }
-            preOrderRoute(*busca);
         }
-    } while();
+        else if(strcmp(optionUser, "generate csv file") == 0) {
+            if(treeOrdering > 0) {
+                char nameOfFile[31];
+                printf(">>> Nome do arquivo: ");
+                setbuf(stdin, NULL);
+                scanf("%[^\n]", nameOfFile);
+
+                if(generateFromTreeToCSVFile(&tree, nameOfFile)) {
+                    printf("file created successfully!!!\n\n");
+                } else {
+                    printf("Nome grande demais\n\n");
+                }
+            } else {
+                printf("A vizualizacao da tabela não mudou!!!\n\n");
+            }
+        }
+        // else if(strcmp(optionUser, "search") == 0) {
+        //     int quantidade;
+        //     BINARY_TREE *busca;
+        //     printf("Procurar com base em...\n[ 1 ] Quantidade de casos\n[ 2 ] Nível de sedentarismo\n[ 3 ] Qualidade do sono\n[ 4 ] Qualidade da alimentação\n[ 5 ] Qualidade psicológica\n");
+        //     printf("Escolha uma opção: ");
+        //     scanf("%d", &choice);
+        //     printf("Quantidade: ", quantidade);
+        //     scanf("%d", &quantidade);
+
+        //     generateTree(&tree, &csv, choice);
+        //     treeOrdering = choice;
+
+        //     if(choice == CASOS) {
+        //         busca = buscaNaArvore(&tree, quantidade, CASOS);
+        //     } else if(choice == SEDENTARISMO) {
+        //         busca = buscaNaArvore(&tree, quantidade, SEDENTARISMO);
+        //     } else if(choice == SONO) {
+        //         busca = buscaNaArvore(&tree, quantidade, SONO);
+        //     } else if(choice == ALIMENTACAO) {
+        //         busca = buscaNaArvore(&tree, quantidade, ALIMENTACAO);
+        //     } else if(choice == PSICOLOGICO) {
+        //         busca = buscaNaArvore(&tree, quantidade, PSICOLOGICO);
+        //     }
+        //     preOrderRoute(*busca);
+        // }
+    } while(strcmp(optionUser, "exit"));
 }
 
 void setRowsAndColumns(FILE *file, CSV *csv) {
@@ -554,7 +565,6 @@ BINARY_TREE *buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha) {
 
 FILE *generateFromTreeToCSVFile(BINARY_TREE *tree, char *nameOfFile){
     if(strlen(nameOfFile) > 30){
-        puts("The file name exceeds 30 characters!");
         return NULL;
     }
 
@@ -566,6 +576,7 @@ FILE *generateFromTreeToCSVFile(BINARY_TREE *tree, char *nameOfFile){
     aux = fopen(name, "w");
     
     printInFile(*tree, aux);
+    return aux;
 }
 
 void printInFile(BINARY_TREE tree, FILE *file) {
@@ -576,11 +587,11 @@ void printInFile(BINARY_TREE tree, FILE *file) {
         fprintf(file, "%d,", valueOfNode(tree).saude.sedentarismo);
         fprintf(file, "%d,", valueOfNode(tree).saude.qualidadeDoSono);
         fprintf(file, "%d,", valueOfNode(tree).saude.qualidadeDaAlimentacao);
-        fprintf(file, "%d,\n", valueOfNode(tree).saude.estadoPsicologico);
+        fprintf(file, "%d\n", valueOfNode(tree).saude.estadoPsicologico);
         printInFile(right(tree), file);
     }
 }
 
 FILE *generateFromCsvToCSVFile(&csv, nameOfFile){
-    
+
 }
