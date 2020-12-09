@@ -36,7 +36,7 @@ int main() {
         
         // Ordenação
         if(strcmp(optionUser, "ordenate") == 0) {
-            printf("Ordernar por...\n[ 1 ] Quantidade de casos\n[ 2 ] Nível de sedentarismo\n[ 3 ] Qualidade do sono\n[ 4 ] Qualidade da alimentação\n[ 5 ] Qualidade psicológica\n[ 6 ] Ordem alfabética dos estados\n");
+            printf("Ordernar por...\n[ 1 ] Quantidade de casos\n[ 2 ] Nível de sedentarismo\n[ 3 ] Qualidade do sono\n[ 4 ] Qualidade da alimentação\n[ 5 ] Qualidade psicológica\n");
             printf("Escolha uma opção: ");
             scanf("%d", &choice);
 
@@ -68,6 +68,21 @@ int main() {
             } else {
                 printf("A vizualizacao da tabela não mudou!!!\n\n");
             }
+        } else if(strcmp(optionUser, "search") == 0) {
+            int quantidade;
+            BINARY_TREE *busca;
+            printf("Procurar com base em...\n[ 1 ] Quantidade de casos\n[ 2 ] Nível de sedentarismo\n[ 3 ] Qualidade do sono\n[ 4 ] Qualidade da alimentação\n[ 5 ] Qualidade psicológica\n");
+
+            printf("Escolha uma opção: ");
+            scanf("%d", &choice);
+
+            generateTree(&tree, &csv, choice);
+            treeOrdering = choice;
+
+            printf("Quantidade: ");
+            scanf("%d", &quantidade);
+            
+            busca = buscaNaArvore(&tree, quantidade, choice);
         }
     } while(strcmp(optionUser, "exit"));
 }
@@ -466,19 +481,20 @@ VALUES *fromCSVToValue(CSV *csv, int line) {
     return values;
 }
 
-void printVALUES(VALUES *values) {
-    printf("%s = %s%c", "Estado", values->estado, '\n');
-    printf("%s = %d%c", "Casos", values->casos, '\n');
-    printf("%s = %d%c", "Sedentarismo", values->saude.sedentarismo, '\n');
-    printf("%s = %d%c", "Sono", values->saude.qualidadeDoSono, '\n');
-    printf("%s = %d%c", "Alimentação", values->saude.qualidadeDaAlimentacao, '\n');
-    printf("%s = %d%s", "Estado psicológico", values->saude.estadoPsicologico, "\n\n");
+void printVALUES(VALUES values) {
+    printf("%s = %s%c", "Estado", values.estado, '\n');
+    printf("%s = %d%c", "Casos", values.casos, '\n');
+    printf("%s = %d%c", "Sedentarismo", values.saude.sedentarismo, '\n');
+    printf("%s = %d%c", "Sono", values.saude.qualidadeDoSono, '\n');
+    printf("%s = %d%c", "Alimentação", values.saude.qualidadeDaAlimentacao, '\n');
+    printf("%s = %d%s", "Estado psicológico", values.saude.estadoPsicologico, "\n\n");
 }
 
 BINARY_TREE *buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha) {
-    BINARY_TREE *busca = NULL;
+    BINARY_TREE search = NULL;
     BINARY_TREE father = (*tree);
     VALUES values;
+    
     switch(escolha) {
         case CASOS:
             values.casos = quantidade;
@@ -498,21 +514,19 @@ BINARY_TREE *buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha) {
     }
     do {
         int aux = putOnTheSide(values, valueOfNode(father), escolha);
-        printf("1");
         if(aux == -1) {
             if(father->left)
                 father = father->left;
             else {
                 break;
             }
-        } else {
-            if(!aux) {
-                if(busca) {
-                    insertElement(busca, valueOfNode(father), escolha);
-                    printf("2");
+        }
+        else {
+            if(aux == 0) {
+                if(search) {
+                    printVALUES(valueOfNode(father));
                 } else {
-                    makeTree(busca, valueOfNode(father));
-                    printf("3");
+                    printVALUES(valueOfNode(father));
                 }
             }
             if(father->right)
@@ -522,7 +536,7 @@ BINARY_TREE *buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha) {
             }
         }
     } while(TRUE);
-    return busca;
+    return &search;
 }
 
 FILE *generateFromTreeToCSVFile(BINARY_TREE *tree, char *nameOfFile){
