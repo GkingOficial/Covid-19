@@ -498,40 +498,45 @@ void helperToSearch(BINARY_TREE tree) {
 }
 
 BINARY_TREE *buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha) {
-    BINARY_TREE *busca = (BINARY_TREE *) malloc(sizeof(BINARY_TREE));
+    BINARY_TREE *busca = NULL;
     BINARY_TREE father = (*tree);
     VALUES values;
+    switch(escolha) {
+        case CASOS:
+            values.casos = quantidade;
+            break;
+        case SEDENTARISMO:
+            values.saude.sedentarismo = quantidade;
+            break;
+        case SONO:
+            values.saude.qualidadeDoSono = quantidade;
+            break;
+        case ALIMENTACAO:
+            values.saude.qualidadeDaAlimentacao = quantidade;
+            break;
+        case PSICOLOGICO:
+            values.saude.estadoPsicologico = quantidade;
+            break;
+    }
     do {
-        switch(escolha) {
-            case CASOS:
-                values.casos = quantidade;
-                break;
-            case SEDENTARISMO:
-                values.saude.sedentarismo = quantidade;
-                break;
-            case SONO:
-                values.saude.qualidadeDoSono = quantidade;
-                break;
-            case ALIMENTACAO:
-                values.saude.qualidadeDaAlimentacao = quantidade;
-                break;
-            case PSICOLOGICO:
-                values.saude.estadoPsicologico = quantidade;
-                break;
-        }
-        if(putOnTheSide(values, valueOfNode(father), escolha) == -1) {
+        int aux = putOnTheSide(values, valueOfNode(father), escolha);
+        if(aux == -1) {
             if(father->left)
                 father = father->left;
             else {
                 break;
             }
         } else {
-            if(father->right) {
-                if(putOnTheSide(father->right, ))
-                father = father->right;
+            if(!aux) {
+                if(busca) {
+                    insertElement(busca, valueOfNode(father), escolha);
+                } else {
+                    makeTree(busca, valueOfNode(father));
+                }
             }
+            if(father->right)
+                father = father->right;
             else {
-                setRight(father, values);
                 break;
             }
         }
