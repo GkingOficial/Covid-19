@@ -4,24 +4,80 @@
 #include<string.h>
 #include<math.h>
 
-#define DUMP(varname) fprintf(stderr, "%s", #varname);
+#define DUMP(varname) fprintf(stderr, "%s", #varname)
+#define NONE 0
 #define CASOS 1
 #define SEDENTARISMO 2
 #define SONO 3
 #define ALIMENTACAO 4
 #define PSICOLOGICO 5
+int treeOrdering = NONE;
 
 int main() {
     FILE *file;
     CSV csv;
     BINARY_TREE tree;
+    char optionUser[30];
+    int choice;
     
     file = fopen("amostra de dados.csv", "r");
     setRowsAndColumns(file, &csv);
     file = fopen("amostra de dados.csv", "r");
     readCSV(file, &csv);
     printCSV(csv);
-    printf("\n\n\n\n\n\n");
+    printf("\n");
+
+    // Solicitação para o usuário
+    scanf("%[^\n]", optionUser);
+
+    // Ordenação
+    if(strcmp(optionUser, "ordenate") == 0) {
+        printf("Ordernar por...\n[ 1 ] Quantidade de casos\n[ 2 ] Nível de sedentarismo\n[ 3 ] Qualidade do sono\n[ 4 ] Qualidade da alimentação\n[ 5 ] Qualidade psicológica\n[ 6 ] Ordem alfabética dos estados\n");
+        printf("Escolha uma opção: ");
+        scanf("%d", &choice);
+
+        generateTree(&tree, &csv, choice);
+        treeOrdering = choice;
+
+
+        printf("Tipo de ordenação:\n[ 1 ] Crescente\n[ 2 ] Decrescente\nEscolha a opção: ");
+        scanf("%d", &choice);
+        if(choice == 1) {
+            ascendingOrder(tree);
+        } else {
+            descendingOrder(tree);
+        }
+    } else if(strcmp(optionUser, "generate csv file") == 0) {
+        char nameOfFile[30];
+        scanf("%[^\n]", nameOfFile);
+
+        if(treeOrdering > 0) {
+            // generateFromTreeToCSVFile(&tree, nameOfFile);
+        } else {
+            // generateFromCsvToCSVFile(&csv, nameOfFile);
+        }
+    } else if(strcmp(optionUser, "search") == 0) {
+        int quantidade;
+        BINARY_TREE *busca;
+        printf("Procurar com base em...\n[ 1 ] Quantidade de casos\n[ 2 ] Nível de sedentarismo\n[ 3 ] Qualidade do sono\n[ 4 ] Qualidade da alimentação\n[ 5 ] Qualidade psicológica\n");
+        printf("Escolha uma opção: ");
+        scanf("%d", &choice);
+        printf("Quantidade: ", quantidade);
+        scanf("%d", &quantidade);
+
+        if(choice == CASOS) {
+            busca = buscaNaArvore(&tree, quantidade, CASOS);
+        } else if(choice == SEDENTARISMO) {
+            busca = buscaNaArvore(&tree, quantidade, SEDENTARISMO);
+        } else if(choice == SONO) {
+            busca = buscaNaArvore(&tree, quantidade, SONO);
+        } else if(choice == ALIMENTACAO) {
+            busca = buscaNaArvore(&tree, quantidade, ALIMENTACAO);
+        } else if(choice == PSICOLOGICO) {
+            busca = buscaNaArvore(&tree, quantidade, PSICOLOGICO);
+        }
+        preOrderRoute(*busca);
+    }
 }
 
 void setRowsAndColumns(FILE *file, CSV *csv) {
@@ -207,14 +263,56 @@ int isRight(BINARY_TREE tree) {
     return (0);
 }
 
-int putOnTheLeftSide(VALUES values1, VALUES values2, int organizate) {
+int putOnTheSide(VALUES values1, VALUES values2, int organizate) {
+    int aux;
     switch(organizate) {
-        case 1: return values1.casos < values2.casos;
-        case 2: return values1.saude.sedentarismo < values2.saude.sedentarismo;
-        case 3: return values1.saude.qualidadeDoSono < values2.saude.qualidadeDoSono;
-        case 4: return values1.saude.qualidadeDaAlimentacao < values2.saude.qualidadeDaAlimentacao;
-        case 5: return values1.saude.estadoPsicologico < values2.saude.estadoPsicologico;
+        case 1: 
+            if(values1.casos < values2.casos) {
+                aux = -1;
+            } else if(values1.casos > values2.casos) {
+                aux = 1;
+            } else {
+                aux = 0;
+            }
+            break;
+        case 2:
+            if(values1.saude.sedentarismo < values2.saude.sedentarismo) {
+                aux = -1;
+            } else if(values1.saude.sedentarismo > values2.saude.sedentarismo) {
+                aux = 1;
+            } else {
+                aux = 0;
+            }
+            break;
+        case 3:
+            if(values1.saude.qualidadeDoSono < values2.saude.qualidadeDoSono) {
+                aux = -1;
+            } else if(values1.saude.qualidadeDoSono > values2.saude.qualidadeDoSono) {
+                aux = 1;
+            } else {
+                aux = 0;
+            }
+            break;
+        case 4:
+            if(values1.saude.qualidadeDaAlimentacao < values2.saude.qualidadeDaAlimentacao) {
+                aux = -1;
+            } else if(values1.saude.qualidadeDaAlimentacao > values2.saude.qualidadeDaAlimentacao) {
+                aux = 1;
+            } else {
+                aux = 0;
+            }
+            break;
+        case 5:
+            if(values1.saude.estadoPsicologico < values2.saude.estadoPsicologico) {
+                aux = -1;
+            } else if(values1.saude.estadoPsicologico > values2.saude.estadoPsicologico) {
+                aux = 1;
+            } else {
+                aux = 0;
+            }
+            break;
     }
+    return aux;
 }
 
 void insertElement(BINARY_TREE *tree, VALUES values, int organizate) {
@@ -223,7 +321,7 @@ void insertElement(BINARY_TREE *tree, VALUES values, int organizate) {
     else {
         BINARY_TREE father = (*tree);
         do {
-            if(putOnTheLeftSide(values, valueOfNode(father), organizate)) {
+            if(putOnTheSide(values, valueOfNode(father), organizate) == -1) {
                 if(father->left)
                     father = father->left;
                 else {
@@ -300,7 +398,13 @@ void removalByCopy(BINARY_TREE *tree) {
 
 void preOrderRoute(BINARY_TREE tree) {
     if (tree) {
-        printf("%d...", valueOfNode(tree).casos);
+        printf("%*s%*s| ", -12, valueOfNode(tree).estado, 4, "");
+        printf("%-12d| ", valueOfNode(tree).casos);
+        printf("%-12d| ", valueOfNode(tree).saude.sedentarismo);
+        printf("%-12d| ", valueOfNode(tree).saude.qualidadeDoSono);
+        printf("%-12d| ", valueOfNode(tree).saude.qualidadeDaAlimentacao);
+        printf("%-12d| ", valueOfNode(tree).saude.estadoPsicologico);
+        puts("");
         preOrderRoute(left(tree));
         preOrderRoute(right(tree));
     }
@@ -310,7 +414,13 @@ void postOrderRoute(BINARY_TREE tree) {
     if (tree) {
         postOrderRoute(left(tree));
         postOrderRoute(right(tree));
-        printf("%d...", valueOfNode(tree).casos);
+        printf("%*s%*s| ", -12, valueOfNode(tree).estado, 4, "");
+        printf("%-12d| ", valueOfNode(tree).casos);
+        printf("%-12d| ", valueOfNode(tree).saude.sedentarismo);
+        printf("%-12d| ", valueOfNode(tree).saude.qualidadeDoSono);
+        printf("%-12d| ", valueOfNode(tree).saude.qualidadeDaAlimentacao);
+        printf("%-12d| ", valueOfNode(tree).saude.estadoPsicologico);
+        puts("");
     }
 }
 
@@ -331,7 +441,13 @@ void ascendingOrder(BINARY_TREE tree) {
 void descendingOrder(BINARY_TREE tree) {
     if(tree) {
         descendingOrder(right(tree));
-        printf("%d...", valueOfNode(tree).casos);
+        printf("%*s%*s| ", -12, valueOfNode(tree).estado, 4, "");
+        printf("%-12d| ", valueOfNode(tree).casos);
+        printf("%-12d| ", valueOfNode(tree).saude.sedentarismo);
+        printf("%-12d| ", valueOfNode(tree).saude.qualidadeDoSono);
+        printf("%-12d| ", valueOfNode(tree).saude.qualidadeDaAlimentacao);
+        printf("%-12d| ", valueOfNode(tree).saude.estadoPsicologico);
+        puts("");
         descendingOrder(left(tree));
     }
 }
@@ -365,4 +481,60 @@ void printVALUES(VALUES *values) {
     printf("%s = %d%c", "Sono", values->saude.qualidadeDoSono, '\n');
     printf("%s = %d%c", "Alimentação", values->saude.qualidadeDaAlimentacao, '\n');
     printf("%s = %d%s", "Estado psicológico", values->saude.estadoPsicologico, "\n\n");
+}
+
+void helperToSearch(BINARY_TREE tree) {
+    if (tree) {
+        ascendingOrder(left(tree));
+        printf("%*s%*s| ", -12, valueOfNode(tree).estado, 4, "");
+        printf("%-12d| ", valueOfNode(tree).casos);
+        printf("%-12d| ", valueOfNode(tree).saude.sedentarismo);
+        printf("%-12d| ", valueOfNode(tree).saude.qualidadeDoSono);
+        printf("%-12d| ", valueOfNode(tree).saude.qualidadeDaAlimentacao);
+        printf("%-12d| ", valueOfNode(tree).saude.estadoPsicologico);
+        puts("");
+        ascendingOrder(right(tree));
+    }
+}
+
+BINARY_TREE *buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha) {
+    BINARY_TREE *busca = (BINARY_TREE *) malloc(sizeof(BINARY_TREE));
+    BINARY_TREE father = (*tree);
+    VALUES values;
+    do {
+        switch(escolha) {
+            case CASOS:
+                values.casos = quantidade;
+                break;
+            case SEDENTARISMO:
+                values.saude.sedentarismo = quantidade;
+                break;
+            case SONO:
+                values.saude.qualidadeDoSono = quantidade;
+                break;
+            case ALIMENTACAO:
+                values.saude.qualidadeDaAlimentacao = quantidade;
+                break;
+            case PSICOLOGICO:
+                values.saude.estadoPsicologico = quantidade;
+                break;
+        }
+        if(putOnTheSide(values, valueOfNode(father), escolha) == -1) {
+            if(father->left)
+                father = father->left;
+            else {
+                break;
+            }
+        } else {
+            if(father->right) {
+                if(putOnTheSide(father->right, ))
+                father = father->right;
+            }
+            else {
+                setRight(father, values);
+                break;
+            }
+        }
+    } while(TRUE);
+    return busca;
 }
