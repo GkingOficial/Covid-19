@@ -58,7 +58,7 @@ int main() {
                 char nameOfFile[31];
                 printf(">>> Nome do arquivo: ");
                 setbuf(stdin, NULL);
-                scanf("%[^\n]", nameOfFile);
+                scanf("%30[^\n]", nameOfFile);
                 
                 if(generateFromTreeToCSVFile(&tree, nameOfFile)) {
                     printf("file created successfully!!!\n\n");
