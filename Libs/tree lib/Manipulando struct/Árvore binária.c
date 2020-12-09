@@ -482,7 +482,7 @@ VALUES *fromCSVToValue(CSV *csv, int line) {
 }
 
 void printVALUES(VALUES values) {
-    printf("%s = %s%c", "Estado", values.estado, '\n');
+    printf("\n%s = %s%c", "Estado", values.estado, '\n');
     printf("%s = %d%c", "Casos", values.casos, '\n');
     printf("%s = %d%c", "Sedentarismo", values.saude.sedentarismo, '\n');
     printf("%s = %d%c", "Sono", values.saude.qualidadeDoSono, '\n');
