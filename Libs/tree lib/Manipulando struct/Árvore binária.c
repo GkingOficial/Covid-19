@@ -19,7 +19,8 @@ int main() {
     BINARY_TREE tree;
     char optionUser[30];
     int choice;
-    
+    int ordenacao;
+
     file = fopen("amostra de dados.csv", "r");
     setRowsAndColumns(file, &csv);
     file = fopen("amostra de dados.csv", "r");
@@ -41,12 +42,11 @@ int main() {
 
             generateTree(&tree, &csv, choice);
             treeOrdering = choice;
-            printf("Arvore ordenada por %d\n", choice);
 
 
             printf("Tipo de ordenação:\n[ 1 ] Crescente\n[ 2 ] Decrescente\nEscolha a opção: ");
-            scanf("%d", &choice);
-            if(choice == 1) {
+            scanf("%d", &ordenacao);
+            if(ordenacao == 1) {
                 ascendingOrder(tree);
             } else {
                 descendingOrder(tree);
@@ -54,45 +54,21 @@ int main() {
         }
         else if(strcmp(optionUser, "generate csv file") == 0) {
             if(treeOrdering > 0) {
+                FILE *aux;
                 char nameOfFile[31];
                 printf(">>> Nome do arquivo: ");
                 setbuf(stdin, NULL);
                 scanf("%[^\n]", nameOfFile);
-
+                
                 if(generateFromTreeToCSVFile(&tree, nameOfFile)) {
                     printf("file created successfully!!!\n\n");
                 } else {
-                    printf("Nome grande demais\n\n");
+                    printf("Nome grande demais para o arquivo\n\n");
                 }
             } else {
                 printf("A vizualizacao da tabela não mudou!!!\n\n");
             }
         }
-        // else if(strcmp(optionUser, "search") == 0) {
-        //     int quantidade;
-        //     BINARY_TREE *busca;
-        //     printf("Procurar com base em...\n[ 1 ] Quantidade de casos\n[ 2 ] Nível de sedentarismo\n[ 3 ] Qualidade do sono\n[ 4 ] Qualidade da alimentação\n[ 5 ] Qualidade psicológica\n");
-        //     printf("Escolha uma opção: ");
-        //     scanf("%d", &choice);
-        //     printf("Quantidade: ", quantidade);
-        //     scanf("%d", &quantidade);
-
-        //     generateTree(&tree, &csv, choice);
-        //     treeOrdering = choice;
-
-        //     if(choice == CASOS) {
-        //         busca = buscaNaArvore(&tree, quantidade, CASOS);
-        //     } else if(choice == SEDENTARISMO) {
-        //         busca = buscaNaArvore(&tree, quantidade, SEDENTARISMO);
-        //     } else if(choice == SONO) {
-        //         busca = buscaNaArvore(&tree, quantidade, SONO);
-        //     } else if(choice == ALIMENTACAO) {
-        //         busca = buscaNaArvore(&tree, quantidade, ALIMENTACAO);
-        //     } else if(choice == PSICOLOGICO) {
-        //         busca = buscaNaArvore(&tree, quantidade, PSICOLOGICO);
-        //     }
-        //     preOrderRoute(*busca);
-        // }
     } while(strcmp(optionUser, "exit"));
 }
 
@@ -499,20 +475,6 @@ void printVALUES(VALUES *values) {
     printf("%s = %d%s", "Estado psicológico", values->saude.estadoPsicologico, "\n\n");
 }
 
-void helperToSearch(BINARY_TREE tree) {
-    if (tree) {
-        ascendingOrder(left(tree));
-        printf("%*s%*s| ", -12, valueOfNode(tree).estado, 4, "");
-        printf("%-12d| ", valueOfNode(tree).casos);
-        printf("%-12d| ", valueOfNode(tree).saude.sedentarismo);
-        printf("%-12d| ", valueOfNode(tree).saude.qualidadeDoSono);
-        printf("%-12d| ", valueOfNode(tree).saude.qualidadeDaAlimentacao);
-        printf("%-12d| ", valueOfNode(tree).saude.estadoPsicologico);
-        puts("");
-        ascendingOrder(right(tree));
-    }
-}
-
 BINARY_TREE *buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha) {
     BINARY_TREE *busca = NULL;
     BINARY_TREE father = (*tree);
@@ -567,7 +529,6 @@ FILE *generateFromTreeToCSVFile(BINARY_TREE *tree, char *nameOfFile){
     if(strlen(nameOfFile) > 30){
         return NULL;
     }
-
     char name[35];
     strcpy(name, nameOfFile);
     strcat(name, ".csv");
@@ -576,6 +537,7 @@ FILE *generateFromTreeToCSVFile(BINARY_TREE *tree, char *nameOfFile){
     aux = fopen(name, "w");
     
     printInFile(*tree, aux);
+    fclose(aux);
     return aux;
 }
 
@@ -590,8 +552,4 @@ void printInFile(BINARY_TREE tree, FILE *file) {
         fprintf(file, "%d\n", valueOfNode(tree).saude.estadoPsicologico);
         printInFile(right(tree), file);
     }
-}
-
-FILE *generateFromCsvToCSVFile(&csv, nameOfFile){
-
 }
