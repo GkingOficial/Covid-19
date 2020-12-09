@@ -22,8 +22,8 @@ int main() {
     readCSV(file, &csv);
     printCSV(csv);
     printf("\n");
-
-    char *t = "Test.csv";
+    
+    char *t = "File";
     generateTree(&tree, &csv, 5);
     generateFromTreeToCSVFile(&tree, t);
 }
@@ -372,8 +372,18 @@ void printVALUES(VALUES *values) {
 }
 
 FILE *generateFromTreeToCSVFile(BINARY_TREE *tree, char *nameOfFile){
+    if(strlen(nameOfFile) > 30){
+        puts("The file name exceeds 30 characters!");
+        return NULL;
+    }
+
+    char name[35];
+    strcpy(name, nameOfFile);
+    strcat(name, ".csv");
+
     FILE *aux;
-    aux = fopen(nameOfFile, "w");
+    aux = fopen(name, "w");
+    
     printInFile(*tree, aux);
 }
 
