@@ -69,3 +69,5 @@ void printVALUES(VALUES *values);
 int putOnTheLeftSide(VALUES values1, VALUES values2, int organizate);
 FILE *generateFromTreeToCSVFile(BINARY_TREE *tree, char *nameOfFile);
 FILE *generateFromCsvToCSVFile(CSV *csv, char *nameOfFile);
+
+void printInFile(BINARY_TREE , FILE *);

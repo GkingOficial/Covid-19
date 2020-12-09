@@ -21,7 +21,11 @@ int main() {
     file = fopen("amostra de dados.csv", "r");
     readCSV(file, &csv);
     printCSV(csv);
-    printf("\n\n\n\n\n\n");
+    printf("\n");
+
+    char *t = "Testando.csv";
+    generateTree(&tree, &csv, 2);
+    generateFromTreeToCSVFile(&tree, t);
 }
 
 void setRowsAndColumns(FILE *file, CSV *csv) {
@@ -365,4 +369,23 @@ void printVALUES(VALUES *values) {
     printf("%s = %d%c", "Sono", values->saude.qualidadeDoSono, '\n');
     printf("%s = %d%c", "Alimentação", values->saude.qualidadeDaAlimentacao, '\n');
     printf("%s = %d%s", "Estado psicológico", values->saude.estadoPsicologico, "\n\n");
+}
+
+FILE *generateFromTreeToCSVFile(BINARY_TREE *tree, char *nameOfFile){
+    FILE *aux;
+    aux = fopen(nameOfFile, "w");
+    printInFile(*tree, aux);
+}
+
+void printInFile(BINARY_TREE tree, FILE *file){
+    if (tree) {
+        printInFile(left(tree), file);
+        fprintf(file, "%s,", valueOfNode(tree).estado);
+        fprintf(file, "%d,", valueOfNode(tree).casos);
+        fprintf(file, "%d,", valueOfNode(tree).saude.sedentarismo);
+        fprintf(file, "%d,", valueOfNode(tree).saude.qualidadeDoSono);
+        fprintf(file, "%d,", valueOfNode(tree).saude.qualidadeDaAlimentacao);
+        fprintf(file, "%d,\n", valueOfNode(tree).saude.estadoPsicologico);
+        printInFile(right(tree), file);
+    }
 }
