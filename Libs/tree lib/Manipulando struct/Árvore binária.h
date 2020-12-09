@@ -67,3 +67,4 @@ int putOnTheSide(VALUES values1, VALUES values2, int organizate);
 FILE *generateFromTreeToCSVFile(BINARY_TREE *tree, char *nameOfFile);
 FILE *generateFromCsvToCSVFile(CSV *csv, char *nameOfFile);
 BINARY_TREE *buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha);
+void printInFile(BINARY_TREE tree, FILE *file);

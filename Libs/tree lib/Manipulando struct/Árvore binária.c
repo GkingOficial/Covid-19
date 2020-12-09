@@ -549,3 +549,32 @@ BINARY_TREE *buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha) {
     } while(TRUE);
     return busca;
 }
+
+FILE *generateFromTreeToCSVFile(BINARY_TREE *tree, char *nameOfFile){
+    if(strlen(nameOfFile) > 30){
+        puts("The file name exceeds 30 characters!");
+        return NULL;
+    }
+
+    char name[35];
+    strcpy(name, nameOfFile);
+    strcat(name, ".csv");
+
+    FILE *aux;
+    aux = fopen(name, "w");
+    
+    printInFile(*tree, aux);
+}
+
+void printInFile(BINARY_TREE tree, FILE *file) {
+    if (tree) {
+        printInFile(left(tree), file);
+        fprintf(file, "%s,", valueOfNode(tree).estado);
+        fprintf(file, "%d,", valueOfNode(tree).casos);
+        fprintf(file, "%d,", valueOfNode(tree).saude.sedentarismo);
+        fprintf(file, "%d,", valueOfNode(tree).saude.qualidadeDoSono);
+        fprintf(file, "%d,", valueOfNode(tree).saude.qualidadeDaAlimentacao);
+        fprintf(file, "%d,\n", valueOfNode(tree).saude.estadoPsicologico);
+        printInFile(right(tree), file);
+    }
+}
