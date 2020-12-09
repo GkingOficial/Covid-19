@@ -23,8 +23,8 @@ int main() {
     printCSV(csv);
     printf("\n");
 
-    char *t = "Testando.csv";
-    generateTree(&tree, &csv, 2);
+    char *t = "Test.csv";
+    generateTree(&tree, &csv, 5);
     generateFromTreeToCSVFile(&tree, t);
 }
 
