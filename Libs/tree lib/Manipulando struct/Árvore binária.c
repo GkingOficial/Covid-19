@@ -1,4 +1,4 @@
-#include"./Árvore binária.h"
+#include"./Arvore binaria.h"
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
