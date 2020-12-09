@@ -55,7 +55,7 @@ int main() {
             if(treeOrdering > 0) {
                 generateFromTreeToCSVFile(&tree, nameOfFile);
             } else {
-                // generateFromCsvToCSVFile(&csv, nameOfFile);
+                generateFromCsvToCSVFile(&csv, nameOfFile);
             }
         } else if(strcmp(optionUser, "search") == 0) {
             int quantidade;
@@ -581,4 +581,6 @@ void printInFile(BINARY_TREE tree, FILE *file) {
     }
 }
 
-//TESTANDO
+FILE *generateFromCsvToCSVFile(&csv, nameOfFile){
+    
+}
