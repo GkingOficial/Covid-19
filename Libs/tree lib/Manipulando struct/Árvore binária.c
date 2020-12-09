@@ -65,6 +65,9 @@ int main() {
         printf("Quantidade: ", quantidade);
         scanf("%d", &quantidade);
 
+        generateTree(&tree, &csv, choice);
+        treeOrdering = choice;
+
         if(choice == CASOS) {
             busca = buscaNaArvore(&tree, quantidade, CASOS);
         } else if(choice == SEDENTARISMO) {
@@ -520,6 +523,7 @@ BINARY_TREE *buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha) {
     }
     do {
         int aux = putOnTheSide(values, valueOfNode(father), escolha);
+        printf("1");
         if(aux == -1) {
             if(father->left)
                 father = father->left;
@@ -530,8 +534,10 @@ BINARY_TREE *buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha) {
             if(!aux) {
                 if(busca) {
                     insertElement(busca, valueOfNode(father), escolha);
+                    printf("2");
                 } else {
                     makeTree(busca, valueOfNode(father));
+                    printf("3");
                 }
             }
             if(father->right)
