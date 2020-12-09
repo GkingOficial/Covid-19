@@ -82,7 +82,7 @@ int main() {
             printf("Quantidade: ");
             scanf("%d", &quantidade);
             
-            busca = buscaNaArvore(&tree, quantidade, choice);
+            buscaNaArvore(&tree, quantidade, choice);
         }
     } while(strcmp(optionUser, "exit"));
 }
@@ -490,8 +490,8 @@ void printVALUES(VALUES values) {
     printf("%s = %d%s", "Estado psicológico", values.saude.estadoPsicologico, "\n\n");
 }
 
-BINARY_TREE *buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha) {
-    BINARY_TREE search = NULL;
+void buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha) {
+
     BINARY_TREE father = (*tree);
     VALUES values;
     
@@ -523,11 +523,7 @@ BINARY_TREE *buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha) {
         }
         else {
             if(aux == 0) {
-                if(search) {
-                    printVALUES(valueOfNode(father));
-                } else {
-                    printVALUES(valueOfNode(father));
-                }
+                printVALUES(valueOfNode(father));
             }
             if(father->right)
                 father = father->right;
@@ -536,7 +532,6 @@ BINARY_TREE *buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha) {
             }
         }
     } while(TRUE);
-    return &search;
 }
 
 FILE *generateFromTreeToCSVFile(BINARY_TREE *tree, char *nameOfFile){
