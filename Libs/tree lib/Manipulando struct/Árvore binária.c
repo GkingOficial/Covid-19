@@ -19,7 +19,6 @@ int main() {
     BINARY_TREE tree;
     char optionUser[30];
     int choice;
-    int ordenacao;
 
     file = fopen("amostra de dados.csv", "r");
     setRowsAndColumns(file, &csv);
@@ -36,14 +35,18 @@ int main() {
         
         // Ordenação
         if(strcmp(optionUser, "ordenate") == 0) {
+            int ordenacao;
             printf("Ordernar por...\n[ 1 ] Quantidade de casos\n[ 2 ] Nível de sedentarismo\n[ 3 ] Qualidade do sono\n[ 4 ] Qualidade da alimentação\n[ 5 ] Qualidade psicológica\n");
             printf("Escolha uma opção: ");
             scanf("%d", &choice);
 
-            generateTree(&tree, &csv, choice);
-            treeOrdering = choice;
-
-
+            if(treeOrdering != choice) {
+                // acredito que aqui viria a função de destruir a árvore
+                generateTree(&tree, &csv, choice);
+                printf("Árvore gerada com base em: %d\n\n", choice);
+                treeOrdering = choice;
+            }
+            
             printf("Tipo de ordenação:\n[ 1 ] Crescente\n[ 2 ] Decrescente\nEscolha a opção: ");
             scanf("%d", &ordenacao);
             if(ordenacao == 1) {
@@ -66,7 +69,7 @@ int main() {
                     printf("Nome grande demais para o arquivo\n\n");
                 }
             } else {
-                printf("A vizualizacao da tabela não mudou!!!\n\n");
+                printf("A vizualizacao dos dados não foi alterada (os dados já se encontram em amostra de dados)!!!\n\n");
             }
         } else if(strcmp(optionUser, "search") == 0) {
             int quantidade;
@@ -76,8 +79,12 @@ int main() {
             printf("Escolha uma opção: ");
             scanf("%d", &choice);
 
-            generateTree(&tree, &csv, choice);
-            treeOrdering = choice;
+            if(treeOrdering != choice) {
+                // acredito que aqui viria a função de destruir a árvore
+                generateTree(&tree, &csv, choice);
+                printf("Árvore gerada com base em: %d\n\n", choice);
+                treeOrdering = choice;
+            }
 
             printf("Quantidade: ");
             scanf("%d", &quantidade);
