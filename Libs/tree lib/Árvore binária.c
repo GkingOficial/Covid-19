@@ -1,16 +1,16 @@
-#include"./Arvore binaria.h"
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
-#include<math.h>
+#include "../csv lib/csv reader.c"
+#include "./Arvore binaria.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-#define DUMP(varname) fprintf(stderr, "%s", #varname)
 #define NONE 0
 #define CASOS 1
 #define SEDENTARISMO 2
 #define SONO 3
 #define ALIMENTACAO 4
 #define PSICOLOGICO 5
+
 int treeOrdering = NONE;
 
 int main() {
@@ -72,7 +72,6 @@ int main() {
             }
         } else if(strcmp(optionUser, "search") == 0) {
             int quantidade;
-            BINARY_TREE *busca;
             printf("Procurar com base em...\n[ 1 ] Quantidade de casos\n[ 2 ] Nível de sedentarismo\n[ 3 ] Qualidade do sono\n[ 4 ] Qualidade da alimentação\n[ 5 ] Qualidade psicológica\n");
 
             printf("Escolha uma opção: ");
@@ -92,88 +91,6 @@ int main() {
         }
     } while(strcmp(optionUser, "exit"));
 }
-
-void setRowsAndColumns(FILE *file, CSV *csv) {
-    char c;
-    int rows = 1, columns = 1;
-
-    while(c = getc(file), c != '\n'){
-        if(c == ','){
-            columns++;
-        }
-    }
-    while(c = getc(file), !feof(file)){
-        if(c == '\n'){
-            rows++;
-        }
-    }
-    csv->column = columns;
-    csv->row = rows;
-    fseek(file, 0, SEEK_SET);
-}
-
-void readCSV(FILE *file, CSV *csv){
-    char texto[100], *word;
-    int i, j, column, row;
-    
-    csv->array = NULL;
-    csv->array = (char ***)malloc(sizeof(char **) * csv->row);
-    if(csv->array == NULL) {
-        printf("There is not storage enough\n");
-    }
-    for(i=0; i<csv->row; i++) {
-        csv->array[i] = (char **)malloc(sizeof(char *) * csv->column);
-        if(csv->array[i] == NULL) {
-            printf("There is not storage enough\n");
-        }
-    }
-
-    row = 0;
-    while(fgets(texto, 100, file)) {
-        column = 0;
-        
-        texto[strlen(texto) - 1] = '\0';
-        word = strtok(texto, ",");
-
-        while(word) {
-            int lengthOfWord = strlen(word);
-            csv->array[row][column] = (char *)malloc(sizeof(char) * (lengthOfWord + 1));
-            if(csv->array[row][column] == NULL) {
-                printf("There is not storage enough\n");
-            }
-            strcpy(csv->array[row][column], word);
-            column++;
-
-            word = strtok(NULL, ",");
-        }
-        row++;
-    }
-}
-
-void printTitle(CSV csv) {
-    for(int j = 0; j < csv.column; j++) {
-        printf("%*s%*s| ", -12, csv.array[0][j], 4, "");
-    }
-    puts("");
-}
-
-void printCSV(CSV csv){
-    for(int j = 0; j < csv.column; j++) {
-        printf("%*s%*s| ", -12, csv.array[0][j], 4, "");
-    }
-    puts("");
-    for(int i = 1; i < csv.row; i++) {
-        for(int j = 0; j < csv.column; j++) {
-            if(j >= 2) {
-                printf("%*s%*s| ", -12, csv.array[i][j], 4, "%");
-            } else {
-                printf("%*s%*s| ", -12, csv.array[i][j], 4, "");
-            }
-        }
-        puts("\b\b");
-    }
-}
-
 
 void centerText(char *text, int fieldWidth) {
     int padlen = (fieldWidth - strlen(text)) / 2;
@@ -254,12 +171,15 @@ BINARY_TREE father(BINARY_TREE tree) {
 }
 
 BINARY_TREE brother(BINARY_TREE tree) {
-    if (father(tree))
-        if (isLeft(tree))
+    if (father(tree)){
+        if (isLeft(tree)){
             return right(father(tree));
-        else
+        } else {
             return left(father(tree));
-    return NULL;
+        }
+    } else {
+        return NULL;
+    }
 }
 
 int isLeft(BINARY_TREE tree) {
@@ -586,7 +506,7 @@ void printInFile(BINARY_TREE tree, FILE *file, int order) {
     }
 }
  
-FILE *generateFromCsvToCSVFile(CSV csv, char *nameOfFile) {
+FILE *generateFromCsvToCSVFile(CSV csv, char *nameOfFile){
     if(strlen(nameOfFile) > 30){
         puts("The file name exceed 30 characters!");
         return NULL;

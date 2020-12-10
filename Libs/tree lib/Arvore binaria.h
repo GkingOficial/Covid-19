@@ -1,35 +1,31 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
-#define TRUE 1
+#ifndef ARVORE_BINARIA
+#define ARVORE_BINARIA
+#endif
 
-typedef struct{
-    int row;
-    int column;
-    char ***array;
-}CSV;
-void setRowsAndColumns(FILE *file, CSV *csv);
-void readCSV(FILE *file, CSV *csv);
-void printCSV(CSV csv);
-void printTitle(CSV csv);
+#include <stdlib.h>
+
+#define TRUE 1
 
 typedef struct {
     int sedentarismo;
     int qualidadeDoSono;
     int qualidadeDaAlimentacao;
     int estadoPsicologico;
-}HEALTH_INFORMATION;
+} HEALTH_INFORMATION;
+
 typedef struct {
     char estado[30];
     int casos;
     HEALTH_INFORMATION saude;
-}VALUES;
+} VALUES;
+
 typedef struct node {
     struct node *left;
     struct node *right;
     struct node *father;
     VALUES informations;
-}NODE;
+} NODE;
+
 typedef NODE *BINARY_TREE;
 
 void makeTree(BINARY_TREE *tree, VALUES values);
@@ -67,3 +63,5 @@ FILE *generateFromTreeToCSVFile(BINARY_TREE *tree, char *nameOfFile, int order);
 FILE *generateFromCsvToCSVFile(CSV csv, char *nameOfFile);
 void buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha);
 void printInFile(BINARY_TREE tree, FILE *file, int order);
+
+void clearBuffer();
