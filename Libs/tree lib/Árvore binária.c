@@ -25,7 +25,7 @@ int main() {
     setRowsAndColumns(file, &csv);
     readCSV(file, &csv);
     printCSV(csv);
-    printf("\n");
+    printf("\n(Digite help para saber mais)\n");
 
     do {
         // Solicitação para o usuário
@@ -43,11 +43,10 @@ int main() {
             if(treeOrdering != choice) {
                 // acredito que aqui viria a função de destruir a árvore
                 generateTree(&tree, &csv, choice);
-                printf("Árvore gerada com base em: %d\n\n", choice);
                 treeOrdering = choice;
             }
             
-            printf("Tipo de ordenação:\n[ 1 ] Crescente\n[ 2 ] Decrescente\nEscolha a opção: ");
+            printf("Tipo de ordenação...\n[ 1 ] Crescente\n[ 2 ] Decrescente\nEscolha a opção: ");
             scanf("%d", &ordenacao);
             if(ordenacao == 1) {
                 ascendingOrder(tree);
@@ -82,13 +81,14 @@ int main() {
             if(treeOrdering != choice) {
                 // acredito que aqui viria a função de destruir a árvore
                 generateTree(&tree, &csv, choice);
-                printf("Árvore gerada com base em: %d\n\n", choice);
                 treeOrdering = choice;
             }
             printf("Quantidade: ");
             scanf("%d", &quantidade);
             
             buscaNaArvore(&tree, quantidade, choice);
+        } else if(strcmp(optionUser, "help") == 0) {
+            printf("\nFunções:\n- ordenate (faz a ordenação crescente ou decrescente dos dados a partir de um campo especificado)\n- generate csv file (gera arquivo csv a partir da última tabela amostrada no programa)\n- search (faz a busca de um determinado valor dentro dos dados a partir de um campo especificado)\n- exit (finaliza o programa)\n- help (amostra todas as funcionalidades do programa)\n\n");
         }
     } while(strcmp(optionUser, "exit"));
 }
