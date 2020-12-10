@@ -35,12 +35,8 @@ int main() {
         
         // Ordenação
         if(strcmp(optionUser, "ordenate") == 0) {
-<<<<<<< HEAD
-            printf("Ordernar por...\n[ 1 ] Quantidade de casos\n[ 2 ] Nível de sedentarismo\n[ 3 ] Qualidade do sono\n[ 4 ] Qualidade da alimentação\n[ 5 ] Qualidade psicológica\n[ 6 ] Ordem alfabética dos estados\n");
-=======
             
             printf("Ordernar por...\n[ 1 ] Quantidade de casos\n[ 2 ] Nível de sedentarismo\n[ 3 ] Qualidade do sono\n[ 4 ] Qualidade da alimentação\n[ 5 ] Qualidade psicológica\n");
->>>>>>> be5ab6ef107d0fc404f8cbb3d94014954c2dab3c
             printf("Escolha uma opção: ");
             scanf("%d", &choice);
 
@@ -58,20 +54,6 @@ int main() {
             }
         }
         else if(strcmp(optionUser, "generate csv file") == 0) {
-<<<<<<< HEAD
-            char nameOfFile[31];
-
-            printf(">>> Nome do arquivo (máx. 30 caracteres): ");
-
-            setbuf(stdin, NULL);
-            if(treeOrdering > 0){
-                if(generateFromTreeToCSVFile(&tree, nameOfFile, choice)){
-                    puts("File created successfully!!!");
-                }
-            } else {
-                if(generateFromCsvToCSVFile(csv,  nameOfFile)){
-                    puts("File created successfully!!!");
-=======
             char nameOfFile[32];
             printf(">>> Nome do arquivo: ");
             setbuf(stdin, NULL);
@@ -85,7 +67,6 @@ int main() {
             } else {
                 if(generateFromCsvToCSVFile(csv, nameOfFile)) {
                     printf("File created successfully!!!\n\n");
->>>>>>> be5ab6ef107d0fc404f8cbb3d94014954c2dab3c
                 }
             }
         }
@@ -112,14 +93,10 @@ int main() {
             } else if(choice == PSICOLOGICO) {
                 busca = buscaNaArvore(&tree, quantidade, PSICOLOGICO);
             }
-<<<<<<< HEAD
-            preOrderRoute(*busca);
-=======
             printf("Quantidade: ");
             scanf("%d", &quantidade);
             
             buscaNaArvore(&tree, quantidade, choice);
->>>>>>> be5ab6ef107d0fc404f8cbb3d94014954c2dab3c
         }
     } while(strcmp(optionUser, "exit"));
 }
@@ -597,11 +574,7 @@ FILE *generateFromTreeToCSVFile(BINARY_TREE *tree, char *nameOfFile, int order){
         puts("The file name exceed 30 characters!");
         return NULL;
     }
-<<<<<<< HEAD
-
-=======
  
->>>>>>> be5ab6ef107d0fc404f8cbb3d94014954c2dab3c
     char name[35];
     strcpy(name, nameOfFile);
     strcat(name, ".csv");
@@ -614,11 +587,7 @@ FILE *generateFromTreeToCSVFile(BINARY_TREE *tree, char *nameOfFile, int order){
     fclose(aux);
     return aux;
 }
-<<<<<<< HEAD
-
-=======
  
->>>>>>> be5ab6ef107d0fc404f8cbb3d94014954c2dab3c
 void printInFile(BINARY_TREE tree, FILE *file, int order) {
     if(order == 1){
         if(tree){
@@ -642,24 +611,6 @@ void printInFile(BINARY_TREE tree, FILE *file, int order) {
             fprintf(file, "%d\n", valueOfNode(tree).saude.estadoPsicologico);
             printInFile(left(tree), file, order);
         }
-<<<<<<< HEAD
-    }
-}
-
-FILE *generateFromCsvToCSVFile(CSV csv, char *nameOfFile){
-    if(strlen(nameOfFile) > 30){
-        puts("The file name exceed 30 characters!");
-        return NULL;
-    }
-
-    char name[35];
-    strcpy(name, nameOfFile);
-    strcat(name, ".csv");
-
-    FILE *aux;
-    aux = fopen(name, "w");
-
-=======
     }
 }
  
@@ -676,20 +627,12 @@ FILE *generateFromCsvToCSVFile(CSV csv, char *nameOfFile) {
     FILE *aux;
     aux = fopen(name, "w");
  
->>>>>>> be5ab6ef107d0fc404f8cbb3d94014954c2dab3c
     for(int i = 0; i < csv.row; i++) {
         for(int j = 0; j < csv.column; j++) {
             j == csv.column - 1 ? fprintf(aux, "%s\n", csv.array[i][j]) : fprintf(aux, "%s,", csv.array[i][j]);
         }
     }
-<<<<<<< HEAD
-
-    fclose(aux);
-    return aux;
-}
-=======
  
     fclose(aux);
     return aux;
 }
->>>>>>> be5ab6ef107d0fc404f8cbb3d94014954c2dab3c
