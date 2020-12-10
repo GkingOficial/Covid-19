@@ -30,7 +30,7 @@ int main() {
     do {
         // Solicitação para o usuário
         printf(">>> ");
-        fflush(stdin);
+        clearBuffer();
         scanf("%[^\n]s", optionUser);
         
         // Ordenação
@@ -57,7 +57,7 @@ int main() {
         else if(strcmp(optionUser, "generate csv file") == 0) {
             char nameOfFile[32];
             printf(">>> Nome do arquivo: ");
-            fflush(stdin);
+            clearBuffer();
             scanf("%31[^\n]s", nameOfFile);
 
 
@@ -607,4 +607,9 @@ FILE *generateFromCsvToCSVFile(CSV csv, char *nameOfFile) {
  
     fclose(aux);
     return aux;
+}
+
+void clearBuffer(){
+    char character;
+    while((character = getchar()) != '\n' && character != EOF);
 }
