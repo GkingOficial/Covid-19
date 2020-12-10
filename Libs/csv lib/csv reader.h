@@ -1,6 +1,8 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#define TRUE 1
+
 typedef struct{
     int row;
     int column;
@@ -9,3 +11,4 @@ typedef struct{
 void setRowsAndColumns(FILE *file, CSV *csv);
 void readCSV(FILE *file, CSV *csv);
 void printCSV(CSV csv);
+void printTitle(CSV csv);

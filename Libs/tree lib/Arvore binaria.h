@@ -13,6 +13,8 @@ void readCSV(FILE *file, CSV *csv);
 void printCSV(CSV csv);
 void printTitle(CSV csv);
 
+
+
 typedef struct {
     int sedentarismo;
     int qualidadeDoSono;
@@ -67,3 +69,4 @@ FILE *generateFromTreeToCSVFile(BINARY_TREE *tree, char *nameOfFile, int order);
 FILE *generateFromCsvToCSVFile(CSV csv, char *nameOfFile);
 void buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha);
 void printInFile(BINARY_TREE tree, FILE *file, int order);
+void clearBuffer();

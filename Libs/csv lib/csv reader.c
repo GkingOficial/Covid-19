@@ -19,16 +19,23 @@ void setRowsAndColumns(FILE *file, CSV *csv) {
     }
     csv->column = columns;
     csv->row = rows;
+    fseek(file, 0, SEEK_SET);
 }
 
 void readCSV(FILE *file, CSV *csv){
     char texto[100], *word;
     int i, j, column, row;
     
-    csv -> array = NULL;
-    csv -> array = (char ***)malloc(sizeof(char **) * csv->row);
-    for(i=0;i<4;i++) {
+    csv->array = NULL;
+    csv->array = (char ***)malloc(sizeof(char **) * csv->row);
+    if(csv->array == NULL) {
+        printf("There is not storage enough\n");
+    }
+    for(i=0; i<csv->row; i++) {
         csv->array[i] = (char **)malloc(sizeof(char *) * csv->column);
+        if(csv->array[i] == NULL) {
+            printf("There is not storage enough\n");
+        }
     }
 
     row = 0;
@@ -41,6 +48,9 @@ void readCSV(FILE *file, CSV *csv){
         while(word) {
             int lengthOfWord = strlen(word);
             csv->array[row][column] = (char *)malloc(sizeof(char) * (lengthOfWord + 1));
+            if(csv->array[row][column] == NULL) {
+                printf("There is not storage enough\n");
+            }
             strcpy(csv->array[row][column], word);
             column++;
 
@@ -50,11 +60,27 @@ void readCSV(FILE *file, CSV *csv){
     }
 }
 
+void printTitle(CSV csv) {
+    for(int j = 0; j < csv.column; j++) {
+        printf("%*s%*s| ", -12, csv.array[0][j], 4, "");
+    }
+    puts("");
+}
+
 void printCSV(CSV csv){
-    for(int i = 0; i < csv.row; i++) {
+    for(int j = 0; j < csv.column; j++) {
+        printf("%*s%*s| ", -12, csv.array[0][j], 4, "");
+    }
+    puts("");
+    for(int i = 1; i < csv.row; i++) {
         for(int j = 0; j < csv.column; j++) {
-            printf("%s, ", csv.array[i][j]);
+            if(j >= 2) {
+                printf("%*s%*s| ", -12, csv.array[i][j], 4, "%");
+            } else {
+                printf("%*s%*s| ", -12, csv.array[i][j], 4, "");
+            }
         }
         puts("\b\b");
     }
 }
+
