@@ -29,9 +29,9 @@ int main() {
 
     do {
         // Solicitação para o usuário
-        setbuf(stdin, NULL);
         printf(">>> ");
-        scanf("%[^\n]", optionUser);
+        fflush(stdin);
+        scanf("%[^\n]s", optionUser);
         
         // Ordenação
         if(strcmp(optionUser, "ordenate") == 0) {
@@ -57,17 +57,17 @@ int main() {
         else if(strcmp(optionUser, "generate csv file") == 0) {
             char nameOfFile[32];
             printf(">>> Nome do arquivo: ");
-            setbuf(stdin, NULL);
-            scanf("%31[^\n]", nameOfFile);
+            fflush(stdin);
+            scanf("%31[^\n]s", nameOfFile);
 
 
             if(treeOrdering > 0) {
                 if(generateFromTreeToCSVFile(&tree, nameOfFile, ordenacao)) {
-                    printf("File created successfully!!!\n\n");
+                    printf("File created successfully!!!\n");
                 }
             } else {
                 if(generateFromCsvToCSVFile(csv, nameOfFile)) {
-                    printf("File created successfully!!!\n\n");
+                    printf("File created successfully!!!\n");
                 }
             }
         } else if(strcmp(optionUser, "search") == 0) {
@@ -235,7 +235,7 @@ void setRight(BINARY_TREE tree, VALUES values) {
 
 VALUES valueOfNode(BINARY_TREE tree) {
     if(tree == NULL) {
-        printf("\nThe tree is empty!\n\n");
+        printf("\nThe tree is empty!\n");
         exit(2);
     }
     return tree->informations;
