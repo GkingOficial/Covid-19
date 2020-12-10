@@ -40,14 +40,16 @@ int main() {
             printf("Escolha uma opção: ");
             scanf("%d", &choice);
 
-            generateTree(&tree, &csv, choice);
-            treeOrdering = choice;
-            printf("Arvore ordenada por %d\n", choice);
-
-
+            if(treeOrdering != choice) {
+                // acredito que aqui viria a função de destruir a árvore
+                generateTree(&tree, &csv, choice);
+                printf("Árvore gerada com base em: %d\n\n", choice);
+                treeOrdering = choice;
+            }
+            
             printf("Tipo de ordenação:\n[ 1 ] Crescente\n[ 2 ] Decrescente\nEscolha a opção: ");
-            scanf("%d", &choice);
-            if(choice == 1) {
+            scanf("%d", &ordenacao);
+            if(ordenacao == 1) {
                 ascendingOrder(tree);
             } else {
                 descendingOrder(tree);
@@ -69,29 +71,19 @@ int main() {
                     printf("File created successfully!!!\n\n");
                 }
             }
-        }
-        else if(strcmp(optionUser, "search") == 0) {
+        } else if(strcmp(optionUser, "search") == 0) {
             int quantidade;
             BINARY_TREE *busca;
             printf("Procurar com base em...\n[ 1 ] Quantidade de casos\n[ 2 ] Nível de sedentarismo\n[ 3 ] Qualidade do sono\n[ 4 ] Qualidade da alimentação\n[ 5 ] Qualidade psicológica\n");
+
             printf("Escolha uma opção: ");
             scanf("%d", &choice);
-            printf("Quantidade: ", quantidade);
-            scanf("%d", &quantidade);
 
-            generateTree(&tree, &csv, choice);
-            treeOrdering = choice;
-
-            if(choice == CASOS) {
-                busca = buscaNaArvore(&tree, quantidade, CASOS);
-            } else if(choice == SEDENTARISMO) {
-                busca = buscaNaArvore(&tree, quantidade, SEDENTARISMO);
-            } else if(choice == SONO) {
-                busca = buscaNaArvore(&tree, quantidade, SONO);
-            } else if(choice == ALIMENTACAO) {
-                busca = buscaNaArvore(&tree, quantidade, ALIMENTACAO);
-            } else if(choice == PSICOLOGICO) {
-                busca = buscaNaArvore(&tree, quantidade, PSICOLOGICO);
+            if(treeOrdering != choice) {
+                // acredito que aqui viria a função de destruir a árvore
+                generateTree(&tree, &csv, choice);
+                printf("Árvore gerada com base em: %d\n\n", choice);
+                treeOrdering = choice;
             }
             printf("Quantidade: ");
             scanf("%d", &quantidade);
@@ -496,33 +488,20 @@ VALUES *fromCSVToValue(CSV *csv, int line) {
     return values;
 }
 
-void printVALUES(VALUES *values) {
-    printf("%s = %s%c", "Estado", values->estado, '\n');
-    printf("%s = %d%c", "Casos", values->casos, '\n');
-    printf("%s = %d%c", "Sedentarismo", values->saude.sedentarismo, '\n');
-    printf("%s = %d%c", "Sono", values->saude.qualidadeDoSono, '\n');
-    printf("%s = %d%c", "Alimentação", values->saude.qualidadeDaAlimentacao, '\n');
-    printf("%s = %d%s", "Estado psicológico", values->saude.estadoPsicologico, "\n\n");
+void printVALUES(VALUES values) {
+    printf("\n%s = %s%c", "Estado", values.estado, '\n');
+    printf("%s = %d%c", "Casos", values.casos, '\n');
+    printf("%s = %d%c", "Sedentarismo", values.saude.sedentarismo, '\n');
+    printf("%s = %d%c", "Sono", values.saude.qualidadeDoSono, '\n');
+    printf("%s = %d%c", "Alimentação", values.saude.qualidadeDaAlimentacao, '\n');
+    printf("%s = %d%s", "Estado psicológico", values.saude.estadoPsicologico, "\n\n");
 }
 
-void helperToSearch(BINARY_TREE tree) {
-    if (tree) {
-        ascendingOrder(left(tree));
-        printf("%*s%*s| ", -12, valueOfNode(tree).estado, 4, "");
-        printf("%-12d| ", valueOfNode(tree).casos);
-        printf("%-12d| ", valueOfNode(tree).saude.sedentarismo);
-        printf("%-12d| ", valueOfNode(tree).saude.qualidadeDoSono);
-        printf("%-12d| ", valueOfNode(tree).saude.qualidadeDaAlimentacao);
-        printf("%-12d| ", valueOfNode(tree).saude.estadoPsicologico);
-        puts("");
-        ascendingOrder(right(tree));
-    }
-}
+void buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha) {
 
-BINARY_TREE *buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha) {
-    BINARY_TREE *busca = NULL;
     BINARY_TREE father = (*tree);
     VALUES values;
+    
     switch(escolha) {
         case CASOS:
             values.casos = quantidade;
@@ -542,22 +521,16 @@ BINARY_TREE *buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha) {
     }
     do {
         int aux = putOnTheSide(values, valueOfNode(father), escolha);
-        printf("1");
         if(aux == -1) {
             if(father->left)
                 father = father->left;
             else {
                 break;
             }
-        } else {
-            if(!aux) {
-                if(busca) {
-                    insertElement(busca, valueOfNode(father), escolha);
-                    printf("2");
-                } else {
-                    makeTree(busca, valueOfNode(father));
-                    printf("3");
-                }
+        }
+        else {
+            if(aux == 0) {
+                printVALUES(valueOfNode(father));
             }
             if(father->right)
                 father = father->right;
@@ -566,7 +539,6 @@ BINARY_TREE *buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha) {
             }
         }
     } while(TRUE);
-    return busca;
 }
 
 FILE *generateFromTreeToCSVFile(BINARY_TREE *tree, char *nameOfFile, int order){
