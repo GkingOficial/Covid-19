@@ -70,6 +70,7 @@ int main() {
             }
         } else if(strcmp(optionUser, "search") == 0) {
             int quantidade;
+            BINARY_TREE *busca;
             printf("Procurar com base em...\n[ 1 ] Quantidade de casos\n[ 2 ] Nível de sedentarismo\n[ 3 ] Qualidade do sono\n[ 4 ] Qualidade da alimentação\n[ 5 ] Qualidade psicológica\n");
 
             printf("Escolha uma opção: ");
@@ -82,7 +83,9 @@ int main() {
             printf("Quantidade: ");
             scanf("%d", &quantidade);
             
-            buscaNaArvore(&tree, quantidade, choice);
+            printTitle(csv);
+            busca = buscaNaArvore(&tree, quantidade, choice);
+            ascendingOrder(*busca);
         } else if(strcmp(optionUser, "help") == 0) {
             printf("\nFunções:\n- ordenate (faz a ordenação crescente ou decrescente dos dados a partir de um campo especificado)\n- generate csv file (gera arquivo csv a partir da última tabela amostrada no programa)\n- search (faz a busca de um determinado valor dentro dos dados a partir de um campo especificado)\n- exit (finaliza o programa)\n- help (amostra todas as funcionalidades do programa)\n\n");
         }
@@ -336,7 +339,6 @@ void preOrderRoute(BINARY_TREE tree) {
         printf("%8d%-8c| ", valueOfNode(tree).saude.qualidadeDoSono, '%');
         printf("%8d%-8c| ", valueOfNode(tree).saude.qualidadeDaAlimentacao, '%');
         printf("%8d%-8c| \n", valueOfNode(tree).saude.estadoPsicologico, '%');
-        ascendingOrder(right(tree));
         preOrderRoute(left(tree));
         preOrderRoute(right(tree));
     }
@@ -353,12 +355,12 @@ void postOrderRoute(BINARY_TREE tree) {
         printf("%8d%-8c| ", valueOfNode(tree).saude.qualidadeDoSono, '%');
         printf("%8d%-8c| ", valueOfNode(tree).saude.qualidadeDaAlimentacao, '%');
         printf("%8d%-8c| \n", valueOfNode(tree).saude.estadoPsicologico, '%');
-        ascendingOrder(right(tree));
     }
 }
 
 void ascendingOrder(BINARY_TREE tree) {
     if (tree) {
+        ascendingOrder(left(tree));
         printf("| ");
         printf("%*s%*s| ", -12, valueOfNode(tree).estado, 4, "");
         printf("%-16d| ", valueOfNode(tree).casos);
@@ -380,7 +382,7 @@ void descendingOrder(BINARY_TREE tree) {
         printf("%8d%-8c| ", valueOfNode(tree).saude.qualidadeDoSono, '%');
         printf("%8d%-8c| ", valueOfNode(tree).saude.qualidadeDaAlimentacao, '%');
         printf("%8d%-8c| \n", valueOfNode(tree).saude.estadoPsicologico, '%');
-        ascendingOrder(right(tree));
+        descendingOrder(left(tree));
     }
 }
 
@@ -415,8 +417,8 @@ void printVALUES(VALUES values) {
     printf("%s = %d%s", "Estado psicológico", values.saude.estadoPsicologico, "\n\n");
 }
 
-void buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha) {
-
+BINARY_TREE *buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha) {
+    BINARY_TREE *busca = (BINARY_TREE *)malloc(sizeof(BINARY_TREE));
     BINARY_TREE father = (*tree);
     VALUES values;
     
@@ -448,7 +450,11 @@ void buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha) {
         }
         else {
             if(aux == 0) {
-                printVALUES(valueOfNode(father));
+                if(busca) {
+                    insertElement(busca, valueOfNode(father), escolha);
+                } else {
+                    makeTree(busca, valueOfNode(father));
+                }
             }
             if(father->right)
                 father = father->right;
@@ -457,6 +463,7 @@ void buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha) {
             }
         }
     } while(TRUE);
+    return busca;
 }
 
 FILE *generateFromTreeToCSVFile(BINARY_TREE *tree, char *nameOfFile, int order){
