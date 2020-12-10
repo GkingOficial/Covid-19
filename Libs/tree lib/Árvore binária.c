@@ -341,8 +341,8 @@ void removalByCopy(BINARY_TREE *tree) {
 void preOrderRoute(BINARY_TREE tree) {
     if (tree) {
         printf("| ");
-        printf("%*s%*s| ", -12, valueOfNode(tree).estado, 4, "");
-        printf("%-16d| ", valueOfNode(tree).casos);
+        printf("%8s%-8s| ", valueOfNode(tree).estado, "");
+        printf("%8d%-8s| ", valueOfNode(tree).casos, "");
         printf("%8d%-8c| ", valueOfNode(tree).saude.sedentarismo, '%');
         printf("%8d%-8c| ", valueOfNode(tree).saude.qualidadeDoSono, '%');
         printf("%8d%-8c| ", valueOfNode(tree).saude.qualidadeDaAlimentacao, '%');
@@ -357,8 +357,8 @@ void postOrderRoute(BINARY_TREE tree) {
         postOrderRoute(left(tree));
         postOrderRoute(right(tree));
         printf("| ");
-        printf("%*s%*s| ", -12, valueOfNode(tree).estado, 4, "");
-        printf("%-16d| ", valueOfNode(tree).casos);
+        printf("%8s%-8s| ", valueOfNode(tree).estado, "");
+        printf("%8d%-8s| ", valueOfNode(tree).casos, "");
         printf("%8d%-8c| ", valueOfNode(tree).saude.sedentarismo, '%');
         printf("%8d%-8c| ", valueOfNode(tree).saude.qualidadeDoSono, '%');
         printf("%8d%-8c| ", valueOfNode(tree).saude.qualidadeDaAlimentacao, '%');
@@ -370,8 +370,8 @@ void ascendingOrder(BINARY_TREE tree) {
     if (tree) {
         ascendingOrder(left(tree));
         printf("| ");
-        printf("%*s%*s| ", -12, valueOfNode(tree).estado, 4, "");
-        printf("%-16d| ", valueOfNode(tree).casos);
+        printf("%8s%-8s| ", valueOfNode(tree).estado, "");
+        printf("%8d%-8s| ", valueOfNode(tree).casos, "");
         printf("%8d%-8c| ", valueOfNode(tree).saude.sedentarismo, '%');
         printf("%8d%-8c| ", valueOfNode(tree).saude.qualidadeDoSono, '%');
         printf("%8d%-8c| ", valueOfNode(tree).saude.qualidadeDaAlimentacao, '%');
@@ -384,8 +384,8 @@ void descendingOrder(BINARY_TREE tree) {
     if(tree) {
         descendingOrder(right(tree));
         printf("| ");
-        printf("%*s%*s| ", -12, valueOfNode(tree).estado, 4, "");
-        printf("%-16d| ", valueOfNode(tree).casos);
+        printf("%8s%-8s| ", valueOfNode(tree).estado, "");
+        printf("%8d%-8s| ", valueOfNode(tree).casos, "");
         printf("%8d%-8c| ", valueOfNode(tree).saude.sedentarismo, '%');
         printf("%8d%-8c| ", valueOfNode(tree).saude.qualidadeDoSono, '%');
         printf("%8d%-8c| ", valueOfNode(tree).saude.qualidadeDaAlimentacao, '%');
