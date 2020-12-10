@@ -15,9 +15,11 @@ int main() {
     FILE *file;
     CSV csv;
     BINARY_TREE tree;
+    BINARY_TREE *busca;
     char optionUser[30];
     int choice;
     int ordenacao;
+    int teveABusca = 0;
 
     file = fopen("amostra de dados.csv", "r");
     setRowsAndColumns(file, &csv);
@@ -42,6 +44,7 @@ int main() {
                 generateTree(&tree, &csv, choice);
                 treeOrdering = choice;
             }
+            teveABusca = 0;
             
             printf("Tipo de ordenação...\n[ 1 ] Crescente\n[ 2 ] Decrescente\nEscolha a opção: ");
             scanf("%d", &ordenacao);
@@ -59,18 +62,24 @@ int main() {
             setbuf(stdin, NULL);
             scanf("%31[^\n]s", nameOfFile);
 
-            if(treeOrdering > 0) {
-                if(generateFromTreeToCSVFile(&tree, nameOfFile, ordenacao)) {
+            if(teveABusca) {
+                if(generateFromTreeToCSVFile(busca, nameOfFile, 1)) {
                     printf("File created successfully!!!\n");
                 }
             } else {
-                if(generateFromCsvToCSVFile(csv, nameOfFile)) {
-                    printf("File created successfully!!!\n");
+                if(treeOrdering > 0) {
+                    if(generateFromTreeToCSVFile(&tree, nameOfFile, ordenacao)) {
+                        printf("File created successfully!!!\n");
+                    }
+                } else {
+                    if(generateFromCsvToCSVFile(csv, nameOfFile)) {
+                        printf("File created successfully!!!\n");
+                    }
                 }
             }
         } else if(strcmp(optionUser, "search") == 0) {
             int quantidade;
-            BINARY_TREE *busca;
+            
             printf("Procurar com base em...\n[ 1 ] Quantidade de casos\n[ 2 ] Nível de sedentarismo\n[ 3 ] Qualidade do sono\n[ 4 ] Qualidade da alimentação\n[ 5 ] Qualidade psicológica\n");
 
             printf("Escolha uma opção: ");
@@ -85,6 +94,7 @@ int main() {
             
             printTitle(csv);
             busca = buscaNaArvore(&tree, quantidade, choice);
+            teveABusca = 1;
             ascendingOrder(*busca);
         } else if(strcmp(optionUser, "help") == 0) {
             printf("\nFunções:\n- ordenate (faz a ordenação crescente ou decrescente dos dados a partir de um campo especificado)\n- generate csv file (gera arquivo csv a partir da última tabela amostrada no programa)\n- search (faz a busca de um determinado valor dentro dos dados a partir de um campo especificado)\n- exit (finaliza o programa)\n- help (amostra todas as funcionalidades do programa)\n\n");
