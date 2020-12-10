@@ -65,17 +65,15 @@ void printTitle(CSV csv) {
 }
 
 void printCSV(CSV csv){
+    printf("| ");
     for(int j = 0; j < csv.column; j++) {
         printf("%*s%*s| ", -12, csv.array[0][j], 4, "");
     }
     puts("");
     for(int i = 1; i < csv.row; i++) {
+        printf("| ");
         for(int j = 0; j < csv.column; j++) {
-            if(j >= 2) {
-                printf("%*s%*s| ", -12, csv.array[i][j], 4, "%");
-            } else {
-                printf("%*s%*s| ", -12, csv.array[i][j], 4, "");
-            }
+            j >= 2 ? printf("%8s%-8c| ", csv.array[i][j], '%') : printf("%8s%-8s| ", csv.array[i][j], "");
         }
         puts("\b\b");
     }
