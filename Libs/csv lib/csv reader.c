@@ -58,6 +58,7 @@ void readCSV(FILE *file, CSV *csv){
 }
 
 void printTitle(CSV csv) {
+    printf("| ");
     for(int j = 0; j < csv.column; j++) {
         printf("%*s%*s| ", -12, csv.array[0][j], 4, "");
     }
@@ -65,9 +66,11 @@ void printTitle(CSV csv) {
 }
 
 void printCSV(CSV csv){
+    int padlen;
     printf("| ");
     for(int j = 0; j < csv.column; j++) {
-        printf("%*s%*s| ", -12, csv.array[0][j], 4, "");
+        padlen = (16 - strlen(csv.array[0][j])) / 2;
+        printf("%*s%s%*s| ", padlen, "", csv.array[0][j], strlen(csv.array[0][j]) % 2 ? padlen + 1 : padlen, "");
     }
     puts("");
     for(int i = 1; i < csv.row; i++) {

@@ -28,12 +28,10 @@ int main() {
     printf("\n(Digite help para saber mais)\n");
 
     do {
-        // Solicitação para o usuário
         printf(">>> ");
         setbuf(stdin, NULL);
         scanf("%[^\n]s", optionUser);
         
-        // Ordenação
         if(strcmp(optionUser, "ordenate") == 0) {
             
             printf("Ordernar por...\n[ 1 ] Quantidade de casos\n[ 2 ] Nível de sedentarismo\n[ 3 ] Qualidade do sono\n[ 4 ] Qualidade da alimentação\n[ 5 ] Qualidade psicológica\n");
