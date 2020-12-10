@@ -19,23 +19,23 @@ int main() {
     BINARY_TREE tree;
     char optionUser[30];
     int choice;
+    int ordenacao;
 
     file = fopen("amostra de dados.csv", "r");
     setRowsAndColumns(file, &csv);
-    file = fopen("amostra de dados.csv", "r");
     readCSV(file, &csv);
     printCSV(csv);
     printf("\n");
 
     do {
         // Solicitação para o usuário
-        printf(">>> ");
         setbuf(stdin, NULL);
+        printf(">>> ");
         scanf("%[^\n]", optionUser);
         
         // Ordenação
         if(strcmp(optionUser, "ordenate") == 0) {
-            int ordenacao;
+            
             printf("Ordernar por...\n[ 1 ] Quantidade de casos\n[ 2 ] Nível de sedentarismo\n[ 3 ] Qualidade do sono\n[ 4 ] Qualidade da alimentação\n[ 5 ] Qualidade psicológica\n");
             printf("Escolha uma opção: ");
             scanf("%d", &choice);
@@ -56,20 +56,20 @@ int main() {
             }
         }
         else if(strcmp(optionUser, "generate csv file") == 0) {
+            char nameOfFile[32];
+            printf(">>> Nome do arquivo: ");
+            setbuf(stdin, NULL);
+            scanf("%31[^\n]", nameOfFile);
+
+
             if(treeOrdering > 0) {
-                FILE *aux;
-                char nameOfFile[31];
-                printf(">>> Nome do arquivo: ");
-                setbuf(stdin, NULL);
-                scanf("%30[^\n]", nameOfFile);
-                
-                if(generateFromTreeToCSVFile(&tree, nameOfFile)) {
-                    printf("file created successfully!!!\n\n");
-                } else {
-                    printf("Nome grande demais para o arquivo\n\n");
+                if(generateFromTreeToCSVFile(&tree, nameOfFile, ordenacao)) {
+                    printf("File created successfully!!!\n\n");
                 }
             } else {
-                printf("A vizualizacao dos dados não foi alterada (os dados já se encontram em amostra de dados)!!!\n\n");
+                if(generateFromCsvToCSVFile(csv, nameOfFile)) {
+                    printf("File created successfully!!!\n\n");
+                }
             }
         } else if(strcmp(optionUser, "search") == 0) {
             int quantidade;
@@ -85,7 +85,6 @@ int main() {
                 printf("Árvore gerada com base em: %d\n\n", choice);
                 treeOrdering = choice;
             }
-
             printf("Quantidade: ");
             scanf("%d", &quantidade);
             
@@ -110,6 +109,7 @@ void setRowsAndColumns(FILE *file, CSV *csv) {
     }
     csv->column = columns;
     csv->row = rows;
+    fseek(file, 0, SEEK_SET);
 }
 
 void readCSV(FILE *file, CSV *csv){
@@ -541,31 +541,70 @@ void buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha) {
     } while(TRUE);
 }
 
-FILE *generateFromTreeToCSVFile(BINARY_TREE *tree, char *nameOfFile){
+FILE *generateFromTreeToCSVFile(BINARY_TREE *tree, char *nameOfFile, int order){
     if(strlen(nameOfFile) > 30){
+        puts("The file name exceed 30 characters!");
         return NULL;
     }
+ 
     char name[35];
     strcpy(name, nameOfFile);
     strcat(name, ".csv");
-
+ 
     FILE *aux;
     aux = fopen(name, "w");
     
-    printInFile(*tree, aux);
+    printInFile(*tree, aux, order);
+    
     fclose(aux);
     return aux;
 }
-
-void printInFile(BINARY_TREE tree, FILE *file) {
-    if (tree) {
-        printInFile(left(tree), file);
-        fprintf(file, "%s,", valueOfNode(tree).estado);
-        fprintf(file, "%d,", valueOfNode(tree).casos);
-        fprintf(file, "%d,", valueOfNode(tree).saude.sedentarismo);
-        fprintf(file, "%d,", valueOfNode(tree).saude.qualidadeDoSono);
-        fprintf(file, "%d,", valueOfNode(tree).saude.qualidadeDaAlimentacao);
-        fprintf(file, "%d\n", valueOfNode(tree).saude.estadoPsicologico);
-        printInFile(right(tree), file);
+ 
+void printInFile(BINARY_TREE tree, FILE *file, int order) {
+    if(order == 1){
+        if(tree){
+            printInFile(left(tree), file, order);
+            fprintf(file, "%s,", valueOfNode(tree).estado);
+            fprintf(file, "%d,", valueOfNode(tree).casos);
+            fprintf(file, "%d,", valueOfNode(tree).saude.sedentarismo);
+            fprintf(file, "%d,", valueOfNode(tree).saude.qualidadeDoSono);
+            fprintf(file, "%d,", valueOfNode(tree).saude.qualidadeDaAlimentacao);
+            fprintf(file, "%d\n", valueOfNode(tree).saude.estadoPsicologico);
+            printInFile(right(tree), file, order);
+        }
+    } else {
+        if(tree){
+            printInFile(right(tree), file, order);
+            fprintf(file, "%s,", valueOfNode(tree).estado);
+            fprintf(file, "%d,", valueOfNode(tree).casos);
+            fprintf(file, "%d,", valueOfNode(tree).saude.sedentarismo);
+            fprintf(file, "%d,", valueOfNode(tree).saude.qualidadeDoSono);
+            fprintf(file, "%d,", valueOfNode(tree).saude.qualidadeDaAlimentacao);
+            fprintf(file, "%d\n", valueOfNode(tree).saude.estadoPsicologico);
+            printInFile(left(tree), file, order);
+        }
     }
+}
+ 
+FILE *generateFromCsvToCSVFile(CSV csv, char *nameOfFile) {
+    if(strlen(nameOfFile) > 30){
+        puts("The file name exceed 30 characters!");
+        return NULL;
+    }
+ 
+    char name[35];
+    strcpy(name, nameOfFile);
+    strcat(name, ".csv");
+ 
+    FILE *aux;
+    aux = fopen(name, "w");
+ 
+    for(int i = 0; i < csv.row; i++) {
+        for(int j = 0; j < csv.column; j++) {
+            j == csv.column - 1 ? fprintf(aux, "%s\n", csv.array[i][j]) : fprintf(aux, "%s,", csv.array[i][j]);
+        }
+    }
+ 
+    fclose(aux);
+    return aux;
 }
