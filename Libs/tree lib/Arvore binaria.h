@@ -57,7 +57,7 @@ VALUES *fromCSVToValue(CSV *csv, int line);
 void printVALUES(VALUES values);
 int putOnTheSide(VALUES values1, VALUES values2, int organizate);
 
-FILE *generateFromTreeToCSVFile(BINARY_TREE *tree, char *nameOfFile, int order);
+FILE *generateFromTreeToCSVFile(BINARY_TREE *tree, char *nameOfFile, int order, CSV csv);
 FILE *generateFromCsvToCSVFile(CSV csv, char *nameOfFile);
 // void buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha);
 BINARY_TREE *buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha);

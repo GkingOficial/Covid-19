@@ -63,12 +63,12 @@ int main() {
             scanf("%31[^\n]s", nameOfFile);
 
             if(teveABusca) {
-                if(generateFromTreeToCSVFile(busca, nameOfFile, 1)) {
+                if(generateFromTreeToCSVFile(busca, nameOfFile, 1, csv)) {
                     printf("File created successfully!!!\n");
                 }
             } else {
                 if(treeOrdering > 0) {
-                    if(generateFromTreeToCSVFile(&tree, nameOfFile, ordenacao)) {
+                    if(generateFromTreeToCSVFile(&tree, nameOfFile, ordenacao, csv)) {
                         printf("File created successfully!!!\n");
                     }
                 } else {
@@ -476,7 +476,7 @@ BINARY_TREE *buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha) {
     return busca;
 }
 
-FILE *generateFromTreeToCSVFile(BINARY_TREE *tree, char *nameOfFile, int order){
+FILE *generateFromTreeToCSVFile(BINARY_TREE *tree, char *nameOfFile, int order, CSV csv){
     if(strlen(nameOfFile) > 30){
         puts("The file name exceed 30 characters!");
         return NULL;
@@ -488,7 +488,11 @@ FILE *generateFromTreeToCSVFile(BINARY_TREE *tree, char *nameOfFile, int order){
  
     FILE *aux;
     aux = fopen(name, "w");
-    
+
+    for(int j = 0; j < csv.column; j++) {
+        j == csv.column - 1 ? fprintf(aux, "%s\n", csv.array[0][j]) : fprintf(aux, "%s,", csv.array[0][j]);
+    }
+
     printInFile(*tree, aux, order);
     
     fclose(aux);
