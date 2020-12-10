@@ -2,8 +2,6 @@
 #define CSV_READER
 #endif
 
-#include <stdio.h>
-
 typedef struct{
     int row;
     int column;

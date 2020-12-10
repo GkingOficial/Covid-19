@@ -1,8 +1,6 @@
+#include "../common.h"
 #include "../csv lib/csv reader.c"
 #include "./Arvore binaria.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 #define NONE 0
 #define CASOS 1
@@ -30,7 +28,7 @@ int main() {
     do {
         // Solicitação para o usuário
         printf(">>> ");
-        setbuf(stdin, NULL);
+        clearBuffer();
         scanf(" %[^\n]s", optionUser);
         
         // Ordenação
@@ -56,7 +54,7 @@ int main() {
         else if(strcmp(optionUser, "generate csv file") == 0) {
             char nameOfFile[32];
             printf(">>> Nome do arquivo: ");
-            setbuf(stdin, NULL);
+            clearBuffer();
             scanf("%31[^\n]s", nameOfFile);
 
 
@@ -529,5 +527,5 @@ FILE *generateFromCsvToCSVFile(CSV csv, char *nameOfFile){
 
 void clearBuffer(){
     char character;
-    while((character = getchar()) != '\n' && character != EOF);
+    while(character = getchar(), character != '\n' && character != EOF);
 }

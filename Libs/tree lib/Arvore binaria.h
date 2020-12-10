@@ -2,8 +2,6 @@
 #define ARVORE_BINARIA
 #endif
 
-#include <stdlib.h>
-
 #define TRUE 1
 
 typedef struct {
