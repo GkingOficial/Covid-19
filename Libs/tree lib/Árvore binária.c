@@ -28,8 +28,8 @@ int main() {
     do {
         // Solicitação para o usuário
         printf(">>> ");
-        clearBuffer();
-        scanf(" %[^\n]s", optionUser);
+        setbuf(stdin, NULL);
+        scanf("%[^\n]s", optionUser);
         
         // Ordenação
         if(strcmp(optionUser, "ordenate") == 0) {
@@ -46,17 +46,18 @@ int main() {
             printf("Tipo de ordenação...\n[ 1 ] Crescente\n[ 2 ] Decrescente\nEscolha a opção: ");
             scanf("%d", &ordenacao);
             if(ordenacao == 1) {
+                printTitle(csv);
                 ascendingOrder(tree);
             } else {
+                printTitle(csv);
                 descendingOrder(tree);
             }
         }
         else if(strcmp(optionUser, "generate csv file") == 0) {
             char nameOfFile[32];
             printf(">>> Nome do arquivo: ");
-            clearBuffer();
+            setbuf(stdin, NULL);
             scanf("%31[^\n]s", nameOfFile);
-
 
             if(treeOrdering > 0) {
                 if(generateFromTreeToCSVFile(&tree, nameOfFile, ordenacao)) {
@@ -328,13 +329,14 @@ void removalByCopy(BINARY_TREE *tree) {
 
 void preOrderRoute(BINARY_TREE tree) {
     if (tree) {
+        printf("| ");
         printf("%*s%*s| ", -12, valueOfNode(tree).estado, 4, "");
-        printf("%-12d| ", valueOfNode(tree).casos);
-        printf("%-12d| ", valueOfNode(tree).saude.sedentarismo);
-        printf("%-12d| ", valueOfNode(tree).saude.qualidadeDoSono);
-        printf("%-12d| ", valueOfNode(tree).saude.qualidadeDaAlimentacao);
-        printf("%-12d| ", valueOfNode(tree).saude.estadoPsicologico);
-        puts("");
+        printf("%-16d| ", valueOfNode(tree).casos);
+        printf("%8d%-8c| ", valueOfNode(tree).saude.sedentarismo, '%');
+        printf("%8d%-8c| ", valueOfNode(tree).saude.qualidadeDoSono, '%');
+        printf("%8d%-8c| ", valueOfNode(tree).saude.qualidadeDaAlimentacao, '%');
+        printf("%8d%-8c| \n", valueOfNode(tree).saude.estadoPsicologico, '%');
+        ascendingOrder(right(tree));
         preOrderRoute(left(tree));
         preOrderRoute(right(tree));
     }
@@ -344,26 +346,26 @@ void postOrderRoute(BINARY_TREE tree) {
     if (tree) {
         postOrderRoute(left(tree));
         postOrderRoute(right(tree));
+        printf("| ");
         printf("%*s%*s| ", -12, valueOfNode(tree).estado, 4, "");
-        printf("%-12d| ", valueOfNode(tree).casos);
-        printf("%-12d| ", valueOfNode(tree).saude.sedentarismo);
-        printf("%-12d| ", valueOfNode(tree).saude.qualidadeDoSono);
-        printf("%-12d| ", valueOfNode(tree).saude.qualidadeDaAlimentacao);
-        printf("%-12d| ", valueOfNode(tree).saude.estadoPsicologico);
-        puts("");
+        printf("%-16d| ", valueOfNode(tree).casos);
+        printf("%8d%-8c| ", valueOfNode(tree).saude.sedentarismo, '%');
+        printf("%8d%-8c| ", valueOfNode(tree).saude.qualidadeDoSono, '%');
+        printf("%8d%-8c| ", valueOfNode(tree).saude.qualidadeDaAlimentacao, '%');
+        printf("%8d%-8c| \n", valueOfNode(tree).saude.estadoPsicologico, '%');
+        ascendingOrder(right(tree));
     }
 }
 
 void ascendingOrder(BINARY_TREE tree) {
     if (tree) {
-        ascendingOrder(left(tree));
+        printf("| ");
         printf("%*s%*s| ", -12, valueOfNode(tree).estado, 4, "");
-        printf("%-12d| ", valueOfNode(tree).casos);
-        printf("%-12d| ", valueOfNode(tree).saude.sedentarismo);
-        printf("%-12d| ", valueOfNode(tree).saude.qualidadeDoSono);
-        printf("%-12d| ", valueOfNode(tree).saude.qualidadeDaAlimentacao);
-        printf("%-12d| ", valueOfNode(tree).saude.estadoPsicologico);
-        puts("");
+        printf("%-16d| ", valueOfNode(tree).casos);
+        printf("%8d%-8c| ", valueOfNode(tree).saude.sedentarismo, '%');
+        printf("%8d%-8c| ", valueOfNode(tree).saude.qualidadeDoSono, '%');
+        printf("%8d%-8c| ", valueOfNode(tree).saude.qualidadeDaAlimentacao, '%');
+        printf("%8d%-8c| \n", valueOfNode(tree).saude.estadoPsicologico, '%');
         ascendingOrder(right(tree));
     }
 }
@@ -371,14 +373,14 @@ void ascendingOrder(BINARY_TREE tree) {
 void descendingOrder(BINARY_TREE tree) {
     if(tree) {
         descendingOrder(right(tree));
+        printf("| ");
         printf("%*s%*s| ", -12, valueOfNode(tree).estado, 4, "");
-        printf("%-12d| ", valueOfNode(tree).casos);
-        printf("%-12d| ", valueOfNode(tree).saude.sedentarismo);
-        printf("%-12d| ", valueOfNode(tree).saude.qualidadeDoSono);
-        printf("%-12d| ", valueOfNode(tree).saude.qualidadeDaAlimentacao);
-        printf("%-12d| ", valueOfNode(tree).saude.estadoPsicologico);
-        puts("");
-        descendingOrder(left(tree));
+        printf("%-16d| ", valueOfNode(tree).casos);
+        printf("%8d%-8c| ", valueOfNode(tree).saude.sedentarismo, '%');
+        printf("%8d%-8c| ", valueOfNode(tree).saude.qualidadeDoSono, '%');
+        printf("%8d%-8c| ", valueOfNode(tree).saude.qualidadeDaAlimentacao, '%');
+        printf("%8d%-8c| \n", valueOfNode(tree).saude.estadoPsicologico, '%');
+        ascendingOrder(right(tree));
     }
 }
 
@@ -526,6 +528,6 @@ FILE *generateFromCsvToCSVFile(CSV csv, char *nameOfFile){
 }
 
 void clearBuffer(){
-    char character;
-    while(character = getchar(), character != '\n' && character != EOF);
+    scanf("%*[^\n]s");
+    scanf("%*c");
 }
