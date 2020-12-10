@@ -30,8 +30,8 @@ int main() {
     do {
         // Solicitação para o usuário
         printf(">>> ");
-        clearBuffer();
-        scanf("%[^\n]s", optionUser);
+        setbuf(stdin, NULL);
+        scanf(" %[^\n]s", optionUser);
         
         // Ordenação
         if(strcmp(optionUser, "ordenate") == 0) {
@@ -41,7 +41,6 @@ int main() {
             scanf("%d", &choice);
 
             if(treeOrdering != choice) {
-                // acredito que aqui viria a função de destruir a árvore
                 generateTree(&tree, &csv, choice);
                 treeOrdering = choice;
             }
@@ -57,7 +56,7 @@ int main() {
         else if(strcmp(optionUser, "generate csv file") == 0) {
             char nameOfFile[32];
             printf(">>> Nome do arquivo: ");
-            clearBuffer();
+            setbuf(stdin, NULL);
             scanf("%31[^\n]s", nameOfFile);
 
 
@@ -78,7 +77,6 @@ int main() {
             scanf("%d", &choice);
 
             if(treeOrdering != choice) {
-                // acredito que aqui viria a função de destruir a árvore
                 generateTree(&tree, &csv, choice);
                 treeOrdering = choice;
             }
