@@ -24,7 +24,6 @@ int main() {
     setRowsAndColumns(file, &csv);
     readCSV(file, &csv);
     printCSV(csv);
-    fclose(file);
     printf("\n(Digite help para saber mais)\n");
 
     do {
@@ -46,15 +45,13 @@ int main() {
             
             printf("Tipo de ordenação...\n[ 1 ] Crescente\n[ 2 ] Decrescente\nEscolha a opção: ");
             scanf("%d", &ordenacao);
-
             printTitle(csv);
             if(ordenacao == 1) {
                 ascendingOrder(tree);
             } else {
                 descendingOrder(tree);
             }
-        }
-        else if(strcmp(optionUser, "generate csv file") == 0) {
+        } else if(strcmp(optionUser, "generate csv file") == 0) {
             char nameOfFile[32];
             printf(">>> Nome do arquivo: ");
             setbuf(stdin, NULL);
@@ -90,16 +87,15 @@ int main() {
             printf("Quantidade: ");
             scanf("%d", &quantidade);
             
+            printTitle(csv);
             busca = buscaNaArvore(&tree, quantidade, choice);
             teveABusca = 1;
-
-            printTitle(csv);
             ascendingOrder(*busca);
-            
         } else if(strcmp(optionUser, "help") == 0) {
             printf("\nFunções:\n- ordenate (faz a ordenação crescente ou decrescente dos dados a partir de um campo especificado)\n- generate csv file (gera arquivo csv a partir da última tabela amostrada no programa)\n- search (faz a busca de um determinado valor dentro dos dados a partir de um campo especificado)\n- exit (finaliza o programa)\n- help (amostra todas as funcionalidades do programa)\n\n");
         }
     } while(strcmp(optionUser, "exit"));
+    fclose(file);
 }
 
 void centerText(char *text, int fieldWidth) {
