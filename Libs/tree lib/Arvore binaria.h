@@ -58,8 +58,3 @@ FILE *generateFromCsvToCSVFile(CSV csv, char *nameOfFile);
 void printInFile(BINARY_TREE tree, FILE *file, int order);
 
 BINARY_TREE *buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha);
-
-void clearBuffer();
-void removalByFusion(BINARY_TREE *tree);
-void removalByCopy(BINARY_TREE *tree);
-void printVALUES(VALUES values);
