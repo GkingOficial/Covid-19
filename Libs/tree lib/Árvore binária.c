@@ -282,62 +282,6 @@ void insertElement(BINARY_TREE *tree, VALUES values, int organizate) {
     }
 }
 
-void removalByFusion(BINARY_TREE *tree) {
-    if (*tree) {
-        BINARY_TREE aux = *tree;
-        if (!((*tree)->right))
-            *tree = (*tree)->left;
-        else
-            if ((*tree)->left == NULL)
-                *tree = (*tree)->right;
-            else {
-                aux = (*tree)->left;
-                while (aux->right)
-                aux = aux->right;
-                aux->right = (*tree)->right;
-                aux->right ->father= aux;
-                aux = *tree;
-                *tree = (*tree)->left;
-            }
-        free(aux);
-    }
-}
-
-void removalByCopy(BINARY_TREE *tree) {
-    if (*tree) {
-        BINARY_TREE aux = *tree;
-        if ((*tree)->right == NULL) {
-            *tree = (*tree)->left;
-            (*tree)->father=NULL;
-        } else
-            if ((*tree)->left == NULL) {
-                *tree = (*tree)->right;
-                (*tree)->father=NULL;
-            } else {
-                aux = (*tree)->right;
-                while (aux->left!=NULL)
-                    aux = aux->left;
-
-                strcpy((*tree)->informations.estado, aux->informations.estado);
-
-                (*tree)->informations.casos = aux->informations.casos;
-                (*tree)->informations.saude.estadoPsicologico = aux->informations.saude.estadoPsicologico;
-                (*tree)->informations.saude.qualidadeDaAlimentacao = aux->informations.saude.qualidadeDaAlimentacao;
-                (*tree)->informations.saude.qualidadeDoSono = aux->informations.saude.qualidadeDoSono;
-                (*tree)->informations.saude.sedentarismo = aux->informations.saude.sedentarismo;
-
-                if (aux->father == *tree) {
-                    aux->father->right = aux->right;
-                    aux->father->right->father = aux->father;
-                } else {
-                    aux->father->left = aux->right;
-                    aux->father->left->father = aux->father;
-                }
-            }
-        free(aux);
-    }
-}
-
 void preOrderRoute(BINARY_TREE tree) {
     if (tree) {
         printf("| ");
@@ -414,15 +358,6 @@ VALUES *fromCSVToValue(CSV *csv, int line) {
     values->saude.qualidadeDaAlimentacao = atoi(csv->array[line - 1][4]);
     values->saude.estadoPsicologico = atoi(csv->array[line - 1][5]);
     return values;
-}
-
-void printVALUES(VALUES values) {
-    printf("\n%s = %s%c", "Estado", values.estado, '\n');
-    printf("%s = %d%c", "Casos", values.casos, '\n');
-    printf("%s = %d%c", "Sedentarismo", values.saude.sedentarismo, '\n');
-    printf("%s = %d%c", "Sono", values.saude.qualidadeDoSono, '\n');
-    printf("%s = %d%c", "Alimentação", values.saude.qualidadeDaAlimentacao, '\n');
-    printf("%s = %d%s", "Estado psicológico", values.saude.estadoPsicologico, "\n\n");
 }
 
 BINARY_TREE *buscaNaArvore(BINARY_TREE *tree, int quantidade, int escolha) {
@@ -549,4 +484,69 @@ FILE *generateFromCsvToCSVFile(CSV csv, char *nameOfFile){
 void clearBuffer(){
     scanf("%*[^\n]s");
     scanf("%*c");
+}
+
+void removalByFusion(BINARY_TREE *tree) {
+    if (*tree) {
+        BINARY_TREE aux = *tree;
+        if (!((*tree)->right))
+            *tree = (*tree)->left;
+        else
+            if ((*tree)->left == NULL)
+                *tree = (*tree)->right;
+            else {
+                aux = (*tree)->left;
+                while (aux->right)
+                aux = aux->right;
+                aux->right = (*tree)->right;
+                aux->right ->father= aux;
+                aux = *tree;
+                *tree = (*tree)->left;
+            }
+        free(aux);
+    }
+}
+
+void removalByCopy(BINARY_TREE *tree) {
+    if (*tree) {
+        BINARY_TREE aux = *tree;
+        if ((*tree)->right == NULL) {
+            *tree = (*tree)->left;
+            (*tree)->father=NULL;
+        } else
+            if ((*tree)->left == NULL) {
+                *tree = (*tree)->right;
+                (*tree)->father=NULL;
+            } else {
+                aux = (*tree)->right;
+                while (aux->left!=NULL)
+                    aux = aux->left;
+
+                strcpy((*tree)->informations.estado, aux->informations.estado);
+
+                (*tree)->informations.casos = aux->informations.casos;
+                (*tree)->informations.saude.estadoPsicologico = aux->informations.saude.estadoPsicologico;
+                (*tree)->informations.saude.qualidadeDaAlimentacao = aux->informations.saude.qualidadeDaAlimentacao;
+                (*tree)->informations.saude.qualidadeDoSono = aux->informations.saude.qualidadeDoSono;
+                (*tree)->informations.saude.sedentarismo = aux->informations.saude.sedentarismo;
+
+                if (aux->father == *tree) {
+                    aux->father->right = aux->right;
+                    aux->father->right->father = aux->father;
+                } else {
+                    aux->father->left = aux->right;
+                    aux->father->left->father = aux->father;
+                }
+            }
+        free(aux);
+    }
+}
+
+void printVALUES(VALUES values) {
+    printf("\n%s = %s%c", "Estado", values.estado, '\n');
+    printf("%s = %d%c", "Casos", values.casos, '\n');
+    printf("%s = %d%c", "Sedentarismo", values.saude.sedentarismo, '\n');
+    printf("%s = %d%c", "Sono", values.saude.qualidadeDoSono, '\n');
+    printf("%s = %d%c", "Alimentação", values.saude.qualidadeDaAlimentacao, '\n');
+    printf("%s = %d%s", "Estado psicológico", values.saude.estadoPsicologico, "\n\n");
 }
