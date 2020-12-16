@@ -1,5 +1,4 @@
 #include "./csv reader.h"
-#include"../common.h"
 
 void setRowsAndColumns(FILE *file, CSV *csv) {
     char c;
