@@ -1,6 +1,6 @@
 #include "../common.h"
 #include "../csv lib/csv reader.c"
-#include "./Arvore binaria.h"
+#include "Arvore binaria.h"
 
 #define NONE 0
 #define CASOS 1
